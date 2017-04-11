@@ -119,13 +119,54 @@ public class TextParserTest {
         //</editor-fold>
 
         //<editor-fold desc="When">
-        List<String> tokens = textParser.tokenise("some!!!!words!!");
+        List<String> tokens = textParser.tokenise("some!!!!words!! here");
+        //</editor-fold>
+
+        //<editor-fold desc="Then">
+        assertEquals(3, tokens.size());
+        assertEquals("some!!!!", tokens.get(0));
+        assertEquals("words!!", tokens.get(1));
+        assertEquals("here", tokens.get(2));
+        //</editor-fold>
+    }
+
+    @Test
+    public void periodsCanSplitWords() {
+        //<editor-fold desc="Given">
+        TextParser textParser = new TextParser();
+        //</editor-fold>
+
+        //<editor-fold desc="When">
+        List<String> tokens = textParser.tokenise("hello.world");
         //</editor-fold>
 
         //<editor-fold desc="Then">
         assertEquals(2, tokens.size());
-        assertEquals("some!!!!", tokens.get(0));
-        assertEquals("words!!", tokens.get(1));
+        assertEquals("hello", tokens.get(0));
+        assertEquals("world", tokens.get(1));
+        //</editor-fold>
+    }
+
+    @Test
+    public void periodsDoNotSplitNumbers() {
+        //<editor-fold desc="Given">
+        TextParser textParser = new TextParser();
+        //</editor-fold>
+
+        //<editor-fold desc="When">
+        List<String> tokens = textParser.tokenise("hello.1.2.world.3.4 15.4 and. hello");
+        //</editor-fold>
+
+        //<editor-fold desc="Then">
+        System.err.println("Results = " + String.join(", ", tokens));
+        assertEquals(7, tokens.size());
+        assertEquals("hello", tokens.get(0));
+        assertEquals("1.2", tokens.get(1));
+        assertEquals("world", tokens.get(2));
+        assertEquals("3.4", tokens.get(3));
+        assertEquals("15.4", tokens.get(4));
+        assertEquals("and", tokens.get(5));
+        assertEquals("hello", tokens.get(6));
         //</editor-fold>
     }
 }

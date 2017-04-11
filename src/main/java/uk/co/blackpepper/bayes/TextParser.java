@@ -3,6 +3,9 @@ package uk.co.blackpepper.bayes;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+import java.util.stream.Collectors;
 
 /**
  * Created by davidg on 11/04/2017.
@@ -13,15 +16,43 @@ public class TextParser {
         result.addAll(tokenizeSpaces(text));
         ArrayList<String> result2 = new ArrayList<String>();
         for (String s : result) {
-            result2.addAll(tokenizeExc(s));
+            result2.addAll(tokenizePeriods(s));
         }
-        return result2;
+        ArrayList<String> result3 = new ArrayList<String>();
+        for (String s : result2) {
+            result3.addAll(tokenizeExc(s));
+        }
+        return result3.stream().filter(i -> i.length() > 0).collect(Collectors.toList());
     }
 
     private List<String> tokenizeSpaces(String text) {
         String[] split = text.split("\\s");
         ArrayList<String> result = new ArrayList<String>();
         result.addAll(Arrays.asList(split));
+        return result;
+    }
+
+    private List<String> tokenizePeriods(String text) {
+        ArrayList<String> result = new ArrayList<String>();
+        Pattern p = Pattern.compile("([0-9]+\\.[0-9]+)+");
+        Matcher matcher = p.matcher(text);
+        int i = 0;
+        while(matcher.find()) {
+            String group = matcher.group();
+            String before = text.substring(i, matcher.start());
+            if (before.endsWith(".")) {
+                before = before.substring(0, before.length() - 1);
+            }
+            if (before.startsWith(".")) {
+                before = before.substring(1);
+            }
+            i = matcher.end();
+            result.add(before);
+            result.add(group);
+        }
+        if (i == 0) {
+            result.addAll(Arrays.asList(text.split("\\.")));
+        }
         return result;
     }
 
