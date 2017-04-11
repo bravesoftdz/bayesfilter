@@ -1,0 +1,41 @@
+Slide-to-unlock. Pinch-to-zoom. Double-tap-to-wake. Gestures that work well are invaluable to a user's experience, and Android phone manufacturers are bringing these gestures to the home screen in deceptively simple and astonishingly successful ways.
+
+Case in point: both the Samsung Galaxy S8 — and the Google Pixel before it — are eschewing the app drawer button and instead using a gesture to open the drawer. Google employed a slightly brightened dock background and a swipe from the dock to open the app drawer on the Pixel Launcher, but Samsung's taking this two steps further: swiping up or down anywhere on the home screen will launch you into the app drawer.
+
+So what if you want to open something other than the app drawer? No problem.
+
+S8 gestures on a system levelHTC gestures ona system levelEvie Launcher gestures
+
+Gesture controls on launchers can be generally broken down into two categories: locked down and customizable. First-party launchers like the Pixel Launcher, as well as system-wide gestures on Samsung, HTC, and other devices, are locked down gestures in that you can turn them off and on, but you can't change them from their default action. For example, if you want to swipe down on your home screen to pull up the notifications instead of the app drawer on a Samsung Galaxy S8, you're out of luck unless you want to download another launcher. Some third-party launchers like Evie Launcher utilize locked-down gestures, likely in the interest of simplicity.
+
+
+The second category of gesture controls are customizable controls, such as those we find on Action Launcher 3, Nova Launcher, and ADW 2 Launcher. These launchers all offer a set of gesture controls that the user can assign a desired action to, from direct dialing your mother to opening the notification shade to opening Google Maps or launching a Tasker task. Customizable gesture controls let the user create the UI that they want through their taps and swipes.
+
+Action ShortcutsNova GesturesADW Gestures
+
+While most launchers put things in different places, customizable gesture controls on launchers are generally in the same place and format. Look for Gestures or Shortcuts on your launcher's settings menu. You'll be treated to a list of gestures you can assign shortcuts and apps to. Tap the gesture you desire, then you'll be treated to a list of all the things you can assign there. While the possibilities are really quite endless, here are some popular and useful ways to utilize gesture controls on your home screen:
+
+Swipe up to open app drawer
+Swipe down to open notification shade
+Double-tap to open app
+Double-tap to lock phone 1
+Two-finger swipe down for Quick Settings
+Two-finger swipe up to connect to home Bluetooth speaker (Tasker task)
+Two-finger swipe down to disconnect to home Bluetooth speaker (Tasker task)
+Tap Home button (on home screen) to open Google app
+Two-finger swipe up to turn on flashlight.
+Swipe from Phone app to call Mom
+1 A lot of users do this to avoid wearing out their power button, and for phones with double-tap to wake since they start getting used to double-tapping to wake and sleep.
+
+Oh, that last one is a swipe action. Nova Launcher allows you to not only assign actions to a gesture to the home screen but to individual apps on your home screen, called swipe actions in the shortcut editing screen. Swipe actions allows us to do things like:
+
+Direct dial mom by swiping the phone button
+Add a secret app to a folder by making it the shortcut gesture — I use this to avoid blank spaces in folders
+Begin Navigating home when you swipe on Google Maps
+Toggle Bluetooth when you swipe on Google Play Music
+Start playing your drive-time playlist when you swipe on Google Play Music
+Swipe actions are best actions
+
+Beyond Nova Launcher, there aren't a lot of launchers that support swipe actions. Also, as more and more apps begin to support Android 7.1 App Shortcuts, the gesture used for swipe actions could be co-opted for App Shortcuts, which offer multiple options as opposed to the singular action assigned to swipe actions. It'll be interesting to see how that's handled over the next year or two.
+
+So what gestures do you give your phone on a regular basis? Have you hit upon the perfect shortcut system to achieve peak efficiency on your home screen? Share them with us in the comments — I'm always looking for new shortcut combos to try.

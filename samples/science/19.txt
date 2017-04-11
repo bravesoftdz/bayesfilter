@@ -1,0 +1,58 @@
+New observations of a bizarre object in the constellation of Orion point  - literally - to a colossal explosion powered by a multi-star collision. And by colossal, I mean holy-yikes-the-energies-involved-are-terrifying colossal.
+
+Oh, do I love this story.
+
+You’ve probably seen photos of the Orion Nebula, one of the most beautiful and amazing objects in the sky. Located about 1300 light years from us, it’s actually just a small part of the much larger Orion Molecular Cloud (or OMC), a cold, dark cloud of gas that’s giving birth to hundreds of stars inside it; newborn stars on the Earth-facing side of the cloud blew a hole in the material, lighting it up to create the Orion nebula. But behind the flashier beauty lurks the rest of the cloud, and although it appears dark by eye, that doesn’t mean it’s quiet.
+
+Quite the opposite. When you look at the OMC using the Atacama Large Millimeter Array (ALMA), a radio telescope located in Chile, what you find is cosmic fireworks:
+
+Gemini + ALMA observations of the event
+The ALMA radio observations (color coded so that red is material headed away from us and blue toward us) on top of an infrared background image of OMC by the Gemini telescope. Credit: ALMA (ESO/NAOJ/NRAO), J. Bally; B. Saxton (NRAO/AUI/NSF); Gemini Observatory/AURA
+ 
+
+Ye. GADS.
+
+What you are seeing here looks very much like an explosion. The streamers —about a hundred in total— all seem to come from one spot, and while they point outward in different directions they have an overall spherical symmetry to them.
+
+This structure (for lack of a better word, and oddly, it doesn’t have a name or nickname as most such objects do) has been observed before. But these new ALMA observations provide us not only with much higher resolution so we see detail better, but, more importantly, they also provide velocity measurements of the streamers via the Doppler shift. They’re moving away from the center at speeds of 20 to over 150 kilometers per second. Mind you, the total amount of gas in this thing is eight times the Sun’s mass. That’s a huge amount of material. And when you look at the velocities and positions of the streamers, an amazing thing pops out: The material that’s physically farther away from the center is moving faster than stuff closer in.
+
+That’s exactly what you expect from an explosion. Think of it this way: If you blow something up, then wait a second, the stuff traveling fastest will have moved the farthest away. Even better, if you know how far they’ve traveled you can figure out how long ago the explosion occurred. Tracing their directions and speeds backwards, it looks like the debris was sent on its way in 1475 CE.
+
+Yes, you read that right. This isn’t some bazillion year old event. It happened just about 540 years ago!
+
+velocity map of the streamers
+A map of the velocities of the streamers. Red is moving away from us; blue toward us. Four stars are indicated by the circles;  from top to bottom they are BN, Source I, Source n, and a fourth possibly unrelated object called IRc4. Credit: Bally et al.
+ 
+
+It gets better. Three stars near the center of this structure are flying away from it, as well. They have somewhat arcane names, having been discovered by different people at different times, but they’re all massive stars. One, called BN, is somewhere between 16 and 25 times the mass of our Sun, making it a behemoth. A second, called Source I, is somewhere between 10 and 22 solar masses, and the third, Source n, is at least 3 to 6 times the mass of the Sun, and may be even larger.
+
+If you trace their directions and speeds backwards, you find that all three stars were in close proximity to each other just - can you guess? - yes, 500 years ago. At that time, they were all within a few tens of billions of kilometers of each other; very close, on a galactic scale. Whatever catastrophe blew out the streamers of gas also physically flung out these stars, as well.
+
+The energy of the event that set all this into motion depends on the total mass ejected and the velocities of those objects. Doing the math, the total energy of the event was roughly 1048 ergs.
+
+I saw that number and the hair on the back of my neck stood up. An erg is a teeny unit, but 1,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000 is a lot. A lot a lot. It’s about the same amount of energy the Sun emits in ten million years.
+
+Ye GADS. Again. That’s enough energy to, well, to toss around huge stars and vast amounts of gas like they’re toys. What the heck could generate power on that scale?
+
+It turns out, the stars rushing away from the scene of the crime are the guilty parties. It was a hit-and-run.
+
+All three stars are very massive, and therefore young; the more massive a star, the shorter its life. They were no doubt born in the core of the OMC, called OMC1, a small, dense knot of material where much of the star birth in the cloud is taking place. There are a lot stars being created there; in the same volume of space between the Sun and the nearest star, tens of thousands of stars are forming in OMC1! Space is so empty near the Sun that our star could live its entire lifetime and never have a close encounter with another star, but in the core of OMC1, such near-misses are inevitable.
+
+If a collision* involves three or more stars, especially really massive ones, very interesting things can happen. In this case, it’s even more interesting, because Source I is a binary: two stars orbiting each other. During the encounter, all these objects exchange energy, literally affecting the other objects’ velocities. Two massive stars in orbit have a huge amount of orbital energy, so when a third (or fourth) star passes them, it can steal this orbital energy, giving the interloper a huge kick. It can be flung away at very high speed.
+
+But we have to remember Newton’s Third Law! Every action has an equal but opposite reaction. If you take something heavy and throw it away from you, you feel a force pushing you in the opposite direction. This is called reflex motion, and it rears its head mightily in stellar collisions. That’s what we’re seeing here: the star BN probably stole some of Source I’s orbital energy, and it got flung one direction, while Source I went another. In the middle of this was Source n, which also was in the wrong place at the wrong time. It got swept up in this gravitational traffic accident event and shot off, too.
+
+And that was the event that created this huge explosion of energy. So, what’s the deal with all that gas? Well, all these stars were young, remember, so young they may still have been surrounded by the disks of material from which they formed. In the collision, that gas would’ve been shot away, as well. The material was ejected hard, forming those streamers as it shot through the cold gas between the stars in OMC. The scientists who made these observations liken it to high-speed footage of explosions. Watch:
+
+
+ 
+
+Look familiar?
+
+And so, all this comes together. While it wasn’t an explosion like a chemical detonation, it was a massive release of energy over a very short period of time, which is what an explosion is. And the results are very explodey looking, I think you’ll agree.
+
+And while this may seem like a low-probability event (multiple stars with disks rear-ending each other in the core of a dense cloud) we’ve actually seen other events that may be due to this sort of thing. So much energy is dumped into the cloud that it can briefly grow very bright in the infrared part of the spectrum, and such flares have been seen not only in our galaxy but in others as well. While I wouldn’t say such events are common, necessarily, they do seem to happen relatively often given enough time and the right circumstances.
+
+I find this all rather mind-blowing. While the energy released in the collision is small compared to, say, a supernova (a literally exploding star), it’s still a soul-crushing amount to extract from a simple encounter between multiple stars. I’m glad it happened over a thousand light years away! That’s close enough to get a good look, but not so close that it poses a threat. When it comes to ridiculously catastrophic astronomical events, that’s my favorite kind.
+
+* Astronomers refer to even near misses as “collisions”, because even if the objects don’t physically impact, their gravity of each object extends a long way and can affect the other object.

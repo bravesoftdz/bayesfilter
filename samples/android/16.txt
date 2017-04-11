@@ -1,0 +1,48 @@
+We explain how to move apps to a microSD card in your Android phone or tablet. as well as how to store files and photos on a microSD card to free up internal storage. There are also other ways to get more storage in Android.
+Many cheap Android phones come with a paltry 4- or 8GB of storage, while even 16GB isn't really enough for lots of apps, high-resolution photos and videos, plus a music library. Fortunately, the vast majority of Android phones have a memory card slot, into which you can slot an inexpensive microSD card.
+What you need to know about microSD cards
+Before you buy one, check what capacity your phone will support. Flagship phones tend to accommodate 128GB or higher, but many cheap Androids accept only 32GB. To be fair, 32GB will be enough for most people. We've tested and rated all the best microSD cards. 
+Once you've got the microSD card, it's easy to set things up so that it becomes the default place for new apps, photos, videos, music and more. You can switch the storage location within your camera settings or Google Play Music settings, for example. But what about the stuff already clogging up your phone's internal storage?
+SPONSORED CONTENT
+Understanding how anti-virus works
+By BitDefender
+How to move apps to SD
+First, let's clear up something important: not all apps can be moved to microSD, and some phones won't let you move apps to SD at all. This means phones with just 4- or 8GB of internal storage can still run into problems even with a microSD card if you download and use a lot of apps.
+Whether or not an app can be moved to microSD is down to the app developer and, sometimes, the phone manufacturer. 
+Samsung's Galaxy S7 is among the phones that do allow you to move apps to SD, but you should note that those apps won't be available when you remove the SD card. We've written a separate guide to help if you see Android's "insufficient storage available" message.
+If an app can be moved to the microSD card, you'll find the option to do so within the Settings, Apps menu. Not all Android phones have the same settings app, but there will be an Apps menu somewhere.
+1x1 pixel
+On the first tab of this screen you'll see all apps downloaded to your phone. Swipe in from the right to see which are stored on your SD card - this screen should be blank unless you did it before and simply forgot how to do it.
+To move an app, return to the Downloaded tab and tap on an app to select it. Here we've selected AnTuTu, which was not preinstalled on the phone (preinstalled apps often cannot be moved).
+You'll see an option to 'Move to SD card': tap this. The button will first show 'Moving', then when the action is complete it will switch to 'Move to phone'. You'll now find the app listed under the On SD Card tab.
+Move app to SD
+Content continues below
+Hate The Sound Of Snoring? This New Technology Blocks It
+Isolate Ear Silencers
+Best Tracking Device Ever is Selling Like Crazy
+TrackR Bravo
+The Most Addictive Game Of The Year! Build Your City!
+Elvenar
+Ads by Revcontent
+Sometimes the option to Move to SD card will be greyed out, as is the case with the Amazon Music app that is preinstalled on the EE Harrier Mini we're using here to take screenshots. These apps cannot be moved to microSD.
+Can't move to SD
+It's worth pointing out that many free apps are available that offer to automate this process for you. If you're concerned about storage then adding yet another app probably isn't the best idea, but you can always uninstall it once it has done its job.
+How to move photos, video, music and files to SD
+The first thing to do is browse to Settings, Storage on your Android phone or tablet, then look for an option to 'Transfer data to SD card'. Not all Android devices have this option, and if yours doesn't you'll need to manually move the files. 
+The second easiest way to quickly move photos, video, music and other files to a microSD card is to do so using a PC or Mac. Hook up the phone to your computer via a USB cable, then open a new window to browse its contents.
+You should be able to see the phone's internal storage and SD card as two separate storage devices. We're using Android File Transfer on a Mac, which shows the Internal storage and SD card on separate tabs. 
+To move files from Internal storage to SD card simply drag-and-drop files to copy them from the internal storage to the Mac desktop and back to the phone's SD card, then delete them from the phone's internal storage. Just don't try to move any Android system files.
+SD on Mac
+SPONSORED CONTENT
+
+ 
+Spring into action with our Flying Deals!
+Sponsored by Parrot
+Spring has arrived, so take off in flight with the Parrot Bebop 2 FPV or the Parrot Disco! Use the code FLYINGDEALS at checkout for a 20% discount.
+File manager app
+Another option is to use a File manager app. Many Android phones come with such an app preinstalled, but it is not a standard part of Android. We've downloaded the free File Manager app from Topnet999, but ES File Explorer is one of the most popular apps, too.
+Tap on the Storage tab at the top of the app to see the various storage available on the phone. Here sdcard0 was our phone's internal storage, while sdcard1 was the microSD card. Let's start with photos.
+First open sdcard0 and browse to DCIM, Camera. Here you'll find any shots taken by your camera. Tap the three dots at the bottom right of the screen and choose Multi-select. Tap on each item you want to move to SD; when selected the white text becomes yellow. Now choose Move, browse to the microSD card and choose Move here. 
+Repeat the process for any music and other files stored on your device.
+If you're phone's due for an upgrade, check out the best new phones coming in 2017
+Follow Marie Brewis on Twitter.

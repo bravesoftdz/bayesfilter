@@ -1,0 +1,16 @@
+Android O is reportedly causing trouble with apps which draw over the status bar. Apps like Status, Twilight and others don’t work in the Android O Developer Preview, and the Android Developer’s documentation suggests it’s not a bug.
+
+ Microsoft
+Free Quick Start Developer Guide
+Sponsored by Microsoft
+Thanks to the cloud, right now is the best time to ...
+In the past, apps have been able to operate on top of other apps and system UI elements for certain functions. In the case of Twilight, which aims to help users get a better sleep by reducing the amount of blue light in a display, this can draw over all other UI elements to give the entire screen a red-ish hue.
+
+Android O changes the potential these apps have by removing the TYPE_SYSTEM_OVERLAY window type and replacing it with TYPE_APPLICATION_OVERLAY. This, disappointingly, looks like it would stop Twilight covering parts of the screen like the status bar or keyboard, which would defeat the purpose of the app.
+
+SEE ALSO:
+LG stops short of confirming Google OLED interest, says deal is not done yet
+4 hours ago
+The Android O developer preview doesn’t necessarily reflect the final version of the product that Google will release later in the year, so things could change before then. However, this is likely tied to a security concern and so Google may not be inclined to change it back.
+
+Google’s Android updates often remove the need for certain apps as their core functionality gets baked into the platform. This is usually only disappointing for developers, as consumers have a viable alternative. A night mode might make up for Twilight, but we’re not so sure about the others.

@@ -1,0 +1,8 @@
+Wileyfox has begun its transition away from the now-defunct CyanogenOS with the first Android Nougat updates for its devices. An update rolling out today for the Wileyfox Swift 2X moves users to a new Android 7.1.1-based OS with the latest April 2017 security patches from Google.
+
+The update doesn't drastically change the appearance of the software, which has always has a "vanilla" Android look and feel, topped off with Wileyfox's orange-hued branding. And while most of the established feature set has come over uninterrupted, JMComms reports that some options, like themes, the audio FX manager and the ability to tweak individual apps' power settings, have been removed. (Given the expansive feature set of Cyanogen, it's not surprising to see some functionality fall by the wayside.)
+
+Other additions include the new "FoxHole" launcher, with an HTC Binkfeed-style news feed under the name "Wileyfox Zen," which offers users a wide range of UK-centric news content.
+
+
+Wileyfox has already committed to bringing Nougat to its entire product range. Next up will be the Storm in May, followed by the Spark series in June.

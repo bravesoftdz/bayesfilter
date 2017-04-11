@@ -1,0 +1,25 @@
+Android players of the hit sandbox game Minecraft will soon be able to access a ton of new community-made content. The game’s developer, Mojang, has just announced Minecraft Marketplace for the Pocket and Windows 10 editions of the game. It will add an in-app store to purchase new maps and skins (among other things) for the game, along with Minecraft Coins, the in-app currency that will be used to acquire content.
+
+ Microsoft
+Wondering which applications to move to the cloud?
+Sponsored by Microsoft
+Find proven strategies in this free e-book and star...
+SEE ALSO:
+Best games like Minecraft on Android
+1 day ago
+While there’s always been a ton of third-party maps and mods made for the PC version of Minecraft, this will be the first time that the mobile versions will be able to offer that kind of content directly to its players without having to sideload it on their device. Mojang says it is partnering with some of the biggest names in the Minecraft crafting community to make content that will be available to purchase via the Marketplace for its official launch. In addition to Android and Windows 10, the Marketplace will also be available for the versions of Minecraft on iOS, Apple TV, the Amazon Fire tablets and the Samsung Gear VR and Oculus Rift headsets.
+
+
+
+Mojang says the idea for the Marketplace is to help support the growing number of people and teams who are spending a ton of time making content for Minecraft and want to make some money from their work. It will also provide players with a safer and simple way to find and download those kinds of third-party creations. Pocket edition players will still have the option to manually download and install free content for the game off the internet.
+
+Pocket edition players of the game will still have the option to manually download and install free content for the game off the internet.
+Microsoft, Mojang’s owner, is also opening up Minecraft Marketplace for anyone who wants to sell content for the game with the Minecraft Partner Program. In order to participate, creators must register as an official business and also be able to show they have already created a “portfolio of high quality content” for the game. If you think you qualify, you can apply for the program at Microsoft’s website. However, based on the site, it does sound like Microsoft is looking to get content from the highest end Minecraft community creators rather than just hobbyists, at least for the time being.
+
+
+
+The Minecraft Coins system of in-app currency is the part of the store that players will use real money to purchase. It will let content creators set more flexible prices for their creations in the Marketplace. Mojang says that the app store platforms will get a 30 percent cut of all sales from the Marketplace, but creators will still get the majority of the money for their content after that.
+
+Mojang and Microsoft will be holding a public beta of the Marketplace feature sometime later in April, but it will be to test the Minecraft Coins system; the content store itself won’t launch until sometime later this spring. Mojang will also be holding a Reddit AMA session on April 20 starting at noon Eastern time to answer any questions about the Marketplace.
+
+Of course, the idea of an in-app store for a mobile game is nothing new, but it’s mostly available for free-to-play titles. It’s not found as often for games that people pay for up front, like the Android version of Minecraft that costs $6.99 to download. However, the idea of a curated in-game store for extra high-quality content should be very attractive for casual players who don’t want to learn how to sideload maps and skins on their device. Naturally, it could also be a huge boost for Microsoft, which acquired Mojang for $2.5 billion in 2014. Being able to monetize the purchase of content for the mobile versions of the game could generate a ton of extra revenue, and help to justify that big purchase three years ago.

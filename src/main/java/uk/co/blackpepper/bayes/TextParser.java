@@ -14,6 +14,7 @@ public class TextParser {
         if (text == null) {
             return result;
         }
+        text.replaceAll("[^A-Za-z'!]", " ");
         result.addAll(tokenizeSpaces(text));
         ArrayList<String> result2 = new ArrayList<String>();
         for (String s : result) {
@@ -100,5 +101,17 @@ public class TextParser {
             result.add(s);
         }
         return result;
+    }
+
+    private static boolean isNumeric(String str) {
+        try
+        {
+            double d = Double.parseDouble(str);
+        }
+        catch(NumberFormatException nfe)
+        {
+            return false;
+        }
+        return true;
     }
 }

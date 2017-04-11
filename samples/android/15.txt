@@ -1,0 +1,31 @@
+We return to the Nexus 6P after the Android 7.1.2 beta update, to see how Google’s Nexus phone handles the latest version of Android and whether the new features are worth having.
+
+When we first reviewed //recombu.com/mobile/article/huawei-google-nexus-6p-review the mighty Nexus 6P back in 2015, we were impressed enough to throw it the full five stars. This metal slab was packed with top-end specs and sported one of the most iconic phone designs of its time, making it a highly desirable mobile indeed.
+
+We came back to the Nexus 6P in 2016 for our long-term review //recombu.com/mobile/article/huawei-google-nexus-6p-long-term-review-nine-months-2016 , where the benefits of owning a Nexus phone were crystal clear. Even close to a year after its launch, this Android masterpiece still packed plenty of brains, beauty, and brawn to make it an easy recommendation, even if certain elements (like the capable cameras) had been surpassed by some rival phones.
+
+Now we have Android 7.1.2 , the latest version of Android Nougat, and the overlay-free Nexus 6P is one of the first phones to receive it via Google’s beta program. Here’s what you can expect from the 6P after receiving this latest update and how the phone holds up in 2017.
+
+How do I update my phone to Android 7.1.2?
+
+If you want to download Android 7.1.2 to your Nexus or Pixel phone, you’ll need to enrol on Google’s beta testing program. We’ve detailed full instructions on how to do this in our updating Android guide //recombu.com/mobile/article/how-to-update-your-android-phone .
+
+Once you’ve enrolled on the Android Developer’s website, you should receive the update in the standard way, via your mobile’s System Update feature. We downloaded and installed Android 7.1.2 on our Nexus 6P review handset, to take it for a test drive.
+
+Nexus 6P with Android 7.1.2: What are the best new features?
+
+After installing the Android 7.1.2 update on the Nexus 6P, you’ll struggle to notice any immediate impact. Visually, Android is pretty much the same as the previous version, with no obvious changes to icons, themes, fonts and the rest.
+
+However, behind the scenes you’ll find one particularly funky new feature. We’re already big fans of the new Moves gesture ‘Swipe for Notifications’, which allows you to drag down the notifications bar using the fingerprint sensor. Just swipe your digit down the scanner and the notifications tab is revealed, saving you from stretching your thumb to the top of the screen.
+
+This is particularly helpful on the mighty Nexus 6P, as it’s a rather meaty mobile. Reaching the top of the display when using the phone one-handed isn’t just a serious test of your dexterity, it’s also an open invitation for the thing to be fumbled and dropped. But the new sensor swipe gesture works perfectly and makes the phone much easier to operate when you’re on the go.
+
+Besides that, Android 7.1.2 mostly fixes some bugs and makes some behind-the-scenes tweaks that are hard to detect. Bluetooth connectivity improvements have apparently been implemented, although we didn’t personally notice any issues with our 6P connecting to our Bluetooth headset or wearables before.
+
+How does the Nexus 6P handle Android 7.1.2 and should I update?
+
+The Nexus 6P seems to handle Android 7.1.2 perfectly well, so far. We haven’t noticed any performance issues, with the OS running smoothly at all times. That Snapdragon processor is ageing very gracefully indeed, helped along by the 3GB of RAM.
+
+Stability certainly doesn’t seem to be an issue either. Since we installed Android 7.1.2, we haven’t seen any crashes, glitches or other touchy moments. We’ll continue to use the latest version of Android on the Nexus 6P and report back if any long-term problems arise.
+
+That sensor gesture support sure is great, but we wouldn't say an update to Android 7.1.2 is essential unless you've noticed any niggling issues on your handset. The bulk of this update is stability improvement and bug fixing, so this may help out in cases of glitches and other bad behaviour.

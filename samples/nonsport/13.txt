@@ -1,0 +1,26 @@
+The way you tilt your mobile while you're using it could allow hackers to steal your pin numbers and passwords, according to new research.
+Experts at Newcastle University analysed the movement of a smartphone as the keyboard was used.
+They say they cracked four-digit pins with 70% accuracy on the first guess and 100% by the fifth guess.
+The team of cyber-experts claim tech companies know about the problem but can't figure out what to do about it.
+Dr Maryam Mehrnezhad, from the university's school of computing science, said: "Most smartphones, tablets, and other wearables are now equipped with a multitude of sensors.
+More related stories
+Online dating
+How to stay safe when you're dating online
+padlock
+What fraudsters hope you'll post online
+BB-8
+Loads of you have the password 'Star Wars'
+"But because mobile apps and websites don't need to ask permission to access most of them, malicious programmes can covertly 'listen in' on your sensor data."
+Actor portraying a hacker
+Image caption Obviously most hackers wear hoodies and stand in dark rooms
+The research suggests there's a problem in the tech industry because of the number of different sensors used by competing companies.
+Dr Mehrnezhad said: "On some browsers we found that if you open a page on your phone or tablet which hosts one of these malicious codes and then open [another one], then they can spy on every personal detail you enter.
+"And worse still, in some cases, unless you close them down completely, they can even spy on you when your phone is locked.
+"People were far more concerned about the camera and GPS than they were about the silent sensors."
+iPhone 5s security code log-in
+Image caption Maybe use touch ID if your phone has it from now on?
+The team said it was able to identify 25 different sensors which come as standard on most devices.
+The researchers found that everything you do - from clicking, scrolling and holding to tapping - led to people holding their phone in a unique way.
+So on a known webpage, the team was able to work out which part of the page the user was clicking on, and what they were typing, by the way it was tilted.
+They said they'd told all the major tech companies, like Google and Apple, about the risks but no-one has been able to come up with an answer so far.
+The team is now looking at the risks around personal fitness trackers linked to online profiles.

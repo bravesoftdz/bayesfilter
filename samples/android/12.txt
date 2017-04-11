@@ -1,0 +1,10 @@
+ZTE is officially getting into the Android Wear game.
+
+The company has unveiled the Quartz and said it will be available online from 14 April or from 21 April via T-Mobile for just $192 (about £154). It features a round 1.4-inch AMOLED display, 768MB RAM, 4GB ROM, interchangeable 22mm bands, IP67 water-resistant body, 500mAh battery, 3G connectivity, and GPS. It’s also got one button on the side that’ll activate Google Assistant or access your apps.
+
+VentureBeat's Evan Blass already revealed in February that ZTE is coming out with an Android Wear device. It's different from the company's 5.5-inch Quartz Android phone from the past. Also, while many manufacturers are already on their third-generation Android Wear watch, this is ZTE's first. But it has worked on activity trackers, such as the Venus 1 and Venus 2, both of which debuted in 2016.
+
+ZTE Blade V7: All about that metal, that metal, no plastic
+Unfortunately, the watch is missing NFC, as well as a heart rate monitor and a rotating dial. You’ll also need to be a T-Mobile subscriber to fully take advantage of this watch, which means it may only be a US-only device at launch. But it does run Android Wear 2.0, and because the software rollout has been delayed many times, there are only a few affordable watches available running the update.
+
+See Pocket-lint's Android Wear 2.0 guide for more about the software.

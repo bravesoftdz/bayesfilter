@@ -1,0 +1,7 @@
+If you're so much an Apple fan that you run Apple Music on Android devices, there's an upgrade to patch against a man-in-the-middle vulnerability.
+
+Eight months ago, Canadian security researcher David Coomber discovered that Apple Music for Android 1.2.1 and older doesn't validate the SSL certificates presented when logging into the mobile application and payment servers.
+
+As he writes at Bugtraq, that would allow an attacker to silently collect sensitive user information.
+
+Apple was notified of the bug in August 2016. The fix landed in the middle of last week when Cupertino released Apple Music for Android Version 2.0, which provided a handy distraction, focusing attention on the app's UI and features. ®

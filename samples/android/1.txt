@@ -1,0 +1,13 @@
+A new survey has found the majority of pay-TV providers have Android on their technology roadmaps, but only half are willing to pay a premium for the privledge.
+
+A survey by Ovum on behalf of security firm Irdeto found 72% of respondents are considering Android implementations as a part of their set-top box (STB) strategies. 50% of respondents see Android as being important for their goals within the next five years.
+
+However, while a majority of respondents indicated a commitment to Android, only 54% of video service providers are willing to pay more for Android chipsets than traditional chipsets with embedded middleware.
+
+“Video service providers are feeling pressure to continue to innovate their offerings to satisfy consumer demand for an optimal user experience,” said Frank Poppelsdorf, Director of Product Management, Irdeto. “These results indicate that Android TV is not only on pace to play a critical role in the future of TV distribution, but are essential for the industry to meet growing consumer demand for new and innovative services.”
+
+Respondents said a key feature of Android was the ability to download additional apps. However, the functionality brings with it concerns around piracy caused by allowing third-party apps onto the set-top box.
+
+“The open nature of the technology brings up several security concerns, especially in regard to piracy. As the industry continues to shift toward more open platforms for the set-top box, it will be critical for video service providers to implement a robust 360-degree security approach to ensure their premium content is protected while optimising flexibility and time to market,” added Poppelsdorf.
+
+You can download the report from the Broadband TV News website.

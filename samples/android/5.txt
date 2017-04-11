@@ -1,0 +1,5 @@
+Forex trading platform developer MetaQuotes just announced that the latest MetaTrader 5 Android build now features position history.
+
+All data on deals related to a position are grouped into one record containing position Open and Close time (determined by the first and last trades), volume, average weighted Open and Close price and, most importantly, the total financial result of trades.
+
+Just a few months ago MetaQuotes announced that the latest MetaTrader 5 Android build is already available for download on Google Play and features a sorting feature in Trade and History tabs as well as optimized charts in multi-window mode.
