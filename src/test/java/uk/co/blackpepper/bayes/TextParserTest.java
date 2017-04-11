@@ -3,6 +3,7 @@ package uk.co.blackpepper.bayes;
 import org.junit.Test;
 
 import java.util.List;
+import java.util.Map;
 
 import static org.junit.Assert.*;
 
@@ -25,6 +26,37 @@ public class TextParserTest {
         assertEquals("word", tokens.get(0));
         //</editor-fold>
     }
+
+    @Test
+    public void isTextIsNullThenReturnAnEmptyList() {
+        //<editor-fold desc="Given">
+        TextParser textParser = new TextParser();
+        //</editor-fold>
+
+        //<editor-fold desc="When">
+        List<String> tokens = textParser.tokenise(null);
+        //</editor-fold>
+
+        //<editor-fold desc="Then">
+        assertEquals(0, tokens.size());
+        //</editor-fold>
+    }
+
+    @Test
+    public void isTextIsBlankThenReturnAnEmptyList() {
+        //<editor-fold desc="Given">
+        TextParser textParser = new TextParser();
+        //</editor-fold>
+
+        //<editor-fold desc="When">
+        List<String> tokens = textParser.tokenise("     \n\n\n\n\n \t   \r\n   ");
+        //</editor-fold>
+
+        //<editor-fold desc="Then">
+        assertEquals(0, tokens.size());
+        //</editor-fold>
+    }
+
     @Test
     public void ifTextContainsTwoWordsThenReturnAListOfTwoWords() {
         //<editor-fold desc="Given">
@@ -168,5 +200,40 @@ public class TextParserTest {
         assertEquals("and", tokens.get(5));
         assertEquals("hello", tokens.get(6));
         //</editor-fold>
+    }
+
+    @Test
+    public void aConcordanceOfOneWordIsASingleInstance() {
+        TextParser textParser = new TextParser();
+
+        Map<String, Integer> concordance = textParser.concordance("one");
+
+        assertEquals(1, concordance.size());
+        assertTrue(concordance.containsKey("one"));
+        assertEquals(1, concordance.get("one").intValue());
+    }
+
+    @Test
+    public void canCreateAConcordanceOfMultipleWords() {
+        TextParser textParser = new TextParser();
+
+        Map<String, Integer> concordance = textParser.concordance("seven words are better than six words");
+
+        assertEquals(6, concordance.size());
+        assertEquals(1, concordance.get("seven").intValue());
+        assertEquals(2, concordance.get("words").intValue());
+        assertEquals(1, concordance.get("are").intValue());
+        assertEquals(1, concordance.get("better").intValue());
+        assertEquals(1, concordance.get("than").intValue());
+        assertEquals(1, concordance.get("six").intValue());
+    }
+
+    @Test
+    public void anEmptyStringGeneratesAnEmptyConcordance() {
+        TextParser textParser = new TextParser();
+
+        Map<String, Integer> concordance = textParser.concordance("");
+
+        assertTrue(concordance.isEmpty());
     }
 }

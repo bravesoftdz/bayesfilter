@@ -1,8 +1,6 @@
 package uk.co.blackpepper.bayes;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.util.stream.Collectors;
@@ -13,6 +11,9 @@ import java.util.stream.Collectors;
 public class TextParser {
     public List<String> tokenise(String text) {
         ArrayList<String> result = new ArrayList<String>();
+        if (text == null) {
+            return result;
+        }
         result.addAll(tokenizeSpaces(text));
         ArrayList<String> result2 = new ArrayList<String>();
         for (String s : result) {
@@ -23,6 +24,20 @@ public class TextParser {
             result3.addAll(tokenizeExc(s));
         }
         return result3.stream().filter(i -> i.length() > 0).collect(Collectors.toList());
+    }
+
+    public Map<String,Integer> concordance(String text) {
+        List<String> stringList = tokenise(text);
+        Map<String, Integer> map = new HashMap<String, Integer>();
+        for (String s : stringList) {
+            if (map.containsKey(s)) {
+                int count = map.get(s);
+                map.put(s, count + 1);
+            } else {
+                map.put(s, 1);
+            }
+        }
+        return map;
     }
 
     private List<String> tokenizeSpaces(String text) {
