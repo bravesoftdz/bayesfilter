@@ -94,4 +94,38 @@ public class TextParserTest {
         assertEquals("words", tokens.get(1));
         //</editor-fold>
     }
+
+    @Test
+    public void multipleExclamationPointsAreConstituentCharactersEvenIfNoGapAfter() {
+        //<editor-fold desc="Given">
+        TextParser textParser = new TextParser();
+        //</editor-fold>
+
+        //<editor-fold desc="When">
+        List<String> tokens = textParser.tokenise("some!!!!words");
+        //</editor-fold>
+
+        //<editor-fold desc="Then">
+        assertEquals(2, tokens.size());
+        assertEquals("some!!!!", tokens.get(0));
+        assertEquals("words", tokens.get(1));
+        //</editor-fold>
+    }
+
+    @Test
+    public void canHaveMultipleWordsEndingWithExMarks() {
+        //<editor-fold desc="Given">
+        TextParser textParser = new TextParser();
+        //</editor-fold>
+
+        //<editor-fold desc="When">
+        List<String> tokens = textParser.tokenise("some!!!!words!!");
+        //</editor-fold>
+
+        //<editor-fold desc="Then">
+        assertEquals(2, tokens.size());
+        assertEquals("some!!!!", tokens.get(0));
+        assertEquals("words!!", tokens.get(1));
+        //</editor-fold>
+    }
 }
