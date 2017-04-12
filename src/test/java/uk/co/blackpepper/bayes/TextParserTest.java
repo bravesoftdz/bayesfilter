@@ -244,13 +244,13 @@ public class TextParserTest {
     public void aNonSportStoryDoesNotLookLikeSport() throws IOException {
         TextParser textParser = new TextParser();
 
-        File sportDir = new File("/Users/davidg/Desktop/bayes/samples/sport");
+        File sportDir = new File("./samples/sport");
         SampleSource sportSample = new DirectorySampleSource(sportDir);
 
         Concordance sportConcordance = sportSample.concordance();
         int sportCount = sportSample.sampleCount();
 
-        File nonSportDir = new File("/Users/davidg/Desktop/bayes/samples/nonsport");
+        File nonSportDir = new File("./samples/nonsport");
         SampleSource nonSportSample = new DirectorySampleSource(nonSportDir);
 
         Concordance nonSportConcordance = nonSportSample.concordance();
@@ -334,10 +334,10 @@ public class TextParserTest {
 
     @Test
     public void aSportStoryLooksLikeSport() throws IOException {
-        File sportDir = new File("/Users/davidg/Desktop/bayes/samples/sport");
+        File sportDir = new File("./samples/sport");
         SampleSource sportSample = new DirectorySampleSource(sportDir);
 
-        File nonSportDir = new File("/Users/davidg/Desktop/bayes/samples/nonsport");
+        File nonSportDir = new File("./samples/nonsport");
         SampleSource nonSportSample = new DirectorySampleSource(nonSportDir);
 
         HashMap<String, SampleSource> sourceHashMap = new HashMap<>();
@@ -504,7 +504,13 @@ public class TextParserTest {
     @Ignore
     public void fred() throws IOException {
 
-        String dataDirName = "/Users/davidg/Desktop/bayes/data/";
+        HashMap<String, SampleSource> sampleSourceHashMap = new HashMap<>();
+        sampleSourceHashMap.put("business", new DirectorySampleSource(new File("./data/samples/business")));
+        sampleSourceHashMap.put("technology", new DirectorySampleSource(new File("./data/samples/technology")));
+
+        Categoriser categoriser = new Categoriser(sampleSourceHashMap);
+
+        String dataDirName = "./data/";
         String analysisDirName = dataDirName + "analysis/";
         String outputDirName = dataDirName + "output/";
         File analysisDir = new File(analysisDirName);
@@ -512,7 +518,7 @@ public class TextParserTest {
             String name = file.getName();
             if (name.endsWith(".txt")) {
                 String analysisText = readFileAsString(file);
-                String category = categorizeAgainstData(analysisText);
+                String category = categoriser.getProbableCategoryFor(analysisText);
                 System.err.println("Category = " + category);
                 File destDir = new File(outputDirName, category);
                 if (!destDir.isDirectory()) {
@@ -523,29 +529,14 @@ public class TextParserTest {
         }
     }
 
-    private String categorizeAgainstData(String text) throws IOException {
-        File businessDir = new File("/Users/davidg/Desktop/bayes/data/samples/business");
-        SampleSource businessSample = new DirectorySampleSource(businessDir);
-
-        File technologyDir = new File("/Users/davidg/Desktop/bayes/data/samples/technology");
-        SampleSource technologySample = new DirectorySampleSource(technologyDir);
-
-        HashMap<String, SampleSource> sampleSourceHashMap = new HashMap<>();
-        sampleSourceHashMap.put("business", businessSample);
-        sampleSourceHashMap.put("technology", technologySample);
-
-        return (new Categoriser(sampleSourceHashMap)).getProbableCategoryFor(text);
-    }
-
-
     private String getLikelyCategory(String text) throws IOException {
-        File sportDir = new File("/Users/davidg/Desktop/bayes/samples/sport");
+        File sportDir = new File("./samples/sport");
         SampleSource sportSample = new DirectorySampleSource(sportDir);
 
-        File androidDir = new File("/Users/davidg/Desktop/bayes/samples/android");
+        File androidDir = new File("./samples/android");
         SampleSource androidSample = new DirectorySampleSource(androidDir);
 
-        File scienceDir = new File("/Users/davidg/Desktop/bayes/samples/science");
+        File scienceDir = new File("./samples/science");
         SampleSource scienceSample = new DirectorySampleSource(scienceDir);
 
         HashMap<String, SampleSource> sampleSourceHashMap = new HashMap<>();
