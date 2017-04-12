@@ -1,0 +1,95 @@
+  • [                    ] [SUBMIT] What term do you want to search?
+  • switch to the US edition switch to the AU edition switch to the INT edition
+How should I upgrade from Windows Vista before it becomes unsupported?
+Readers have reacted to messages about ‘the end of Windows Vista’ with a flurry
+of questions about their options. Here are the main ones
+Microsoft will stop supporting Windows Vista on 12 April, but there are a few
+[ ] Microsoft will stop supporting Windows Vista on 12 April, but there are a
+few options available if you want to stick with Windows. Photograph: Mary
+How should I upgrade from Windows Vista before it becomes unsupported?
+Readers have reacted to messages about ‘the end of Windows Vista’ with a flurry
+of questions about their options. Here are the main ones
+Thursday 16 March 2017 10.02 GMT Last modified on Thursday 16 March 2017 
+    I have a Compaq Presario CQ60-215DX. Can I upgrade from Vista to Windows 7
+Microsoft will stop supporting Windows Vista on 12 April, so you have less than
+a month to decide what to do. The short answer is, yes, you can upgrade from
+Vista to Windows 7 or to the latest Windows 10. Whether it’s worth it is
+The main consideration is the hardware. PC manufacturers installed Vista from
+2006 to 2009, so most of these machines will be eight to 10 years old. They are
+likely to have low specifications, by today’s standards, and their ageing hard
+drives are increasingly likely to fail. Users could upgrade these PCs to 4GB of
+memory and replace their hard drives with SSDs to prolong their life, but in
+many cases, it’s not worth it. They could buy something newer on eBay, or get a
+refurbished machine from a supplier such as Tier1online.
+Bear in mind that doing hardware and software upgrades can involve quite a lot
+of work with an uncertain outcome. That’s fine for PC hobbyists, but if you
+were that sort of person, you wouldn’t be using Vista. In fact, you probably
+wouldn’t have bought a Presario CQ60-215DX. If yours has a dual-core AMD Athlon
+X2 QL-62 processor, it will be slow. If it has a single-core Sempron, it
+Windows Vista. People who have faster or newer Vista laptops should find they
+run better under Windows 10. Photograph: Microsoft
+People who have faster or newer Vista laptops should find they run better under
+Windows 10. The minimum useful spec is something like a 2.4GHz Core 2 Duo T8300
+and 4GB of memory. This processor has a PassMark CPU score of 1482. Search for
+your CPU’s score at PassMark and see if it’s higher. If it’s much lower, drop
+If in doubt about Windows 10, try it for free. Anyone can install it at zero
+cost simply by not activating it (if you can cope with the nagging to buy it):
+You could also try installing a version of Linux, such as Mint 18.1, which is
+free. (If you have problems getting the Wireless LAN card to work, this might
+Linux is not directly compatible with programs such as Microsoft Office, Adobe
+Creative Suite, Apple iTunes and other mainstream software. Check to see
+whether you will be able to run all your essentials on Linux, or find usable
+Either way, make a clone of your hard drive first, so that you can go back to
+Vista if Windows 7/10/Linux doesn’t work properly.
+    If I upgrade to Windows 7, do I need to upgrade my programs etc first? Lynn
+The upgrade from Vista to Windows 7 is what Microsoft calls “an in-place
+upgrade”. All your current programs and data should stay the same as they were
+before. It is, of course, important to back up your PC and all your data first,
+Make sure that Vista is patched and up-to-date before upgrading. You could also
+update all your PC’s drivers to the latest versions – there’s some help online
+– and check your PC manufacturer’s website for Rom upgrades. However, you don’t
+Windows 7 is no longer the current version, and there are scammers selling
+pirate copies, so caveat emptor. You will need to buy a version that is as good
+as or better than your current version of Vista. For example, you can upgrade
+from Vista Home Basic to Windows 7 Home Basic, Home Premium or Ultimate.
+However, you cannot go from Vista Home Premium to Windows 7 Home Basic. See
+Further, in-place upgrades have to go from 32-bit to 32-bit versions, or from
+64-bit to 64-bit versions, not from 32-bit to 64-bit versions, or vice versa.
+You can upgrade from 32-bits to 64-bits – this is a good idea – but only by
+doing a “clean installation” that removes all your current software and data.
+To do this, select the Custom option instead of the usual Upgrade option.
+One problem with upgrading to Windows 7 is that the DVD versions are now many
+years out of date. Once you’ve installed it, you have to download hundreds of
+updates, and many of them force reboots. The last time I did a clean
+installation of Windows 7, it was still installing updates three days later.
+Either way, I don’t recommend upgrading to Windows 7 today, unless it’s a
+stepping stone to Windows 10. Windows 10 is much better than Windows 7, and
+it’s improving all the time. Also, Windows 7 reaches the end of its life in
+2020, though you may need to buy a new PC before then.
+    I have a decent PC running Vista – fast processor, 8GB of memory. Is there
+    an easy way to wipe it clean and do a new install of Windows 10? I have my
+You cannot do an in-place upgrade from Vista to Windows 10, and therefore
+Microsoft did not offer Vista users a free upgrade. However, you can certainly
+buy an upgrade to Windows 10 and do a clean installation. (In fact, it doesn’t
+matter which way round you do it. You can install Windows 10 first and then go
+You don’t need to wipe your current copy of Vista: the clean installation will
+Microsoft wants people to move to Windows 10 so, at the moment, it’s putting
+To do a clean installation, you can either follow Microsoft’s instructions and
+create a DVD or thumbdrive, or you can buy a retail copy. (With retail copies,
+you can remove a copy of Windows from one PC and install it on another. You
+can’t do that with pre-installed versions, which are locked to the hardware on
+Technically, it’s too late to get a free upgrade from Windows 7 or 8/8.1 to
+Windows 10. However, even after last year’s deadline, Microsoft kept providing
+upgrades when users typed in their Windows 7 product keys. That may still work.
+Also, Microsoft has left a loophole by offering free upgrades to people who
+need assistive technologies such as screen readers. This could obviously be
+Alternatively, you could get a free copy of Windows 10 by joining Microsoft’s
+Insider testing program and do a clean installation of that.
+Finally, you could skip past the product key screens and use Windows 10 without
+activating it. Some features are limited, it puts a watermark on your desktop
+and it will nag you to buy a copy, but it’s still a vast improvement on Vista
+Of course, Microsoft could clamp down on non-activated copies one day. However,
+Microsoft wants people to move to Windows 10 so, at the moment, it’s putting
+adoption ahead of profits. And once you’ve installed Windows 10, all future
+Have you got another question for Jack? Email it to Ask.Jack@theguardian.com
+© 2017 Guardian News and Media Limited or its affiliated companies.

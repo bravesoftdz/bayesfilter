@@ -1,0 +1,66 @@
+  • [                    ] [SUBMIT] What term do you want to search?
+  • switch to the US edition switch to the AU edition switch to the INT edition
+Uber calls claims it stole self-driving technology 'demonstrably false'
+Ride-hailing company defends itself in federal court filing amid allegations it
+lifted LiDAR technology from Waymo, a company spun out of Google
+Travis Kalanick, CEO of Uber. The company is defending itself against
+[ ] Travis Kalanick, CEO of Uber. The company is defending itself against
+allegations it stole technology from Waymo. Photograph: Wang Zhao/AFP/Getty
+Uber calls claims it stole self-driving technology 'demonstrably false'
+Ride-hailing company defends itself in federal court filing amid allegations it
+lifted LiDAR technology from Waymo, a company spun out of Google
+Friday 7 April 2017 22.07 BST Last modified on Saturday 8 April 2017 00.50 BST
+Uber has begun to mount its defense against allegations that the ride-hailing
+company is using technology stolen from Waymo, the self-driving car company
+Uber claimed in a federal court filing Friday that it began developing its own
+self-driving technology in 2015, before it acquired Otto, a self-driving
+trucking startup founded by several former Google employees.
+My week as an Uber courier: my bike got stolen, but I kept my five-star rating
+The filing, which opposes a Waymo motion for a preliminary injunction against
+Uber, contains Uber’s most detailed defense to date since Waymo accused it of
+the “calculated theft” of its LiDAR technology in February.
+“Both of [Waymo’s] central premises – that former Waymo employees brought
+thousands of confidential Waymo documents to Uber to build a copycat LiDAR and
+that Uber’s LiDAR closely mimics Waymo’s single-lens design – are demonstrably
+false,” the filing states. “A cursory inspection of Uber’s LiDAR and Waymo’s
+Waymo’s lawsuit centers around LiDAR – the system of lasers that autonomous
+vehicles use to “see” the world – and the actions of Anthony Levandowski, a
+longtime Google engineer and pioneer in the field of self-driving cars.
+Levandowski left Google in 2016 to found Otto, which was quickly acquired by
+Uber. Levandowski was then named the head of Uber’s self-driving car program.
+Waymo alleged that Levandowski downloaded about 14,000 documents from Waymo’s
+secure server before he left the company, and that he was already in secret
+talks with Uber prior to his departure and founding of Otto. Waymo said that
+its suspicion that Levandowski and other former employees had taken secrets
+about its LiDAR system were confirmed in December when a third-party vendor
+mistakenly emailed Waymo designs for a LiDAR circuit board being used by Uber.
+Waymo sought an injunction requiring the return of its documents and a halt to
+Uber’s use of the allegedly stolen technology – a move that could fatally
+handicap Uber in the heated race to commercialize self-driving vehicles.
+Uber’s CEO, Travis Kalanick, has frequently called self-driving technology
+“existential” to his $70bn business. In its filing Friday, Uber said that
+granting the injunction would, among other things, “impede Uber’s efforts to
+Uber has not provided a rebuttal to the allegations that Levandowski downloaded
+14,000 files. The company has been hampered there by Levandowski’s assertion of
+the fifth amendment. At a hearing in March, Levandowski’s lawyers explained
+that he was invoking his right against self-incrimination because of the
+Levandowski’s invocation of that right has led to complicated and, at times,
+heated arguments in court, with his attorneys arguing that even providing a
+list of privileged documents to Waymo could violate his rights.
+During a hearing on Thursday, Uber’s attorney Arturo Gonzalez said that the
+engineer was “not someone who has to steal anything”, adding, “He knows his
+“Then why did he take the 14,000 documents?” Judge William Alsup retorted.
+Uber's Seattle woes: union battle could see company leave another major city
+In its filing, Uber claimed that it had “never had possession of or used any of
+Waymo’s trade secrets or the 14,000 documents”. The company described the
+development of its own LiDAR system, which it said was substantially different
+Uber’s LiDAR, the company said, used four lenses, while Waymo’s used one, a
+fundamental difference that Uber suggests proves that the device is not based
+“Uber’s assertion that they’ve never touched the 14,000 stolen files is
+disingenuous at best, given their refusal to look in the most obvious place:
+the computers and devices owned by the head of their self-driving program,” a
+Waymo spokesperson said in a statement. “We’re asking the court to step in
+based on clear evidence that Uber is using, or plans to use, our trade secrets
+to develop their LiDAR technology, as seen in both circuit board blueprints and
+Alsup will rule on the motion after a hearing scheduled for 3 May.
+© 2017 Guardian News and Media Limited or its affiliated companies.

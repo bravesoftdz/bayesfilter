@@ -1,0 +1,112 @@
+  • [                    ] [SUBMIT] What term do you want to search?
+  • switch to the US edition switch to the AU edition switch to the INT edition
+Honor 6X review: a lot of phone for the money, shame about the old software
+A big 5.5in screen, solid build and feel, a great fingerprint scanner and
+dual-Sim support means latest Huawei Honor is a solid, good value smartphone
+[ ] The Honor 6X ticks most of the right boxes at a reasonable price, with good
+battery life, performance and camera. Photograph: Samuel Gibbs for the Guardian
+Honor 6X review: a lot of phone for the money, shame about the old software
+A big 5.5in screen, solid build and feel, a great fingerprint scanner and
+dual-Sim support means latest Huawei Honor is a solid, good value smartphone
+Monday 30 January 2017 09.00 GMT Last modified on Tuesday 21 February 2017 
+Huawei’s Honor line has been making a name for itself by selling good yet
+reasonably priced smartphones. The Honor 6X is no exception, even if it isn’t
+Last year’s Honor 5X offered a lot of smartphone for the money at a time when
+the stalwart of the good-but-cheap smartphone market, the Moto G series, was
+faltering. Now the Honor 6X has a lot to live up to.
+Rounded sides and a curved back make the 6X nice to hold.
+Rounded sides and a curved back make the 6X nice to hold. Photograph: Samuel
+The Honor 6X looks like a slightly smaller version of the Huawei Mate 9. It’s
+got a metal back, plastic top and bottom edges, a dual camera in vertical
+orientation and a fingerprint sensor on the back. The front is plain and all
+glass. It’s a simple, attractive design that’s more rounded and smoother than
+It’s well made, with very little flex in the body. At 8.2mm thick the 6X is the
+same thickness as the 5X, but thinner by 1.6mm than the Moto G4 Plus. The 6X is
+also shorter by 4mm than the 5X, but whether you could tell that by looking at
+It weighs 162g, which is actually heavier than the 158g 5X and the 155g Moto G4
+Plus, but the curved back and rounded edges make it feel a lot nicer in the
+hand. It feels reassuringly heavy with good balance rather than being a lump.
+The 5.5in 1080p LCD screen is very good for a smartphone costing under £250,
+and is improved over the 5X, although it doesn’t quite match up to the likes of
+Apple’s iPhone or Samsung’s AMOLED displays in its S range. It looks relatively
+crisp, clear and colourful, with wide viewing angles. The included screen
+protector is useful, but sort of ruins the smooth glass curve down to the
+  • Operating system: EMUI 4.1 based on Android 6 Marshmallow
+  • Camera: 12MP+2MP dual rear camera, 8MP front-facing camera
+  • Connectivity: LTE, Wi-Fi, Bluetooth 4.1, GPS, dual-Sim
+The Honor 6X has no USB-C, only a microUSB. Photograph: Samuel Gibbs for the
+The Honor 6X has Huawei’s own processor, the Kirin 655, which handled games and
+apps with aplomb. The in graphically-rich Real Racing 3, for instance, gameplay
+was buttery smooth and the 6X only got slightly warm while playing. It was
+responsive and snappy throughout normal Android operations and in no way felt
+like anything other than a premium device in operation.
+Battery life was also very good. Using it as my primary device, even with the
+Facebook app installed, and receiving hundreds of push notifications, emails
+and messages, as well as browsing the web and using apps for around three
+hours, I would finish the day with about half the battery left. The next
+morning it would only have dropped about 3% battery overnight and would last
+Most users will get somewhere between 1.5 days and well over two days of use
+between charges, more if you leave it alone for long periods as Huawei’s app
+control prolongs standby time immeasurably compared to most other Android
+It also charges a lot faster than the 5X, which means when it does run out it
+takes just over an hour rather than a good two to reach 100%.
+The 6X also has dual-Sim support, for using two numbers or plans at the same
+time with the same phone, but the second Sim slot also doubles as a microSD
+card slot for adding more storage, which means it’s either or but not both.
+The Honor 6X has a microUSB port, not the new USB-C port for charging, which is
+disappointing. It might be helpful in the short term to be able to use your
+existing microUSB cables, but soon almost everything will use USB-C and the
+Emotion UI is Huawei’s modified version of Android, and while other Huawei
+devices such as the Mate 9 have EMUI5, the Honor 6X has the older 4.1.
+Emotion UI is Huawei’s modified version of Android, and while other Huawei
+devices such as the Mate 9 have EMUI5, the Honor 6X has the older 4.1.
+If there’s one weakness to the Honor 6X, it’s the software. It has an old
+version of Android 6 Marshmallow, not the current Android 7 Nougat, which for a
+new smartphone going on sale over four months after Nougat was released is
+At the same time Huawei makes modifications to the basic Android experience
+which are a mixed bag. Some tweaks such as aggressive control of background
+applications and notifications when they’re draining your battery are good.
+The removal of the app drawer in favour of every app installed having to be on
+the home screen is not. Some people like Huawei’s so-called Emotion UI - EMUI
+EMUI 5, which the Honor 6X is due to get relatively soon, is a big step up, but
+for now it’s stuck with the same version of EMUI as the Honor 8 and Huawei P9.
+For more information on EMUI 4.1, please see the Huawei P9 review.
+The camera on the Honor 6X works well even in low light.
+The camera on the Honor 6X works well even in low light. Photograph: Samuel
+The dual camera on the back produces really quite good images, with accurate
+colour and a solid amount of detail in all conditions short of really poor
+light. The 12-megapixel sensor captures the images and the auxiliary
+2-megapixel sensor below it captures depth information. Using the two, with a
+special wide-aperture mode, you can take a variable aperture photo for various
+blurring effects, but also refocus the picture after the fact.
+The HDR mode is not built into the main shooting mode, and while it is easily
+one of the best cameras for the price, it won’t trouble the best there is
+available on a smartphone for sheer image quality.
+The 8-megapixel front-facing selfie camera is fixed focus, which eliminates
+out-of-focus shots, but also means you’re unlikely to get anything with a
+pleasing out-of-focus background. Nevertheless, it captures a really good
+amount of detail in photos, even in poor artificial lighting conditions, and
+has enough beauty modes to satisfy all but the most self-obsessed.
+The fingerprint scanner on the back of the Honor 6X is very good.
+The fingerprint scanner on the back of the Honor 6X is very good. Photograph:
+  • The fingerprint sensor is very fast and very accurate
+  • The fingerprint scanner can be used to swipe through photos or pull down
+  • Call quality was good, and reception and data speeds were excellent
+  • Some versions of the Honor 6X, including the US variant, do not have NFC
+    and therefore no access to Android Pay and on-touch pairing
+The Honor 6X costs £224 and is available in grey, silver or gold. For
+comparison, the Moto G4 Plus costs £190 and the Honor 8 costs £370.
+The Honor 6X is another excellent reasonably-priced smartphone from Huawei and
+It has a great camera, good build, dual-Sim and microSD card support, a snappy
+processor, a decent screen and good battery life. But it has an old version of
+Android without the latest security updates, an inferior version of Huawei’s
+If those faults can be overlooked then the Honor 6X is a great phone for less
+    Pros: good cameras, good screen, dual-Sim, microSD card support, good
+    battery life, great fingerprint scanner, great value
+    Cons: old version of Android, EMUI not to everyone’s taste, microUSB not
+  • OnePlus 3T review: the top-end smartphone that won’t break the bank
+  • Huawei Mate 9 review: big screen, long battery life and dual cameras
+  • Honor 8 review: Huawei’s cheaper smartphone is just short of brilliant
+  • Honor 5X review – a lot of phone for the money, let down by poor software
+  • Moto G4 and G4 Plus review: great phone, no longer quite so budget
+© 2017 Guardian News and Media Limited or its affiliated companies.

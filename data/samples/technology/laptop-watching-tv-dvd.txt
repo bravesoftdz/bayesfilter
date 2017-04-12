@@ -1,0 +1,96 @@
+  • [                    ] [SUBMIT] What term do you want to search?
+  • switch to the US edition switch to the AU edition switch to the INT edition
+How should I replace the failing laptop I use for watching TV and DVDs?
+Emma uses an old 17in laptop for watching TV and DVDs. Would it be better to
+replace it with a similar laptop, a desktop, or perhaps even buy a TV?
+[ ] ‘We could get another 17in laptop to replace it, but my husband ends up
+crouched over the screen, so perhaps a desktop would be better.’ Photograph:
+How should I replace the failing laptop I use for watching TV and DVDs?
+Emma uses an old 17in laptop for watching TV and DVDs. Would it be better to
+replace it with a similar laptop, a desktop, or perhaps even buy a TV?
+Thursday 23 February 2017 09.59 GMT Last modified on Thursday 23 February 2017 
+    We don’t have a traditional TV set at home. Instead, we watch TV programmes
+    and DVDs on a 17in Dell Studio 17 laptop, which we plug into our Denon
+    hi-fi system to get decent sound. My husband also uses the laptop for a
+    Unfortunately, our Dell is nearly 10 years old. It’s running Windows Vista,
+    the internet is painfully slow, and the DVD player is starting to become
+    We could get another 17in laptop to replace it, but my husband ends up
+    crouched over the screen, so perhaps a desktop would be better. However, it
+    would need to be one that can easily moved around the house, from his desk
+    Ideally, we don’t really want to spend more than £500 on a new device if
+The Dell Studio 17 was a great machine in its day, but your version sounds as
+though it has come to the end of its natural life. In theory, you could prolong
+it by installing Windows 10, an SSD, some extra memory and a new DVD drive.
+However, hard drives become prone to failure after about five years, so you’d
+probably be better off investing in a new PC. Either way, make sure you have a
+Another problem is that Windows Vista reaches the end of its life on 11 April.
+After that, it won’t get any more security updates. Try to replace your laptop
+As you say, another 17in laptop would be the obvious replacement. However, the
+trend is towards smaller screens on thinner machines, and mainstream 17in
+laptops are now relatively rare. This size is dominated by gaming laptops that
+For non-gamers, the leading contender is the HP 17-x013na, which has a 17.3in
+screen showing 1600 x 900 pixels. This model has an Intel Core i3-5005U
+processor, 8GB of memory, a 1TB hard drive and a SuperMulti DVD burner for
+£449. If you get it from HP, you can buy three years of collect-and-return
+Argos has the same machine with a Core i3-6006U processor, which is one
+generation newer, for £479.99. The 6006U isn’t really any faster. It does have
+better integrated graphics, but you probably wouldn’t care unless you were a
+HP also offers the same laptop with an AMD A8-7410 processor for less (£429),
+but this is much slower than a Core i3-5005. If you buy an HP17, make sure it’s
+a Core i3 not an AMD A-8. That is to say, an HP 17-x013na not an HP 17-y013na.
+Leading contender … the HP 17-x013na. Photograph: HP
+I strongly advocate using desktops rather than laptops for sustained work
+because they avoid hunched-over syndrome. You can also avoid it by putting the
+laptop on a riser and plugging in a good external keyboard. There are hundreds
+An all-in-one PC is another alternative. First, you could get a bigger screen
+for the same money. Second, an all-in-one would be much easier to move than a
+desktop PC, but roughly twice as heavy as a laptop. For example, an HP
+24-g099na weighs 6.46kg, whereas an HP 17-x013na weighs only 2.65kg.
+Spending a little extra on a wireless keyboard and mouse would make your
+The HP 24-g099na all-in-one has a 24in screen with a resolution of 1920 x 1080
+pixels (Full HD), a 2.3GHz Core i3-6100U processor, 8GB of memory, 2TB hard
+drive and read/write DVD for £498.98. The Core i3-6100U is a good step up from
+the 6006U, the screen resolution is better, and you get twice the hard drive
+There are lots of cheaper all-in-ones with smaller screens and much slower
+processors. For example, the HP All-in-One 22-b000na with a 1920 x 1080-pixel
+21.5in screen, Intel Celeron J3060 processor, 4GB of memory and 1TB hard drive
+costs £349. The same machine with a slightly faster J3710 and 8GB costs £399.
+The major drawback is that the J3710, an Atom-based design, is even slower than
+You could also consider the Lenovo C20 all-in-one, which I’ve written about
+before. A C20 with a 19.5in 1366 x 768-pixel screen, Intel Celeron J3160
+processor, 4GB of memory, 1TB hard drive and DVD would cost you £299.99 from
+John Lewis, with a two-year guarantee. The screen resolution is low, and the
+processor is pretty slow, but it would probably do what you need. The main
+attractions are the price and the weight: at 3.8kg, it’s the same weight as
+I agree that live television is a terrible time-sink and best avoided. However,
+if you buy a TV, you won’t have to lug a laptop or all-in-one PC around the
+There are three reasons why this is worth considering. First, you now need a
+full UK TV licence to watch catchup programs on BBC iPlayer on a PC. Second,
+“smart” TVs can handle iPlayer, YouTube, Netflix and other services without a
+laptop, as well as offering dozens of Freeview channels. Even if you buy a dumb
+TV, you can make it smart by plugging in an Amazon Fire or Roku box, for
+example. Third, you may be able to use wifi to stream videos from the PC to
+your TV by using a Google Chromecast, Amazon Fire TV stick, Roku Streaming
+Even if you buy a dumb TV, you can make it smart by plugging in an Amazon Fire
+You could buy an internet-capable JVC LT-24C655 TV with a 23.6in screen and a
+built-in DVD player for £179.99. The “smart” features include the main catchup
+Movie buffs may reel in horror at the idea of watching a 23.6in screen, but
+it’s bigger than the 17.3in screen you’re using now. However, you could get the
+same TV with a 32in screen for £249.99 or a 40in screen for £329.
+The point is that you can get both a PC and a TV for your £500, though you will
+have to debate how best to split the budget. For example, a low-end TV like the
+24in Logik L24HED16 (£129.99) would leave £370 for a laptop or all-in-one PC.
+Going for the 32in JVC smart TV (£249.99) would leave £250 for a laptop.
+There are plenty of new laptops with 15.6in screens, 4GB or 8GB of memory, 1TB
+hard drives and DVD writers. Just avoid the ones with 2GB of memory and 32GB of
+eMMC Flash chip storage. Those are OK for casual use but not for
+You could also look for a certified refurbished ThinkPad of the sort that large
+corporations retire in volume. The T420 and X220 models, among others, tend to
+be good value. You can find lots on Amazon and eBay, but Tier1Online
+specialises in this kind of product. Laptops Direct and Morgan are also worth a
+I prefer ThinkPads, but ex-corporate Dell Latitude laptops and HP Elitebooks
+are also worth considering. Aim for a Core i5-2xxx or i5-3xxx (second or third
+generation, or later) processor in a Grade A laptop, preferably with a six
+month or longer guarantee. Tier1Online guarantees some machines for up to three
+Have you got another question for Jack? Email it to Ask.Jack@theguardian.com
+© 2017 Guardian News and Media Limited or its affiliated companies.

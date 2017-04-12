@@ -1,0 +1,118 @@
+  • [                    ] [SUBMIT] What term do you want to search?
+  • switch to the US edition switch to the AU edition switch to the INT edition
+13 games that will change the way you think about gaming
+Featuring telephones, mirrors, twine and, yes, even screens, the Now Play This
+festival explores the far edges of game design - here’s the best bits
+Morning Makeup Madness, one of the games on display at Now Play This.
+[ ] Morning Makeup Madness, one of the games on display at Now Play This.
+13 games that will change the way you think about gaming
+Featuring telephones, mirrors, twine and, yes, even screens, the Now Play This
+festival explores the far edges of game design - here’s the best bits
+Tuesday 11 April 2017 12.10 BST First published on Tuesday 11 April 2017 
+Now Play This is a festival of experimental games. Spread throughout several
+rooms of the New Wing of Somerset House, and running as part of the London
+games festival, it reflects what happens when we stop worrying about the
+artistic or commercial validity of the medium. Curated by game designers Holly
+Gramazio and George Buckenham, it’s about collecting experiences that offer
+This year’s event featured games in a variety of formats: tabletop, physical,
+digital, augmented reality, virtual reality and new sports. There were
+experimental interfaces and there were fascinating intersections between space
+and content. One game, Joy is Here, covered all the walls in a giant word
+Here are 13 of the most interesting things we saw:
+Dead Pixels (Tatiana Vilela dos Santos and Olivier Drouet)
+Dead Pixels. Photograph: Jordan Erica Webber for the Guardian
+One of the best things about an event like Now Play This is that you get to
+experience games that are meant to be played by large groups – like the two- to
+nine-player Dead Pixels. Each participant stands at a plinth and uses a
+joystick to move a coloured square around a canvas, leaving a trail behind it.
+A closed shape of one colour automatically fills, while drawing over another
+colour produces a dead (black) pixel. The game ends after 99 seconds or when
+the canvas is full, and the colour with the largest area covered wins. While we
+were playing, one girl led her entire family team to successive victories,
+Poem Game. Photograph: Jordan Erica Webber for the Guardian
+On Friday evening, a group of people gathered to play artist Liliane Lijn’s
+1974 Poem Game. Each player (most of whom weren’t born when it was created) was
+handed a few coloured cards with one word on each side and took turns to either
+place one on the table or move/flip one already placed, and then read the
+current words in whichever direction they liked. As the words spread in all
+directions, a loose collective narrative began to build, until Lijn instructed
+the players to flip all the cards and read the result, fulfilling the stated
+intention of the game to “free the players from preconceived ideas of what a
+Invisible Garden (Rosa Carbo-Mascarell and Tim Phillips)
+Invisible Garden. Photograph: Rosa Carbo-Mascarell for the Guardian
+Several attendees enjoyed the uncommonly warm weather by trying this game which
+used the exterior of Somerset House to calming effect. Players donned a
+handmade hat that hid a pair of headphones and a phone, and through
+geolocation, could wander the sunny courtyard hearing the changing sounds of a
+walk through a meadow – birds, frogs, and a babbling brook – rather than the
+Restless Spirit Projector (Viviane Schwarz and Jonatan Van Hove with Amber Hsu)
+One of the most popular rooms was introduced with a plaque that read simply,
+“This room is haunted.” Engulfed in darkness, players used hand mirrors to
+reflect ghosts (projected sprites) into a trap (a light-detecting orb), pairing
+them up according to physical clues left around the room – and occasionally
+removed by the designer Viviane Schwarz – like a notebook filled with
+handwritten and illustrated stories about the ghosts in question.
+Vaccination. Photograph: Jordan Erica Webber for the Guardian
+Vaccination was also part of the Leftfield Collection at Rezzed, but here was
+just one of many games with unique interfaces, if a particularly fun and
+impressive one. One player watches a monitor that shows microorganisms of
+various colours creep from a patient’s extremities to their heart. The other
+plugs a physical injector-shaped device into holes on a board to gather
+medicine and inject it into the head, limbs, or torso. Like a medicalised
+version of the popular Horde mode in shooter games, the patient always dies
+Thread Racer. Photograph: Jordan Erica Webber for the Guardian
+The play space for Thread Racer was a vertical board with a grid of pins, which
+players wrapped thread around to create a race track, and then used joysticks
+to navigate two dots of light around the track, jumping back to the start if
+they bumped into the thread. While it fell prey to predictable wear and tear
+that meant it didn’t function entirely as intended, this was a fun little
+experience that demonstrated creativity on the part of both designers and
+Telephone. Photograph: Jordan Erica Webber for the Guardian
+Lee Shang Lun is perhaps best known for his work on puzzle games Sokobond and
+Stickets, but Telephone is an entirely different experience. Commissioned for
+this event as part of the 10 Second Room, its physical presence is nothing more
+than an old-fashioned telephone on a plinth. Players who picked up the phone
+would hear a prompt – “What’s the grossest thing you would do for £10?” “What
+are five names you wouldn’t give your children?” – and their spoken replies
+were recorded, rearranged, and sent to another phone in a bar in Melbourne for
+Morning Makeup Madness. Photograph: Jordan Erica Webber for the Guardian
+Another 10-second game is Jenny Jiao Hsia’s Morning Makeup Madness, in which
+you have 10 seconds to apply lipstick, blush, mascara, eyeliner, and eyeshadow
+to roughly the right places on a cute representation of a reflected face. At
+the end you’re given a percentage score, perhaps 10% “no makeup look” or 60%
+“hot mess”. It was hard to do particularly well with the joysticks at the
+event, but you can play it in your browser with a mouse and keyboard.
+Sandcastles. Photograph: Jordan Erica Webber for the Guardian
+One 10-second game that took a more poignant look at the passing of time was
+Sandcastles. Players dragged fingers along a touch screen to pull castles of
+various shapes and sizes from the sand, but every 10 seconds the sea would come
+Pink Trombone. Photograph: Jordan Erica Webber for the Guardian
+Perhaps of particular fascination to singers, Pink Trombone is an interactive
+simulation of human vocalisation. Presented with a side-on representation of a
+human nose, mouth and throat, players can move the various parts to make
+different vocal sounds. Besides actually being pretty informative, it is a cute
+and fun interactive toy that you can play with in your browser now.
+Another game that’s playable now is Wish Fishing, from Pol Clarissou of the
+Klondike collective. However, this fortune-telling game was improved by the
+addition of a physical element. The player types a question, the person on
+screen casts their fishing line, and an answer appears in the form of unicode
+symbols. Normally, one has to find the meanings in a text file that comes with
+the game, but at Now Play This the desk was covered with cards with a symbol on
+Agata Nawrot is a talented illustrator from Poland, and Karambola is her first
+game. It’s an impressive debut, beautiful and more substantial than you might
+expect. The story is that “evil bird-thoughts” have attacked several “emotional
+fruit people”, who’ve become separated and withdrawn into their own problems,
+which the player must then solve. Each is simple but different, ranging from
+helping some ginger find its way to plucking the right tune on a spruce cone’s
+kalimba, and the whole thing is tied together beautifully.
+KAMI 2. Photograph: Jordan Erica Webber for the Guardian
+One of the most popular games at the event, possibly because it was spread
+throughout the venue, was KAMI 2, from the BAFTA-winning State of Play. In this
+puzzle game for mobiles, you are presented with coloured patterns made of
+triangles and a palette of the relevant colours, and your task is to colour the
+entire canvas the same shade in a certain number of steps. At the festival,
+prints of some of these puzzles were hung on the walls, and people used an
+augmented-reality feature within the game to play, holding up their phones such
+that passersby frequently thought they were taking photos and ducked to cross
+between them. Whether or not that was an intentional feature of the design, it
+© 2017 Guardian News and Media Limited or its affiliated companies.

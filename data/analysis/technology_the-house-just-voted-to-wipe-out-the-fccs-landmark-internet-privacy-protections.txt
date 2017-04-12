@@ -1,0 +1,138 @@
+It looks like you've previously blocked notifications. Please update your
+Be the first to know about new stories from PowerPost. Sign up to follow, and
+we’ll e-mail you free updates as they’re published.
+You’ll receive free e-mail news updates each time a new story is published.
+The House just voted to wipe away the FCC’s landmark Internet privacy
+Be the first to know about new stories from PowerPost. Sign up to follow, and
+we’ll e-mail you free updates as they’re published.
+You’ll receive free e-mail news updates each time a new story is published.
+By Brian Fung By Brian Fung  March 28  Follow @b_fung
+The Senate and House have voted to repeal an FCC ruling that protects your
+Internet privacy and data from ISPs. Here's all the steps you can take to
+protect yourself. (Jhaan Elker/The Washington Post)
+Congress sent proposed legislation to President Trump on Tuesday that wipes
+away landmark online privacy protections, the first salvo in what is likely to
+become a significant reworking of the rules governing Internet access in an era
+In a party-line vote, House Republicans freed Internet service providers such
+as Verizon, AT&T and Comcast of protections approved just last year that had
+sought to limit what companies could do with information such as customer
+browsing habits, app usage history, location data and Social Security numbers.
+The rules also had required providers to strengthen safeguards for customer
+[What to expect now that Internet providers can collect and sell your Web
+The Senate has voted to nullify those measures, which were set to take effect
+at the end of this year. If Trump signs the legislation as expected, providers
+will be able to monitor their customers’ behavior online and, without their
+permission, use their personal and financial information to sell highly
+targeted ads — making them rivals to Google and Facebook in the $83 billion
+The providers could also sell their users’ information directly to marketers,
+financial firms and other companies that mine personal data — all of whom could
+use the data without consumers’ consent. In addition, the Federal
+Communications Commission, which initially drafted the protections, would be
+forbidden from issuing similar rules in the future.
+Search engines and streaming-video sites already collect usage data on
+consumers. But consumer activists claim that Internet providers may know much
+more about a person’s activities because they can see all of the sites a
+And although consumers can easily abandon sites whose privacy practices they
+don’t agree with, it is far more difficult to choose a different Internet
+provider, the activists said. Many Americans have a choice of only one or two
+broadband companies in their area, according to federal statistics.
+Advocates for tough privacy protections online called Tuesday’s vote “a
+“Today’s vote means that Americans will never be safe online from having their
+most personal details stealthily scrutinized and sold to the highest bidder,”
+said Jeffrey Chester, executive director of the Center for Digital Democracy.
+Supporters of Tuesday’s repeal vote argued that the privacy regulations stifle
+innovation by forcing Internet providers to abide by unreasonably strict
+”[Consumer privacy] will be enhanced by removing the uncertainty and confusion
+these rules will create,” said Rep. Marsha Blackburn (R-Tenn.), who chairs the
+President Trump approved a repeal of FCC rules that protect consumers' online
+data from their Internet providers. (Jhaan Elker/The Washington Post)
+Policy analysts said the deregulatory effort may be the first of several that
+could alter the future of the Internet. Although regulators under President
+Barack Obama had moved to limit the power of Internet providers — by
+restricting what they could do with customer information and curbing their
+ability to block websites or slow down certain types of content — momentum
+For example, consumer advocates fear that Congress or the FCC’s new Republican
+chairman, Ajit Pai, may seek to roll back the agency’s rules on net neutrality
+— the policy that forbids Internet providers from blocking content they don’t
+like or charging websites a fee to reach consumers over faster Internet speeds.
+Industry analysts said Tuesday that the FCC is also poised to deregulate the
+$40-billion-a-year industry for data connections used by hospitals,
+Tuesday’s vote is a sign that Internet providers will be treated more
+permissively at a time when conservatives control the executive and legislative
+branches. That could be a boon for companies such as Verizon and Comcast as
+Internet providers have historically made their money from selling access to
+the Web. But now these providers are looking to increase their revenue by
+tapping the vast troves of data their customers generate as they visit
+websites, watch videos, read information and download apps.
+Industry backers say that allowing providers to use data-driven targeting could
+benefit consumers by leading to more relevant advertisements and innovative
+business models. AT&T, for instance, used to offer Internet discounts to
+consumers in exchange for letting the company monitor their browsing history.
+With Tuesday’s vote, such programs could see a return, and be marketed as a way
+to access cheaper Internet — although consumer groups have criticized these
+plans as a way for providers to charge customers a premium for their privacy.
+Tuesday’s vote took aim at FCC rules that were approved in October over
+strident Republican objections. At the time, the agency’s Democratic leadership
+argued that consumers deserved the same privacy protections governing legacy
+telephone service. As more Americans turn to the Internet to find jobs, do
+homework and seek education, the agency said, consumers needed new protections
+But industry advocates said the FCC’s rules defined privacy far too broadly.
+The industry favors the interpretation of another agency — the Federal Trade
+Commission — that does not consider browsing history or app usage data to be
+But the FTC does not have the authority to punish Internet providers that
+violate its guidelines. That is because of a rule that leaves oversight of
+As a result, Tuesday’s vote may release Internet providers from the FCC’s
+privacy regulation, but the FTC would also be unable to enforce its own
+guidelines on the industry without new authority from Congress.
+“One would hope — because consumers want their privacy protected — that they
+would be good actors, and they would ask permission and do these nice things,”
+said Rep. Mike Doyle (D-Pa.) in a House committee hearing Monday. “But there’s
+no law now that says they have to, and there’s no cop on the beat saying, ‘Hey,
+Pai, the FCC chairman, called the legislation “appropriate” and blamed his
+Democratic predecessor for executive overreach. He also said that
+responsibility for regulating Internet providers should fall to the FTC.
+“Moving forward, I want the American people to know that the FCC will work with
+the FTC to ensure that consumers’ online privacy is protected though a
+consistent and comprehensive framework,” Pai said. “The best way to achieve
+that result would be to return jurisdiction over broadband providers’ privacy
+practices to the FTC, with its decades of experience and expertise in this
+Pai has said that his agency could continue to bring lawsuits against firms
+that are alleged to have violated consumer privacy, even if the FCC privacy
+Republicans just rolled back landmark FCC privacy rules. Here’s what you need
+The Senate just voted to undo landmark rules covering your Internet privacy
+It's begun: Internet providers are pushing to repeal Obama-era Internet privacy
+The FCC just passed sweeping new rules to protect your online privacy
+Brian Fung covers technology for The Washington Post, focusing on
+telecommunications, Internet access and the shifting media economy. Before
+joining The Post, he was the technology correspondent for National Journal and
+an associate editor at the Atlantic. Follow him at @b_fung.
+SuperFan badge holders consistently post smart, timely comments about
+Culture Connoisseurs consistently offer thought-provoking, timely comments on
+Fact Checkers contribute questions, information and facts to The Fact Checker.
+Washingtologists consistently post thought-provoking, timely comments on
+events, communities, and trends in the Washington area.
+This commenter is a Washington Post editor, reporter or producer.
+Post Forum members consistently offer thought-provoking, timely comments on
+Weather Watchers consistently offer thought-provoking, timely comments on
+World Watchers consistently offer thought-provoking, timely comments on
+This commenter is a Washington Post contributor. Post contributors aren’t
+staff, but may write articles or columns. In some cases, contributors are
+Washington Post reporters or editors recommend this comment or reader post.
+Comments our editors find particularly useful or relevant are displayed in Top
+Comments, as are comments by users with these badges: . Replies to those posts
+To pause and restart automatic updates, click "Live" or "Paused". If paused,
+you'll be notified of the number of additional comments that have come in.
+Comments our editors find particularly useful or relevant are displayed in Top
+Comments, as are comments by users with these badges: . Replies to those posts
+Among the criteria for featured comments: likes by users, replies by users,
+previous history of valuable commenting, and selection by moderators.
+    Why people will keep flying United even if they don’t want to
+    Analysis The new White House drug czar has quite an idea for where to put
+    Analysis Want to boycott United? Good luck with that.
+    Analysis Doctors once treated alcoholism with heroin. Now, they want to
+    Why some families who save constantly are still struggling to make ends
+Content from Allstate This content is paid for by an advertiser and published
+by WP BrandStudio. The Washington Post newsroom was not involved in the
+creation of this content. Learn more about WP BrandStudio.
+We went to the source. Here’s what matters to millennials.
+A state-by-state look at where Generation Y stands on the big issues.

@@ -1,0 +1,168 @@
+It looks like you've previously blocked notifications. Please update your
+Be the first to know about new stories from PowerPost. Sign up to follow, and
+we’ll e-mail you free updates as they’re published.
+You’ll receive free e-mail news updates each time a new story is published.
+Perspective Interpretation of the news based on evidence, including data, as
+well as anticipating how events might unfold based on past events
+Should broadband be included in the Trump infrastructure plan?
+Be the first to know about new stories from PowerPost. Sign up to follow, and
+we’ll e-mail you free updates as they’re published.
+You’ll receive free e-mail news updates each time a new story is published.
+By Blair Levin and Larry Downes By Blair Levin and Larry Downes  April 5  
+A House Energy and Commerce Subcommittee recently reviewed options for
+completing America’s impressive progress in deploying broadband infrastructure.
+Unlike other issues, there is bipartisan agreement on the importance of putting
+the 21st century’s most valuable technology into the hands of all Americans,
+and especially those in rural and tribal areas who have the fewest, if any,
+options for getting online. There’s even broad agreement on how to do it.
+As the White House and Congress develop an infrastructure plan promised during
+the campaign, many, including senators, House members and mayors, are urging
+that broadband be included. While our crumbling 20th-century infrastructure of
+roads, bridges, water and mass transit clearly need more immediate attention
+and the bulk of the funding, we agree that broadband should be included,
+balancing fixes to the past with providing for the future.
+As always, the devil will be in the details. On that score, there are valuable
+lessons from the last large federal infrastructure effort, the 2009 Recovery
+Act. One of the most valuable results of that effort was one that cost almost
+nothing — the creation of a National Broadband Plan, which one of us directed.
+The plan stimulated private providers and new entrants to accelerate
+investments in next-generation fiber and mobile networks, and raised alarm
+bells heeded by Congress and the Federal Communications Commission to allocate
+much more radio spectrum for future technologies. Those well-timed decisions
+will now provide the foundation for 5G technologies that will jump-start the
+next wave of disruptive innovation over the next 10 years.
+But while some of the direct investments in “shovel-ready” broadband build-out
+projects were successful, billions in stimulus money was wasted by the
+Department of Agriculture’s Rural Utility Service. Its many sins included
+funding projects in population centers that already had broadband, poor project
+management and a failure to properly vet loan applicants, many of whom
+defaulted. RUS promised to connect 7 million rural Americans. The actual number
+To avoid these and other costly mistakes, here are eight simple ground rules we
+hope Congress will follow in crafting broadband-related infrastructure
+1. Limit and carefully control direct investment funds. Congress should
+consider setting aside a modest portion of any new infrastructure fund, say $20
+billion, for a one-time rural broadband acceleration program. Carriers would be
+offered subsidies to build out in rural areas currently without a broadband
+provider, with the requirement of implementing technologies with sufficient
+bandwidth to support future growth, perhaps up to 100 Mbps speeds. To avoid
+problems that plagued the Recovery Act’s scattered broadband initiatives, the
+acceleration program should be managed entirely by one agency, with strict
+controls to help ensure troubled projects get attention (or cut off) sooner
+Calculation of specific subsidies should be made on a per-location basis,
+determining how much is needed to overcome otherwise prohibitive build-out
+2. Don’t offer ongoing support. To date, efforts to provide universal access to
+rural broadband infrastructure has suffered from a structural flaw. The FCC
+provides payments in the form of small ongoing annual subsidies, even in areas
+when all that was needed was an initial capital investment. As a result, it can
+take years for providers to recoup their own capital investments, creating
+incentives to build piecemeal in rural areas, and to make decisions based on
+what providers believe the government will fund rather than on what consumers
+Future investments should avoid this error by offering carefully structured
+one-time subsidies, saving billions in ongoing costs. While some high-cost
+areas will continue to need both one-time capital and operating support, the
+emphasis should be on locations for which capital support alone can overcome
+3. Use market mechanisms where possible. After establishing the per-location
+subsidy needed, the government may find there are more providers willing to
+build in underserved rural and tribal areas than there are funds to support
+them. If so, the FCC should run a reverse auction among competing providers to
+bid down the per-location cost. Commission Chairman Ajit Pai has already
+proposed  such a solution to improve the efficiency of existing universal
+service programs, with the goal of letting market forces deliver “the best deal
+4. Extend “Dig Once/Climb Once” policies on government property. Lack of
+coordination between broadband and other infrastructure projects wastes time
+and resources. At least two bills circulating in Congress now would expand a
+“Dig Once” rule, requiring installation of broadband conduit whenever roads are
+being dug up for any reason, along with a “Climb Once” policy whenever new
+equipment is being added to existing utility poles. Dig Once alone can reduce
+the cost of deploying fiber under highways in urban areas up to 33 percent and
+up to 16 percent in rural areas, according to the Government Accountability
+Office. A coalition of public policy think tanks recommended at a recent
+hearing that the policy be expanded to state roads, and to all public rights of
+5. Improve government processes that hinder private investment. Direct
+expenditure of taxpayer or borrowed funds is not the only tool available to
+accelerate broadband investment. For providers, the costs of dealing with slow
+and overly bureaucratic local governments can be significant and, at the
+margins, have already proven decisive in which cities get new private
+infrastructure investment and which ones do not. Simply providing a single
+point of contact within a local government can make a big difference in both
+speed and cost of deployment, along with access to city property and
+streamlined zoning processes. Best practices should be established at the
+6. Embrace emerging technologies. For the most sparsely populated and
+geologically challenging parts of the United States, the economics of laying
+fiber-optic cable are unlikely to make sense any time soon, even with
+subsidies. So the question becomes not only what alternative broadband
+technologies are best suited to rural and mountainous regions, but how to
+encourage providers to deploy them. In many rural areas, for example, fixed
+wireless technologies have proven themselves capable of providing high-speed,
+last-mile connections to homes and businesses. Satellite-based solutions have
+also matured, as have hybrid fiber/copper technologies using existing telephone
+lines. No matter how the infrastructure bill provides for broadband in these
+locations, it should do so on a technology-neutral basis to encourage continued
+7. Address nonfinancial causes of the digital divide. Availability and even
+price are not the only things holding back broadband adoption. As we have noted
+, over half of consumers who don’t have Internet service at home — largely
+older and rural Americans and those with less education — say they don’t want
+or need it, even if it were free. Part of that resistance comes from the fact
+that unconnected Americans don’t know how to use a computer or even a
+smartphone, let alone how to install and maintain networking equipment inside
+or outside their home. Whatever funding the infrastructure law provides for
+broadband will be wasted if some of that support isn’t directed to providing
+hands-on education, perhaps through community groups and senior centers, as
+well as simple interfaces for basic technical service.
+8. Use the bully pulpit to encourage digital want-nots. Solving the training
+and support issues of the least tech-savvy users won’t fully answer the
+relevance problem. Digital want-nots also need to understand the value of
+getting online. These include the obvious benefits of connecting to family and
+friends and expanding entertainment options. But there are more fundamental
+ways emerging technologies, including the Internet of Things and smart homes
+and communities, can improve quality of life, especially for seniors hoping to
+age in place in their homes. Many of these benefits were detailed in the
+National Broadband Plan, but neither the FCC nor the White House used it to
+promote a vision of tomorrow that would make getting online today irresistible.
+Public education about why the infrastructure bill is spending money on
+broadband will be critical to getting value from our investment.
+Overall, improving broadband infrastructure will require spending federal funds
+more wisely, but, more important, providing incentives for private investors to
+reallocate their own capital in ways that ultimately benefit everyone. In some
+Following these basic steps will maximize the value of taxpayer money spent on
+broadband infrastructure. More to the point, they can multiply government
+spending through continued private investment, accelerating efforts to close
+the digital divide and bring the least-connected parts of the country into our
+growing digital conversation. That’s truly a win-win-win.
+Blair Levin is a nonresident senior fellow at the Brookings Institution. In
+2009, he oversaw development of the National Broadband Plan. Larry Downes is
+project director at the Georgetown Center for Business and Public Policy and
+co-author of “Big Bang Disruption: Strategy in the Age of Devastating
+Downes is co-author with Paul Nunes of “Big Bang Disruption: Strategy in the
+Age of Devastating Innovation” (Portfolio 2014). He is a project director at
+the Georgetown Center for Business and Public Policy.
+SuperFan badge holders consistently post smart, timely comments about
+Culture Connoisseurs consistently offer thought-provoking, timely comments on
+Fact Checkers contribute questions, information and facts to The Fact Checker.
+Washingtologists consistently post thought-provoking, timely comments on
+events, communities, and trends in the Washington area.
+This commenter is a Washington Post editor, reporter or producer.
+Post Forum members consistently offer thought-provoking, timely comments on
+Weather Watchers consistently offer thought-provoking, timely comments on
+World Watchers consistently offer thought-provoking, timely comments on
+This commenter is a Washington Post contributor. Post contributors aren’t
+staff, but may write articles or columns. In some cases, contributors are
+Washington Post reporters or editors recommend this comment or reader post.
+Comments our editors find particularly useful or relevant are displayed in Top
+Comments, as are comments by users with these badges: . Replies to those posts
+To pause and restart automatic updates, click "Live" or "Paused". If paused,
+you'll be notified of the number of additional comments that have come in.
+Comments our editors find particularly useful or relevant are displayed in Top
+Comments, as are comments by users with these badges: . Replies to those posts
+Among the criteria for featured comments: likes by users, replies by users,
+previous history of valuable commenting, and selection by moderators.
+    Why people will keep flying United even if they don’t want to
+    Analysis The new White House drug czar has quite an idea for where to put
+    Analysis Want to boycott United? Good luck with that.
+    Analysis Doctors once treated alcoholism with heroin. Now, they want to
+    Why some families who save constantly are still struggling to make ends
+Content from Allstate This content is paid for by an advertiser and published
+by WP BrandStudio. The Washington Post newsroom was not involved in the
+creation of this content. Learn more about WP BrandStudio.
+We went to the source. Here’s what matters to millennials.
+A state-by-state look at where Generation Y stands on the big issues.

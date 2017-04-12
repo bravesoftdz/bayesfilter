@@ -1,0 +1,94 @@
+  • [                    ] [SUBMIT] What term do you want to search?
+  • switch to the US edition switch to the AU edition switch to the INT edition
+Which is the best browser for Windows 10: Firefox or Chrome?
+Libby would like to know which browser she should use – it may sound simple,
+Chrome is the most-popular browser, but it is not without flaws.
+[ ] Chrome is the most-popular browser, but it is not without flaws.
+Which is the best browser for Windows 10: Firefox or Chrome?
+Libby would like to know which browser she should use – it may sound simple,
+Thursday 9 February 2017 09.55 GMT Last modified on Tuesday 21 February 2017 
+    Which is the best web browser for Windows 10: Firefox or Google Chrome?
+Over the years, I’ve used and recommended a lot of different browsers for
+Windows, including Mosaic, Netscape, Internet Explorer, Maxthon, Firefox,
+Chrome and Vivaldi. Times change, and so do web browsers. You can always switch
+As mentioned previously, Windows 10 already includes two browsers: Edge and
+Internet Explorer 11. Edge is Microsoft’s new browser and replaces Internet
+Explorer 11, which is only provided for backwards compatibility with websites
+written for IE. Nothing stops you from installing alternatives, either as your
+default browser or for other purposes. For example, you can use a separate
+browser for Facebook and/or Gmail, to reduce cross-site tracking, or use
+different browsers for different Twitter accounts.
+I use Firefox most of the time, but I use Vivaldi for some websites, such as
+Gmail. I also use Edge for BBC iPlayer and other video sources, because I find
+it works better. However, browsers are notorious resource hogs – especially
+Chrome – so I may close them when I’m not using them.
+Closing and reopening browsers is the new “reboot your PC”. Of course, it’s
+only viable if you set your browser to reload existing tabs on restarts. One
+advantage of Firefox, Vivaldi, Opera and some others is that they do “lazy
+loading”: they only reload a tab when you click on it. This avoids a firestorm
+of reloads crippling your PC, especially if you have loads of tabs. (My record
+There are four major web browsers, and three of them are designed to profit the
+companies that produce them: Apple (Safari), Google (Chrome) and Microsoft
+(Edge). Firefox is the only one to put the user’s interests first. Other things
+Firefox is also the only major browser based on open-source code. Google
+releases the Chromium code as open source, and there are other browsers based
+on Chromium. Opera and Vivaldi are examples. However, Google adds proprietary
+code to produce Chrome, and others may do the same.
+Using multiple browsers helps maintain competition. We don’t want websites to
+be optimised for specific browsers (“Google works better with Chrome” etc),
+because that cedes too much power to whoever owns it. Ideally, we want both
+browsers and websites to follow agreed common standards, not company-specific
+Today, all four major browsers use different rendering engines: Blink (Google),
+Gecko (Firefox), Trident (Microsoft) and WebKit (Safari). Blink is a fork of
+WebKit, which was Apple’s fork of KDE’s open source KHTML, but they are
+diverging. (To be picky, Edge uses a fork of Trident, with the legacy junk
+Today, all the main browsers perform well on Windows 10, and you can happily
+use any or all of them. However, each one has some advantages.
+Chrome is the most popular browser and provides the best support for web
+standards, though it’s not significantly better than Vivaldi and Opera. It’s
+also secure, because the browser is sandboxed for extra protection. Chrome uses
+different threads so one bad tab can’t crash the whole browser, though it does
+tend to use a lot of memory and resources (add an extension, such as The Great
+Suspender), and it eats batteries. It struggles if you open a lot of tabs, and
+its interface is unable to cope: each tab shrinks to an unusably small size.
+Firefox is generally as fast as Chrome but more configurable, and it’s much
+better at handling tabs. You can scroll through dozens of tabs with a
+mouse-wheel, pick them off a drop-down list, or find them by typing the site’s
+name into the address bar and selecting “Switch to tab”. It uses less memory
+than Chrome, but a bad tab can crash the browser. (In my experience, it rarely
+happens.) Having too many tabs can slow it down, requiring a restart, but this
+Edge is fast, more secure, and claims to be kind to batteries, but it is still
+in development. It has the advantage of being plumbed into Windows 10 and
+integrated with Cortana – which makes it hard to avoid, even if you don’t like
+it. It’s already about as standards compliant as Firefox, which is a bit behind
+Chrome/Vivaldi/Opera but well ahead of IE11 and Safari. One of its party tricks
+is annotating web pages with a pen or stylus. Its main drawback is a shortage
+For privacy and other reasons, I prefer Chromium-based Vivaldi to Chrome. It’s
+a “power user” browser and much more configurable. It’s slower to start up, but
+it uses “lazy loading”. It handles tabs better than Chrome, by reducing them to
+favicons, and by showing a full preview when you hover the mouse over a tab.
+You gain a lot for sacrificing a few seconds in load time.
+Vivaldi is being developed by some of the people who created the old Opera
+browser, hence the musical name. The old Opera browser also aimed at more
+sophisticated users, and had its own rendering engine, Presto. The new Opera is
+simpler and, like Vivaldi, based on Chromium. It’s worth a look.
+Both Vivaldi and Opera can use Chrome extensions, but they don’t all work. I’ve
+had much more success with Vivaldi, where you can download extensions from the
+All browsers now offer extensions for purposes such as saving passwords safely,
+saving browser sessions, downloading embedded videos, and doing image searches
+on the fly. There’s a natural tendency to install lots of useful-looking
+extensions, but they can cripple browser performance.
+The extensions I use include Ghostery (anti-tracking), Session Manager, Mozilla
+Archive Format (for saving pages in MHTML) and Extended Statusbar. I also have
+extensions for reverse image searches at Google, Bing and TinEye. These are all
+for Firefox, but you can often get the same or similar extensions for other
+I recommend adopting a two- or even a three-browser strategy. If you load your
+main browser with defensive extensions etc, it may not work correctly with some
+Since Windows 10 already includes Edge, you can adopt a two-browser strategy by
+downloading Firefox or Chrome or Vivaldi, whichever you prefer. Download two
+and you will have three rendering engines, which is a good thing.
+For normal use, I don’t think there’s much to choose between Firefox and Chrome
+/Vivaldi at the moment. My preference for Firefox is based on its ability to
+handle a ridiculous number of tabs, plus the fact that it’s not written with
+Have you got another question for Jack? Email it to Ask.Jack@theguardian.com
+© 2017 Guardian News and Media Limited or its affiliated companies.

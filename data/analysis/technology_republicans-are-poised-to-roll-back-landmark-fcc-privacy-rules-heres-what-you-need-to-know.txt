@@ -1,0 +1,150 @@
+It looks like you've previously blocked notifications. Please update your
+Be the first to know about new stories from PowerPost. Sign up to follow, and
+we’ll e-mail you free updates as they’re published.
+You’ll receive free e-mail news updates each time a new story is published.
+Republicans voted to roll back landmark FCC privacy rules. Here’s what you need
+Be the first to know about new stories from PowerPost. Sign up to follow, and
+we’ll e-mail you free updates as they’re published.
+You’ll receive free e-mail news updates each time a new story is published.
+By Brian Fung By Brian Fung  March 28  Follow @b_fung
+The Senate and House have voted to repeal an FCC ruling that protects your
+Internet privacy and data from ISPs. Here's all the steps you can take to
+protect yourself. (Jhaan Elker/The Washington Post)
+House Republicans voted Tuesday to repeal a set of landmark privacy protections
+for Web users, in a sharp pivot away from the Internet policies of the Obama
+administration. President Trump is expected to sign the measure.
+Tuesday's vote is likely to lend momentum to a broader rollback of Obama-era
+policies, particularly in the technology sector. And it empowers Internet
+providers to enter the $83 billion market for online advertising, where the
+ability to collect, store, share and sell consumers' behavioral information is
+directly linked to companies' bottom line. Proponents of the repeal argue the
+regulations stifle innovation by forcing Internet providers to abide by
+unreasonably strict guidelines. But defenders of the privacy rules say they are
+the only thing preventing broadband companies from spying on their customers
+Broadband companies such as Verizon and Comcast are racing to develop ways to
+mine and analyze customer information — such as their browsing habits, app
+usage history, location information and more. The FCC's rules, which were
+passed in October in what was billed as a rare victory for privacy
+advocates, had set limits on how Internet providers could use that information,
+seeking to give consumers more control over the data they generate as they
+traverse the Web on their smartphones and computers. They were scheduled to go
+The new legislative measure would effectively allow providers to access and use
+a wide range of customer data without seeking their users' explicit consent,
+much as Google and Facebook do now. It also releases Internet providers from
+obligations to increase protections of customer information against hackers and
+thieves. And it prohibits the nation's top telecom regulator, the Federal
+Communications Commission, from seeking to restore its privacy regulations in
+Many broadband companies say those rules are unnecessary because they already
+offer detailed privacy policies and take steps to defend their businesses from
+online attack. Industry groups said Tuesday that narrower definitions of
+privacy from other federal agencies are sufficient to protect consumers, but
+declined to say whether they would support beefing up those measures.
+Technically known as “a joint resolution of congressional disapproval,” the
+House voted on a measure that would repeal what policy experts refer to as
+simply the FCC's broadband privacy rules. The measure will now go to the White
+What are these rules Republicans are trying to repeal?
+1) They require Internet providers to be transparent about how they handle your
+data, such as the sites you visit and your Social Security number. Providers
+have to disclose what they collect about users, as well as how and why they use
+that data. They also must make public who else might see that data as a result
+2) The rules specify the conditions under which Internet providers may use
+certain types of data. Under the rules, Internet providers must get your
+explicit permission to share or sell things such as your geolocation
+information, your health information, your children's information, your
+financial information, your Social Security number, your browsing history, your
+app usage history or the content of your messages, emails and other
+communications. This means that Internet providers can't place a notification
+about their practices in fine print and say they got your permission when you
+clicked “okay” — they must instead offer clear notices to ensure that consumers
+know what they're agreeing to. Any other types of information that Internet
+providers share, such as the data plan you've purchased, are considered
+“nonsensitive” by the FCC; while Internet providers don't need to ask for
+explicit permission before collecting it, they must allow consumers to opt out
+3) The FCC rules require Internet providers to meet industry standards on
+security, protecting user data from theft and fraud.
+House voted to repeal the rules. What happens now?
+Assuming Trump signs the measure, Internet providers will be freed from those
+obligations, which would otherwise have taken effect later this year. With this
+data, Internet providers can sell highly targeted ads, making them rivals to
+Internet providers also will be free to use customer data in other ways, such
+as selling the information directly to data brokers that target lucrative or
+“ISPs like Comcast, AT&T, and Charter will be free to sell your personal
+information to the highest bidder without your permission — and no one will be
+able to protect you,” wrote Gigi Sohn, a former FCC staffer who helped draft
+the privacy rules, in a recent blog post on the Verge.
+Selling your data is merely one of the four ways in which Internet providers
+intend to make money off consumers. The others include selling you access to
+the Internet, as they have traditionally done; selling access to media content
+they've acquired by purchasing large entertainment companies; and selling
+advertising that directly targets you based on the data the provider has
+collected by watching how you use the Internet and what content you consume.
+Potentially. AT&T, for instance, used to offer Internet discounts to consumers
+in exchange for letting the company monitor their browsing history. Such
+programs could see a return, and be marketed as a way to access cheaper
+Internet. Industry advocates also argue that data-driven targeting leads
+But overall, repealing the rules gives Internet providers more power over
+Don't companies such as Google and Facebook already use my data for
+They do. But much of the debate is over whether Internet providers should enjoy
+the same privileges. Just because online companies take advantage of your data,
+consumer groups say, doesn't mean Americans should have to submit to Internet
+providers (or any other industry) that wants to do the same. And although
+consumers can generally switch from one search engine or online video service
+to another, they add, switching Internet providers is much harder — especially
+when many Americans have only one or two choices of broadband company.
+By contrast, GOP lawmakers and industry advocates argue the FCC rules stifle
+business and innovation. And, they say, companies such as Facebook are already
+subject to certain privacy guidelines published by the Federal Trade
+Commission, so it would be better if telecom and cable companies lived under
+those expectations, not the more expansive definition of privacy approved by
+“The question is: Why would you have different rules for ISPs in that regard
+than the rest of the Internet ecosystem?” said Howard Waltzman, general counsel
+for the 21st Century Privacy Coalition, an industry-aligned advocacy
+Can't the FTC go after Internet providers with its rules?
+At the moment, not really. The reason has to do with the FCC's rules on net
+neutrality. When the FCC passed those rules, it branded all Internet providers
+as “common carriers,” essentially a fancy legal term to describe traditional
+The problem is that the FTC is bound by something called the “common carrier
+exemption.” The agency isn't allowed to take action against companies that have
+been labeled common carriers by the FCC. (The idea behind the exemption is to
+prevent both agencies from going after the same companies twice for the same
+So if the House vote succeeds and Trump signs the measure, that releases
+Internet providers from the FCC's privacy regulation but does not do anything
+to apply the FTC's own privacy guidelines to the industry. The FCC can still
+sue companies after they have allegedly violated consumer privacy, industry
+groups say. So can state attorneys general. But the FCC will be unable to write
+regulations that preemptively bar privacy violations, meaning that Internet
+providers will be subject to less oversight as a result of the congressional
+Brian Fung covers technology for The Washington Post, focusing on
+telecommunications, Internet access and the shifting media economy. Before
+joining The Post, he was the technology correspondent for National Journal and
+an associate editor at the Atlantic. Follow him at @b_fung.
+SuperFan badge holders consistently post smart, timely comments about
+Culture Connoisseurs consistently offer thought-provoking, timely comments on
+Fact Checkers contribute questions, information and facts to The Fact Checker.
+Washingtologists consistently post thought-provoking, timely comments on
+events, communities, and trends in the Washington area.
+This commenter is a Washington Post editor, reporter or producer.
+Post Forum members consistently offer thought-provoking, timely comments on
+Weather Watchers consistently offer thought-provoking, timely comments on
+World Watchers consistently offer thought-provoking, timely comments on
+This commenter is a Washington Post contributor. Post contributors aren’t
+staff, but may write articles or columns. In some cases, contributors are
+Washington Post reporters or editors recommend this comment or reader post.
+Comments our editors find particularly useful or relevant are displayed in Top
+Comments, as are comments by users with these badges: . Replies to those posts
+To pause and restart automatic updates, click "Live" or "Paused". If paused,
+you'll be notified of the number of additional comments that have come in.
+Comments our editors find particularly useful or relevant are displayed in Top
+Comments, as are comments by users with these badges: . Replies to those posts
+Among the criteria for featured comments: likes by users, replies by users,
+previous history of valuable commenting, and selection by moderators.
+    Why people will keep flying United even if they don’t want to
+    Analysis The new White House drug czar has quite an idea for where to put
+    Analysis Want to boycott United? Good luck with that.
+    Analysis Doctors once treated alcoholism with heroin. Now, they want to
+    Why some families who save constantly are still struggling to make ends
+Content from Allstate This content is paid for by an advertiser and published
+by WP BrandStudio. The Washington Post newsroom was not involved in the
+creation of this content. Learn more about WP BrandStudio.
+We went to the source. Here’s what matters to millennials.
+A state-by-state look at where Generation Y stands on the big issues.

@@ -1,0 +1,86 @@
+It looks like you've previously blocked notifications. Please update your
+Be the first to know about new stories from PowerPost. Sign up to follow, and
+we’ll e-mail you free updates as they’re published.
+You’ll receive free e-mail news updates each time a new story is published.
+The CIA may have hacked iPhones and Macs before they even got to customers, but
+Be the first to know about new stories from PowerPost. Sign up to follow, and
+we’ll e-mail you free updates as they’re published.
+You’ll receive free e-mail news updates each time a new story is published.
+By Hayley Tsukayama By Hayley Tsukayama  March 23  Follow @htsuka
+This post has been updated with statements from Apple and the CIA.
+WikiLeaks claimed Thursday that the CIA had found a way to intercept and hack
+into Apple iPhones just a year after the company's smartphone hit the market.
+The group also claimed that the CIA was able to infect Mac computers. But it's
+very unlikely that your iPhone or Mac was affected, experts say.
+Apple said that its preliminary assessment of the WikiLeaks documents show that
+the "alleged iPhone vulnerability affected iPhone 3G only and was fixed in 2009
+when iPhone 3GS was released." The company also said that the alleged Mac
+exploits described by WikiLeaks were fixed in all Macs launched after 2013.
+The CIA referred The Post to an earlier statement that declined to comment on
+the accuracy of the WikiLeaks information, but denounced disclosures "designed
+to damage the Intelligence Community’s ability to protect America against
+The documents offer a rare glimpse into the world of modern espionage, said
+Jeff Pollard, a security and risk analyst at Forrester Research. For Apple and
+other companies, he said, it also shows that it's very difficult to secure
+their products all the way from their factories to their customers.
+"The most concerning part of this is that it highlights that it doesn't matter
+how secure you keep a device," he said. "You have to understand that there
+could also be something that gets delivered to you in a device that you
+According to WikiLeaks, the documents allege that, as far back as 2008, the CIA
+was able to install software on iPhones before they were shipped to their
+intended owners. There's no evidence of tampering done at Apple's factories,
+experts said. The documents also purportedly show that the CIA found a way to
+install software on Macs that could not be removed, even if a user were to
+reinstall their operating system. There is a specific mention of the CIA trying
+to intercept a laptop that it knew was being given to someone as a gift to
+plant its malware. Both methods require physical access to the devices.
+There is no evidence in the documents that the CIA used these methods on a
+[WikiLeaks: The CIA is using popular TVs, smartphones and cars to spy on their
+Experts who examined the documents said there is little chance that the average
+consumer — particularly in the United States, given the CIA's foreign focus
+— would have been affected by these attacks, said Will Strafach, a noted iPhone
+security expert and co-founder of Verify.ly, a mobile app intelligence service.
+It's also unlikely that anyone could look at these documents now and design a
+"It’s too old. And even if it wasn’t too old, it requires you to get to a
+device that is en route to somebody specific," he said.
+The release of these documents follow a similar disclosure from WikiLeaks
+earlier this month, which allegedly outlined a suite of hacking tools used by
+the CIA that target smartphones, cars and televisions. The group has said that
+it will work with technology companies to help patch flaws exploited by the
+CIA's hacking tools, but offered few details on how such a partnership would
+Apple said that it has not "negotiated with WikiLeaks for any information" and
+has instructed the organization to submit information though its normal
+processes. "Thus far, we have not received any information from them that isn’t
+in the public domain," the company's statement said. "We are tireless defenders
+of our users' security and privacy, but we do not condone theft or coordinate
+Hayley Tsukayama covers consumer technology for The Washington Post.
+SuperFan badge holders consistently post smart, timely comments about
+Culture Connoisseurs consistently offer thought-provoking, timely comments on
+Fact Checkers contribute questions, information and facts to The Fact Checker.
+Washingtologists consistently post thought-provoking, timely comments on
+events, communities, and trends in the Washington area.
+This commenter is a Washington Post editor, reporter or producer.
+Post Forum members consistently offer thought-provoking, timely comments on
+Weather Watchers consistently offer thought-provoking, timely comments on
+World Watchers consistently offer thought-provoking, timely comments on
+This commenter is a Washington Post contributor. Post contributors aren’t
+staff, but may write articles or columns. In some cases, contributors are
+Washington Post reporters or editors recommend this comment or reader post.
+Comments our editors find particularly useful or relevant are displayed in Top
+Comments, as are comments by users with these badges: . Replies to those posts
+To pause and restart automatic updates, click "Live" or "Paused". If paused,
+you'll be notified of the number of additional comments that have come in.
+Comments our editors find particularly useful or relevant are displayed in Top
+Comments, as are comments by users with these badges: . Replies to those posts
+Among the criteria for featured comments: likes by users, replies by users,
+previous history of valuable commenting, and selection by moderators.
+    Why people will keep flying United even if they don’t want to
+    Analysis The new White House drug czar has quite an idea for where to put
+    Analysis Want to boycott United? Good luck with that.
+    Analysis Doctors once treated alcoholism with heroin. Now, they want to
+    Why some families who save constantly are still struggling to make ends
+Content from Allstate This content is paid for by an advertiser and published
+by WP BrandStudio. The Washington Post newsroom was not involved in the
+creation of this content. Learn more about WP BrandStudio.
+We went to the source. Here’s what matters to millennials.
+A state-by-state look at where Generation Y stands on the big issues.

@@ -1,0 +1,58 @@
+  • [                    ] [SUBMIT] What term do you want to search?
+  • switch to the US edition switch to the AU edition switch to the INT edition
+From Paint 3D to Start menu folders, greater privacy control and a dedicated
+[ ] Paint 3D headlines a group of tools and enhancements aimed at making
+From Paint 3D to Start menu folders, greater privacy control and a dedicated
+Thursday 6 April 2017 12.34 BST Last modified on Thursday 6 April 2017 
+The next big update for Microsoft’s ubiquitous Windows 10 operating system is
+here. The so-called Creators Update adds a host of new features from MS Paint
+The Creators Update will begin being pushed out to users via Windows Update on
+11 April, but for those eager to get their hands on it early, it’s available
+via a manual update or a fresh install of Windows using the Media Creation
+Tool. It sounds ominous, but using its ability to upgrade the PC it’s running
+on is very straightforward. Here are the top seven features worth hitting
+Forza Horizon 3 Lamborghini on Beach Photograph: Playground Games
+Other operating systems might pretend to be PC gaming capable, but for the most
+part it’s all about Windows. Now Windows 10 has a dedicated game mode which
+diverts resources away from unnecessary background tasks to the game at hand.
+Whether it’ll make a huge difference to game performance isn’t yet certain, but
+in cases where your PC’s hardware can only just manage the latest and greatest
+Paint 3D makes basic 2D image editing easier, but adds a whole new dimension.
+Microsoft’s perennial Paint program has finally been dragged kicking and
+screaming into the modern era. Now called Paint 3D, at it’s heart it’s still a
+lightweight image editor for cropping, drawing and adding simple text. But it
+can now author 3D images as well as simple 2D ones, taking flat images and
+putting them onto 3D shapes, importing and creating shapes in 3D and various
+other forward-looking tools. It’s quite fun to play with, whether it’ll be a
+Night light aims to reduce the amount of blue light emitted by the screen after
+Following the lead of Apple, Google and many third-party developers over the
+years, Windows 10 now has a Night Light feature, which reduces the amount of
+blue light emitted by the screen either on demand or in time with sunset. The
+idea is that wavelengths of light at the blue end of the spectrum prevent
+people from getting to sleep at night, and so by tuning the colour of the
+screen towards warmer shades less blue light is emitted.
+Dynamic Lock uses the Bluetooth signal from a smartphone to tell whether a
+person is actively sitting in front of the PC and if not, to lock the screen.
+Once logged in, the PC functions as normal while you’re sitting at it and locks
+when you go away, if you have your phone with you at all times.
+Edge will now save groups of tabs for later. Photograph: Microsoft
+The Edge browser has gained a few new tricks. You can now collect tabs for
+later, removing their load from your PC while you’re not using them but not
+losing the page. It blocks some Flash elements by default, requiring a click to
+run them, and Edge now has built-in support for Microsoft Wallet for buying
+Start menu tiles can now be put in folders. Photograph: Microsoft
+The Start menu has gone full circle. First it was all about folders in a
+massive list. Then it was a full page of icons, then a smaller pop-out menu of
+icons, but now users can put those icons in folders. They look a little
+different to the Start menu folders of old (that still exist in the full list
+of programs) resembling folders on an Android or iOS device, but do the same
+Windows 10 Creators Update privacy toggles give users more control over the
+With the Creators Update, Microsoft has reduced the amount of data it collects
+from user machines and refined what is needed to support various functions. The
+majority of data collected is done so to help fix problems, but users can now
+tailor some of the things that are collected on installing or updating Windows
+to the new version. Non-enterprise users will still have difficulty preventing
+Windows from sending any data back to Microsoft, but Home and Pro users now
+have more control, which is a step in the right direction.
+  • Windows 10 users complain about intrusive new OneDrive adverts
+© 2017 Guardian News and Media Limited or its affiliated companies.

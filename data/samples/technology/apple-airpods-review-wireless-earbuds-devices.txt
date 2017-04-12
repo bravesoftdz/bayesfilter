@@ -1,0 +1,155 @@
+  • [                    ] [SUBMIT] What term do you want to search?
+  • switch to the US edition switch to the AU edition switch to the INT edition
+AirPods review: the best non-isolating wireless earbuds, but only for Apple
+Apple has cut the cable from its EarPods, improving sound, fit and connectivity
+– but the AirPods lack noise-cancelling and easy controls
+[ ] Apple’s AirPods are a great choice for truly wireless earbuds if you own an
+Apple device and do not like isolating earphones. Photograph: Stephen Lam/Getty
+AirPods review: the best non-isolating wireless earbuds, but only for Apple
+Apple has cut the cable from its EarPods, improving sound, fit and connectivity
+– but the AirPods lack noise-cancelling and easy controls
+Wednesday 25 January 2017 08.25 GMT Last modified on Tuesday 21 February 2017 
+When Apple removed the traditional headphone socket from its latest iPhone,
+part of the rationale was that wireless headphones were now coming into the
+mainstream. And Apple had its own player in this field, its AirPods.
+But then there was an unexpected delay in their launch, raising fears over
+technical issues. Now they’re finally here, are they worth the £159 price tag?
+The AirPods are not the first wireless earbuds on the market, but until the
+start of 2016 they all had a cable joining the right and left earbud.
+Now there’s a new breed of entirely wireless earbuds, but most of them don’t
+really work. In my testing, only Bragi’s the Headphone and Jabra’s Elite Sport
+wireless earbuds can keep a connection between themselves.
+Apple reckons it’s got that particular problem licked with a new processing
+chip called the W1, which regulates the connection between the earbuds and to
+The AirPods look like EarPods with the cable cut and the slightly thicker
+If you’ve ever seen a set of Apple’s iPhone earphones, the EarPods, you know
+what the AirPods look and feel like. If you took the EarPods, cut the cables
+off, made the stalks a little thicker and ever so slightly changed that odd bud
+It’s a conscious design decision that you’re either going to like or hate. They
+perch in your ear, unlike isolating so-called canal buds that wedge themselves
+in your ear canal, with the stalks going down past your earlobes.
+The fit is closer to an open, traditional earphone from the early 2000s than
+the modern canal-fitting earphone. As such, they don’t isolate you from the
+world around you at all. You can hear everything, even if you push them hard
+As a consequence you have to have the music really quite loud to be able to
+hear it if you’re trying to block out the rest of your train, plane or bus
+commute. At work in an office, they offer almost no refuge from the chatter of
+But, compared to the EarPods, they leak a lot less sound. So while you can hear
+everything, you won’t be subjecting those around you to an impromptu tinny
+disco. They still bleed a little at high volume, but Apple’s done the rest of
+the world a favour by stopping one of the most annoying things of a modern
+Face on the AirPods are difficult to see, hidden by your face, but side on
+they’re quite pronounced. Photograph: Jonathan Haynes for the Guardian
+The fit is relatively comfortable, but I found they hurt my ears a little after
+about an hour wearing them. The AirPods are very light and do not drop out of
+my ears, no matter how hard I shake my head, but neither would a set of EarPods
+Running while wearing them in the cold wasn’t a problem, but as I became sweaty
+they started to slip back from my ear canal and became much quieter. They
+didn’t come out but how secure they are in your ear relies heavily on the shape
+For some people I asked to try out the AirPods, they dropped out of their ears
+almost immediately after they started getting up from a seat or turning their
+If the EarPods fit and stay in your ear, the AirPods will likely fit as well or
+slightly better without the drag of the cable. If they don’t you won’t have any
+It’s also worth noting that the stalks of the AirPods bash into medium-sized
+shape earrings, meaning that you might have change your style to accommodate
+Control centre integration means you can switch between the AirPods and other
+outputs at will. Photograph: Samuel Gibbs for the Guardian
+The AirPods sound surprisingly good given the lack of a proper seal in the ear,
+with relatively full bass and much less of the punishing treble that’s the
+Like most other wireless earbuds, they’re nowhere near as big a step up in
+quality as a set of wired earbuds costing similar. The AirPods definitely sound
+better than the EarPods, with more bass than Bragi’s the Headphone, but less
+separation and distinction between instruments and sounds. They sound similar
+to a good £40 – 60 pair wired earbuds. I was pleasantly surprised.
+Call quality was also pretty good. Although I had to crank up the volume to
+hear the other end, they could hear me loud and clear even when walking along a
+Double tap to activate Siri or take them out to pause or play the music.
+Apple’s gone for simplicity with the AirPods, which means no buttons. In fact,
+there’s only one thing you can do with them once they’re in your lugholes:
+double tap them to either fire up Siri or pause or play music, depending on
+what you’ve got as default in settings (when connected to a non-Apple device
+Connected to an Apple device, when you take one or both out of your ears the
+music pauses and resumes when you put it back in. Volume adjustment, track
+skipping or anything else has to either be done via Siri, which is incredibly
+tedious and requires a good internet connection to work, or by pulling out your
+It feels a bit like Apple built the AirPods for people who own Apple Watches,
+because volume and play controls can be done via the wrist. Most other wireless
+earbuds have buttons or gestures for play controls and volume at the very
+least, and not having even tap gestures to skip tracks and change the volume
+Apple AirPods being paired with an iPhone. Photograph: Samuel Gibbs for the
+The AirPods make and maintain a strong connection to other Apple products. To
+pair them all you need to do is open the case that they come in close to an
+iPhone for the first time and confirm that you want to connect them.
+That pairing is then shared via iCloud to your other Apple devices, should you
+use iCloud and have an iPad or a Mac. Switching between devices is as simple as
+prompting a connection from the tablet, smartphone or computer you want to use.
+The AirPods appear within MacOS’s menu bar, for instance, or the devices menu
+in Command Centre. Select them, wait for the small bong and you’re ready to go.
+Connected to an Apple device, the connection is absolutely bulletproof,
+reaching at least 10m and resisting interference as if it’s not there. The
+AirPods also don’t suffer from the small lag most Bluetooth headphones do when
+connected to Apple devices, which is only noticeable when you’re watching video
+and the lipsync is slightly out. They can also be used one at a time for mono
+On iOS, most other Bluetooth headphones require a trip into the settings app to
+pair, and God forbid you have to try and connect them to a Mac – the Bluetooth
+audio handling has been terrible for years and simply not worth even attempting
+Press the button on the back of the case to initiate pairing to a non-Apple
+Things are different if you want to connect the AirPods to a non-Apple device.
+A button on the case puts the earbuds into pairing mode when held for a second
+or so, so you can find them and pair them manually.
+Many other good Bluetooth headphones have one-touch Bluetooth pairing – just
+tap your Android device on a particular spot and you’re done. But that
+particularly Bluetooth convenience has yet to make it to completely wireless
+The AirPods’ connection to an Android device such as a Samsung Galaxy S7 Edge
+or Google Pixel XL is also not as stable as it is to an iPhone, occasionally
+suffering from skips rather than the cutouts that plague earbuds such as the
+They also do not pause the music when you take them out of your ears, and you
+cannot activate Google Assistant or Cortana using them – a double tap simply
+The little green LED shows you the case charge level. Photograph: Samuel Gibbs
+Wireless earbuds are easier to lose so almost all come with some kind of case
+that charges them, either when plugged in or with an internal battery. Apple’s
+is arguably the best designed of the lot. It’s small, the earbuds slot in, held
+in place by magnets, and it provides up to 24 hours of running time, or about
+It charges via Lightning, and snaps shut with a satisfying click. The only
+thing missing is a battery indicator on the outside of the case, although there
+is a little LED just under the lid that flashes red when its out of juice.
+Apple reckons you get five hours of listening between trips in the case and up
+to 24 hours of battery life between the buds and the case, which is about right
+in my testing. I used them for a week between charges, listening to about five
+For comparison, most others only get under 10 hours of battery life between
+charges, so what Apple’s managed here is quite remarkable.
+  • Siri adjusts the volume one click at a time, which gets old really quickly
+  • Like most Bluetooth headphones and earbuds, the AirPods emit a little chime
+  • The stalks hit earrings and the tops of coats or macs done up around the
+    neck causing a loud tap or brushing noise in your ear
+  • Their while colour and stick-out stalks attract attention in your ear, much
+  • There is a feature that lets you see on a map where you last had your
+    AirPods, if you happen to lose them, within the Find My iPhone app on iOS
+The AirPods cost £159. For comparison, Bragi’s the Headphone cost £125 and
+In some ways I love the AirPods. Apple’s W1 chip really does what it claims:
+solves Bluetooth connectivity issues that have plagued all but a few truly
+wireless earbuds, and with excellent battery life too. The case is also
+brilliant and I don’t even mind the stalk-like design.
+But it is Apple’s EarPod like bud design that I cannot get on with. They sound
+OK, but the lack of any sort of isolation makes listening to music or podcasts
+The problem is accentuated by the lack of instant volume controls. When you hit
+the busy street you need to crank them up to not miss anything, but when you
+emerge into the relative serenity of the office they suddenly sound deafening.
+I would pay twice the asking price for a set of canal-bud AirPods with proper
+For those who cannot get on with canal buds or really love EarPods, the AirPods
+are the best wireless earbuds going, but their advantages are quickly lost when
+For everyone else, there are already viable and similarly priced isolating
+alternatives available, and many more are expected this year. The new Bluetooth
+5.0 specification released at the end of 2016 should also provide many of the
+advantages of Apple’s W1 chip, but for non-Apple devices, although it is
+unknown how long a wait there will be for both smartphones and earbuds using
+    Pros: rock-solid connection, brilliant case, long battery life, seamless
+    connection between multiple Apple devices, no lag or lipsync issues, good
+    Cons: no isolation, less stable when connected to non-Apple devices, lack
+    of controls, reliance on Siri requiring an internet connection
+Once paired with an iPhone, the AirPods are automatically available to any
+other Apple device logged into iCloud, and are one of the first Bluetooth
+headphones that aren’t infuriating to use with a Mac. Photograph: Samuel Gibbs
+  • I tried every set of wireless earbuds until I found some that worked, so
+  • Five of the best Bluetooth headphones to break free of cables
+© 2017 Guardian News and Media Limited or its affiliated companies.

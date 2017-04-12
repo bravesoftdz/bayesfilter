@@ -1,0 +1,101 @@
+  • [                    ] [SUBMIT] What term do you want to search?
+  • switch to the US edition switch to the AU edition switch to the INT edition
+David is fed up with spam, phishing and viruses, and thinks email is no longer
+‘I don’t think anything is going to replace email in the near future, and
+[ ] ‘I don’t think anything is going to replace email in the near future, and
+probably not in the far future.’ Photograph: Alamy
+David is fed up with spam, phishing and viruses, and thinks email is no longer
+Thursday 16 February 2017 10.14 GMT Last modified on Tuesday 21 February 2017 
+    Like countless others, I use email daily, but it’s a love/hate relationship
+    because of the dangers of viruses, trojans, phishing, spam etc. I think it
+    is unreasonable to expect the average person to be able to tell a valid
+    The latest problem is the incorrect identification of emails as spam. I
+    check my spam folder two or three times a week for emails that my ISP (BT
+    Yahoo) has decided are spam. These could be emails between friends with
+    whom I have been exchanging emails for years. It has caused some real
+    problems, and I am now adopting the bizarre solution of texting the person
+    Email is no longer fit for purpose. Can you suggest something to replace
+I don’t think anything is going to replace email in the near future, and
+probably not in the far future. It’s virtually impossible to use internet
+technologies without an email address, because they are used as identifiers by
+most websites, cloud services, and even operating systems such as Google
+Android and Microsoft Windows. Many companies, schools and colleges also give
+Email’s unbeatable advantage is that either everyone has an email address, or
+can easily get one. There are hundreds of different ways to communicate,
+including Facebook Messenger, Skype, WhatsApp, Snapchat, Slack and so on, but
+not even Facebook (1.86 billion monthly active users) has the same reach. Email
+has an estimated 2.7 billion users with 4.6bn accounts (PDF).
+Email’s second huge advantage is that, unlike Facebook, nobody owns it. Anyone
+can set up an email service and use open standards to interoperate with every
+other email service, without paying anyone a fee. Anyone can write an email
+client program, or mail-processing utility, without restriction. There are no
+gatekeepers. The downside, of course, is that most email is spam.
+Email’s third advantage is that it can be used to distribute any type of file,
+although some email services may impose file size or other limits. (Gmail, for
+example, now refuses to send .exe files.) You can send documents and photos to
+your friends, publishers can send you “rich media” newsletters that look like
+web pages, airlines can send you PDF files of boarding cards, and so on. The
+downside is that criminals can send you the same things with added malware.
+Email’s fourth advantage is that it’s a store and forward system. People don’t
+have to be online at the same time to exchange emails, and the emails can be
+kept for future reference. They can also be forwarded to other people, or
+Finally, if you could create an alternative open standard system that could do
+all the things that email can do, it would probably have the same problems.
+I check my Gmail spam folder three or four times a day to rescue wrongly
+identified emails, and it often contains more legitimate emails than spam. I
+may be an unusual case, because I get a lot of promotional emails, press
+releases, newsletters and other things that look “spammy”. However, Google has
+No email filtering system is perfect, but it can be either generous or strict.
+A generous system will let a few borderline spam emails through to your inbox,
+while a strict system will put a few legitimate emails in the junk folder. Spam
+filters used to be somewhat generous, so that users didn’t miss some important
+emails. Gmail took a stricter line. It happily put emails that should obviously
+be legitimate – website requests for email verification, vouchers and paid-for
+tickets, regular newsletters, messages from Google itself etc – into the
+spambox rather than let a few spam emails through.
+Swapping false positives for false negatives gave users the impression that
+Gmail was better at spam filtering, even if their error rates were comparable.
+This prompted other email providers to toughen their filters (Microsoft’s
+Outlook.com now does the same thing, but even worse). This didn’t make their
+filtering better. It just meant you had to look for “false negatives” instead
+Sorry, but thou shalt check thy spam folder or suffer the consequences.
+There are two simple rules for handling email attachments. First, don’t open
+any attachment that doesn’t come from a trusted source, or that you were not
+expecting. Second, save the attachment and run a virus check before opening it.
+Email services try to filter out viruses, and some anti-virus programs can
+check email for malware. If in doubt, save the file and check it. In Windows,
+you can right-click the file and select “Scan with Windows Defender ... ” or
+whatever from the drop-down menu. If in even greater doubt, upload the
+attachment to VirusTotal, which will check it with more than 50 anti-virus
+VirusTotal can also check suspicious web addresses. If you are not sure about a
+link in an email, you can test it. Right-click it, choose “Copy link address”
+In general, however, try to avoid email attachments. It’s better to upload a
+file to Microsoft OneDrive, Dropbox, Google’s Gdrive or a similar service and
+then email someone the link. This is particularly useful to people who are
+running out of space in Gmail, because Google has not kept its word about
+people never having to delete emails, and because Gmail has no way to delete an
+Nothing can replace email, but you can change the way you use it and make
+Email can be annoying or even unbearable when it’s used as a messaging system.
+You can mitigate that problem by limiting the times you use it. For example, I
+would only check email three times a day: before starting work, just before
+lunch, and before going home. Anybody who expected a quick response soon
+learned they weren’t going to get one. Someone who isn’t using email for work
+shouldn’t need to check it more than once a day. (Turn off email notifications
+When you don’t need to keep email records, you can switch to more immediate and
+more casual messaging systems. These include SMS texts, Facebook Messenger,
+WhatsApp, Signal and similar services. Slack and Microsoft Teams are
+alternatives for business users. The drawback is that not everyone you want to
+Facebook Messenger will often be the simplest option because your friends are
+already using it. WhatsApp and Signal are the most secure options: both use
+Open Whisper encryption so that a message can only be read on the two end
+devices, where it’s sent and where it’s received. (Emails travel in plain text
+Facebook Messenger has become popular partly because more people are using
+smartphones to communicate while they are away from their desks. However, PC
+users can also send messages from Facebook’s website, or from a number of
+alternative applications. Facebook has its own web app at Messenger.com, and
+Messenger for Desktop provides an unofficial wrapper that converts it into an
+Some messaging clients support several different messaging services, including
+Facebook Messenger. Examples include Trillian and Franz.
+If you can reduce your dependency on email, you should find it less stressful.
+Have you got another question for Jack? Email it to Ask.Jack@theguardian.com
+© 2017 Guardian News and Media Limited or its affiliated companies.

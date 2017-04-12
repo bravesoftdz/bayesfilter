@@ -1,0 +1,96 @@
+  • [                    ] [SUBMIT] What term do you want to search?
+  • switch to the US edition switch to the AU edition switch to the INT edition
+What sort of computer do I need to set up a public display?
+John helps run a small museum, and they need a screen to show what’s on display
+Single-use tablets, or devices running kiosk software, are useful in a range of
+[ ] Single-use tablets, or devices running kiosk software, are useful in a
+range of premises from museums to supermarkets. Photograph: ddp USA/Rex/
+What sort of computer do I need to set up a public display?
+John helps run a small museum, and they need a screen to show what’s on display
+Thursday 2 February 2017 09.59 GMT Last modified on Tuesday 21 February 2017 
+    I help run a small museum in a historic building, and it’s hard for anyone
+    with mobility issues to access an upper floor. To comply with accreditation
+    requirements, we want some way to show what we have on display upstairs,
+    On a recent visiting to a National Trust property, I saw a tablet in use
+    for this purpose. If we do this, which device would suit our needs? Our
+    budget is £200 to £250. If we could use the device for other tasks, such as
+    word processing, that would be helpful. Is a Windows PC out of the question
+    on this budget? How much more would we need to spend? John
+You can use almost any type of computer for this purpose, from a small tablet
+to a large all-in-one PC. You can also use almost any operating system,
+including Android, Apple’s iOS, Windows and Linux. The best choice will depend
+on your programming abilities and factors such as the amount of physical space
+available, and whether the device is supervised at all times.
+There is, in fact, a huge industry supplying products for this kind of use, and
+their names or blurbs often include “kiosk” or “digital signage”. Kiosk systems
+include cash machines, ticket sales machines, restaurant menus, surgery and
+hotel reception systems, library computers, and public information points
+(maps, directions etc). Many museums and art galleries now have large
+touch-screen displays that show exhibits and floor plans.
+If you put a computer in a public area, people will be tempted to use it for
+their own needs. They might look up train times or phone numbers, but some
+might find it amusing to get up to no good. Public access devices are therefore
+put into a “kiosk mode” that stops people from doing bad things.
+This usually means that kiosks only run one specific program. It can be a web
+browser, but often it’s custom-written software. In your case, it could be a
+If you or your friends see any good kiosk systems, such as the one mentioned in
+the National Trust property, perhaps contact the management to ask for details.
+Ideally, you want to know the hardware specification, the operating system, and
+which kiosk software they used, if any. The major institutions probably have
+many different systems supplied by outside specialist companies, so smaller
+Also, almost every group has some informal way of communicating with people who
+share their interests. It might be a small magazine, a mailing list, a website,
+bulletin board or Facebook group, a conference or whatever. Does your museum?
+There are probably people out there who had the same problem and did a lot of
+In your case, the simplest and cheapest option is a digital photo frame that
+endlessly cycles through a set of photos. Many photo frames can also play
+videos. Some have motion sensors so they only turn on if someone is nearby. The
+Nix Advance X08E (£69.99) is one example, but there are dozens to choose from
+The digital photo frame’s main drawback is also its main benefit: it doesn’t do
+anything else. You don’t need kiosk software to lock it down.
+After that, there’s a trade-off. Android tablets and Apple iPads can do more
+than photo frames but not as much as PCs, so they may be less vulnerable to
+If your main requirement was to do word processing, email, spreadsheets etc,
+then your best option would be to buy a cheap desktop PC and run a cable to a
+second screen. However, with a Windows 10 2-in-1, you could use the
+touch-screen tablet part to show photos and videos, then attach the keyboard
+for work. You could even do that within your budget. Shop around for an HP
+Pavilion x2 detachable laptop, a Lenovo Miix 3 or 310, Toshiba Satellite Click
+10, Acer Switch or similar model at a discount price.
+There are cheaper models – under £150 on Amazon – from smaller brands such as
+Linx, iRulu and Vortex. The Linx 1010B must be worth a look at £146.95.
+Two warnings. First, check to see if you are getting a current model. It seems
+to me that detachables have lost the market to convertibles with 360-degree
+hinged screens. Second, all the cheapies have 32GB of storage. If you want lots
+of photos and a couple of videos, you may have to put them on an SD card, or
+copy them off when you need space for Windows 10 updates. I wrote about the
+There are also lots of 10-inch Android tablets that are more expensive than
+digital photo-frames but cheaper than Windows 10 convertibles. Some even come
+with keyboards for simple word processing, email and web browsing. This time
+you will need at least 16GB of storage and preferably an SD card slot as well.
+Unfortunately, I don’t know much about cheap Android tablets. I only see the
+bigger brands such as Samsung and Asus, plus Amazon Fire variants, and I almost
+never use them. Nowadays, I have a 6in Android phone and a 10in Windows 10
+2-in-1, so Android tablets are of no practical use.
+Not surprisingly, the whole tablet market is in decline. Apple iPad sales fell
+by 22% in the latest quarter, and are half what they were at their peak. Ask
+around and someone may give your museum a tablet they no longer need.
+Windows has long been the most popular operating system for kiosk and signage
+applications. If you have Windows Pro or Window 10 Mobile, you could use its
+built-in Assigned Access feature to restrict Windows to running a single
+program. Unfortunately, it only works with Universal applications from the
+Windows Store. (The more flexible AppLocker is only included in the Enterprise
+There are, of course, plenty of third-party kiosk programs, but most of them
+are aimed at commercial applications. It can be hard to find one that does what
+you want, and even harder to find out how much it costs. However, most
+companies offer free trial versions, so you can explore the market without
+You could look at the FrontFace Lockdown Tool (free) and Antamedia Kiosk
+Software for Windows (from $55/£43), and Video Kiosk for Android ($14.99).
+Netkiosk runs on both Windows and Android. Yooba Kiosk runs on both Windows and
+iOS. Perhaps readers can suggest some good alternatives.
+Alternatively, you could use the free and open source Porteus Kiosk to provide
+access to photos and videos on your own website. Porteus is an
+ultra-lightweight version of Linux that boots from a CD or thumb-drive before
+opening Firefox or Chrome at your designated home page. The original operating
+Have you got another question for Jack? Email it to Ask.Jack@theguardian.com
+© 2017 Guardian News and Media Limited or its affiliated companies.

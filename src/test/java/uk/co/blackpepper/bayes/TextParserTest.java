@@ -1,10 +1,12 @@
 package uk.co.blackpepper.bayes;
 
+import org.junit.Ignore;
 import org.junit.Test;
 
 import java.io.*;
+import java.nio.file.Files;
+import java.nio.file.StandardCopyOption;
 import java.util.*;
-import java.util.stream.Collectors;
 
 import static org.junit.Assert.*;
 
@@ -243,16 +245,20 @@ public class TextParserTest {
         TextParser textParser = new TextParser();
 
         File sportDir = new File("/Users/davidg/Desktop/bayes/samples/sport");
-        int sportCount = sportDir.listFiles().length;
-        String sportWords = getAllText(sportDir);
+        SampleSource sportSample = new DirectorySampleSource(sportDir);
 
-        Map<String, Integer> sportConcordance = textParser.concordance(sportWords);
+        Concordance sportConcordance = sportSample.concordance();
+        int sportCount = sportSample.sampleCount();
 
         File nonSportDir = new File("/Users/davidg/Desktop/bayes/samples/nonsport");
-        int nonSportCount = nonSportDir.listFiles().length;
-        String nonSportWords = getAllText(nonSportDir);
+        SampleSource nonSportSample = new DirectorySampleSource(nonSportDir);
 
-        Map<String, Integer> nonSportConcordance = textParser.concordance(nonSportWords);
+        Concordance nonSportConcordance = nonSportSample.concordance();
+        int nonSportCount = nonSportSample.sampleCount();
+
+        HashMap<String, SampleSource> sampleSourceHashMap = new HashMap<>();
+        sampleSourceHashMap.put("sport", sportSample);
+        sampleSourceHashMap.put("nonsport", nonSportSample);
 
         String text = "LUCCA, Italy — Secretary of State Rex W. Tillerson said on Tuesday that the reign of President Bashar al-Assad of Syria was “coming to an end” and warned that Russia was at risk of becoming irrelevant in the Middle East by continuing to support him.\n" +
                 "\n" +
@@ -320,27 +326,23 @@ public class TextParserTest {
                 "\n" +
                 "“And now Assad has made the Russians look not so good,” Mr. Tillerson said.";
 
-        Bayes bayes = new Bayes();
-        double probability = bayes.getProbability(text, sportCount, sportConcordance, nonSportCount, nonSportConcordance);
+        Categoriser categoriser = new Categoriser(sampleSourceHashMap);
+        double probability = categoriser.getProbabilityInCategory(text, "sport");
         assertTrue(probability < 0.1);
     }
 
 
     @Test
     public void aSportStoryLooksLikeSport() throws IOException {
-        TextParser textParser = new TextParser();
-
         File sportDir = new File("/Users/davidg/Desktop/bayes/samples/sport");
-        int sportCount = sportDir.listFiles().length;
-        String sportWords = getAllText(sportDir);
-
-        Map<String, Integer> sportConcordance = textParser.concordance(sportWords);
+        SampleSource sportSample = new DirectorySampleSource(sportDir);
 
         File nonSportDir = new File("/Users/davidg/Desktop/bayes/samples/nonsport");
-        int nonSportCount = nonSportDir.listFiles().length;
-        String nonSportWords = getAllText(nonSportDir);
+        SampleSource nonSportSample = new DirectorySampleSource(nonSportDir);
 
-        Map<String, Integer> nonSportConcordance = textParser.concordance(nonSportWords);
+        HashMap<String, SampleSource> sourceHashMap = new HashMap<>();
+        sourceHashMap.put("sport", sportSample);
+        sourceHashMap.put("nonsport", nonSportSample);
 
         String text = "As Michael Pineda cut through the Tampa Bay Rays’ lineup Monday afternoon, stacking one out on top of another on top of another, an uncommon energy percolated throughout Yankee Stadium.\n" +
                 "\n" +
@@ -412,8 +414,8 @@ public class TextParserTest {
                 "\n" +
                 "“I’m going to remember we were pretty close,” Romine said when asked what he would remember about the day. “I’m not going to be in a position too many times to catch on opening day – it’s not the gig of a backup to get those opportunities, so I was taking it in. It was fun.”";
 
-        Bayes bayes = new Bayes();
-        double probability = bayes.getProbability(text, sportCount, sportConcordance, nonSportCount, nonSportConcordance);
+        Categoriser categoriser = new Categoriser(sourceHashMap);
+        double probability = categoriser.getProbabilityInCategory(text, "sport");
         assertTrue(probability > 0.9);
     }
 
@@ -498,65 +500,60 @@ public class TextParserTest {
         assertEquals("android", result);
     }
 
-    private String getLikelyCategory(String text) throws IOException {
-        TextParser textParser = new TextParser();
+    @Test
+    @Ignore
+    public void fred() throws IOException {
 
-        File sportDir = new File("/Users/davidg/Desktop/bayes/samples/sport");
-        int sportCount = sportDir.listFiles().length;
-        String sportWords = getAllText(sportDir);
-
-        File androidDir = new File("/Users/davidg/Desktop/bayes/samples/android");
-        int androidCount = androidDir.listFiles().length;
-        String androidWords = getAllText(androidDir);
-
-        File scienceDir = new File("/Users/davidg/Desktop/bayes/samples/science");
-        int scienceCount = scienceDir.listFiles().length;
-        String scienceWords = getAllText(scienceDir);
-
-        int nonSportCount = androidCount + scienceCount;
-        String nonSportWords = androidWords + " " + scienceWords;
-
-        int nonAndroidCount = sportCount + scienceCount;
-        String nonAndroidWords = sportWords + " " + scienceWords;
-
-        int nonScienceCount = sportCount + androidCount;
-        String nonScienceWords = sportWords + " " + androidWords;
-
-        Bayes bayes = new Bayes();
-        double scienceProbability = bayes.getProbability(text,
-                scienceCount, textParser.concordance(scienceWords),
-                nonScienceCount, textParser.concordance(nonScienceWords));
-
-        double androidProbability = bayes.getProbability(text,
-                androidCount, textParser.concordance(androidWords),
-                nonAndroidCount, textParser.concordance(nonAndroidWords));
-
-        double sportProbability = bayes.getProbability(text,
-                sportCount, textParser.concordance(sportWords),
-                nonSportCount, textParser.concordance(nonSportWords));
-
-        System.err.println("scienceProbability = " + scienceProbability);
-        System.err.println("androidProbability = " + androidProbability);
-        System.err.println("sportProbability = " + sportProbability);
-
-        String result = "UNKNOWN";
-
-        if ((scienceProbability > 0.7) && (scienceProbability > androidProbability) && (scienceProbability > sportProbability)) {
-            result = "science";
-        } else if ((androidProbability > 0.7) && (androidProbability > scienceProbability) && (androidProbability > sportProbability)) {
-            result = "android";
-        } else if ((sportProbability > 0.7) && (sportProbability > scienceProbability) && (sportProbability > androidProbability)) {
-            result = "sport";
+        String dataDirName = "/Users/davidg/Desktop/bayes/data/";
+        String analysisDirName = dataDirName + "analysis/";
+        String outputDirName = dataDirName + "output/";
+        File analysisDir = new File(analysisDirName);
+        for (File file : analysisDir.listFiles()) {
+            String name = file.getName();
+            if (name.endsWith(".txt")) {
+                String analysisText = readFileAsString(file);
+                String category = categorizeAgainstData(analysisText);
+                System.err.println("Category = " + category);
+                File destDir = new File(outputDirName, category);
+                if (!destDir.isDirectory()) {
+                    Files.createDirectory(destDir.toPath());
+                }
+                Files.copy(file.toPath(), new File(destDir, name).toPath(), StandardCopyOption.REPLACE_EXISTING);
+            }
         }
-        return result;
     }
 
-    private String getAllText(File dir) throws IOException {
-        String words = "";
-        for (File file : dir.listFiles()) {
-            words += " " + readFileAsString(file);
-        }
-        return words;
+    private String categorizeAgainstData(String text) throws IOException {
+        File businessDir = new File("/Users/davidg/Desktop/bayes/data/samples/business");
+        SampleSource businessSample = new DirectorySampleSource(businessDir);
+
+        File technologyDir = new File("/Users/davidg/Desktop/bayes/data/samples/technology");
+        SampleSource technologySample = new DirectorySampleSource(technologyDir);
+
+        HashMap<String, SampleSource> sampleSourceHashMap = new HashMap<>();
+        sampleSourceHashMap.put("business", businessSample);
+        sampleSourceHashMap.put("technology", technologySample);
+
+        return (new Categoriser(sampleSourceHashMap)).getProbableCategoryFor(text);
+    }
+
+
+    private String getLikelyCategory(String text) throws IOException {
+        File sportDir = new File("/Users/davidg/Desktop/bayes/samples/sport");
+        SampleSource sportSample = new DirectorySampleSource(sportDir);
+
+        File androidDir = new File("/Users/davidg/Desktop/bayes/samples/android");
+        SampleSource androidSample = new DirectorySampleSource(androidDir);
+
+        File scienceDir = new File("/Users/davidg/Desktop/bayes/samples/science");
+        SampleSource scienceSample = new DirectorySampleSource(scienceDir);
+
+        HashMap<String, SampleSource> sampleSourceHashMap = new HashMap<>();
+        sampleSourceHashMap.put("sport", sportSample);
+        sampleSourceHashMap.put("android", androidSample);
+        sampleSourceHashMap.put("science", scienceSample);
+
+        return (new Categoriser(sampleSourceHashMap)).getProbableCategoryFor(text);
     }
 
     private static String readFileAsString(File filePath)
@@ -576,3 +573,4 @@ public class TextParserTest {
     }
 
 }
+

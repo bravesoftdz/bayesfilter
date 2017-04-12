@@ -1,0 +1,126 @@
+  • [                    ] [SUBMIT] What term do you want to search?
+  • switch to the US edition switch to the AU edition switch to the INT edition
+Google lawsuit could be a fatal setback for Uber's self-driving dreams
+Accusations that an ex-Google engineer stole trade secrets and took them to
+Uber may pose an existential threat in the race to get self-driving cars on the
+Uber has racked up victories against regulators, but now it’s going up against
+[ ] Uber has racked up victories against regulators, but now it’s going up
+against tech’s undisputed heavyweight champion: Google. Photograph: Bloomberg/
+Google lawsuit could be a fatal setback for Uber's self-driving dreams
+Accusations that an ex-Google engineer stole trade secrets and took them to
+Uber may pose an existential threat in the race to get self-driving cars on the
+Julia Carrie Wong and Olivia Solon in San Francisco
+Saturday 25 February 2017 17.15 GMT Last modified on Sunday 26 February 2017 
+When Anthony Levandowski loped on to the stage to accept the Hot New Startup
+award at an industry awards show this month, the trucker hat perched on his
+head served as a cringeworthy nod to the millions of drivers his self-driving
+Three weeks later, it is the pioneering engineer of self-driving car technology
+whose job could be in jeopardy, and the lawsuit he is named in could pose an
+existential threat to an increasingly vulnerable Uber.
+With deep pockets and a $70bn valuation, Uber has racked up a series of
+victories against regulators, taxi companies, and upstart competitors. But Uber
+will now go up against tech’s undisputed heavyweight champion – Google – while
+it is still on the ropes after a consumer boycott campaign and allegations of a
+Uber accused of 'calculated theft' of Google's self-driving car technology
+A report by the New York Times that Uber misled the public by blaming a human
+driver for running a red light during the company’s short-lived self-driving
+trial in San Francisco further damaged both Uber’s and Levandowski’s
+credibility. The car was in fact driving itself when it ran the red light,
+according to two sources and internal documents obtained by the Times.
+Levandowski, who runs Uber’s self-driving car program, is at the center of a
+blistering lawsuit against Uber that was filed Thursday by his former employer,
+Google’s self-driving car project, Waymo. He is accused of brazenly stealing
+critical intellectual property and trade secrets and using them to start his
+own company, Otto. Uber’s $680m acquisition of Otto in August 2016 gave it
+access to Waymo’s secrets, the suit claims, which the ride sharing company is
+now using to bypass Google’s seven years and many millions of dollars worth of
+Anthony Levandowski discusses Uber’s self-driving cars in San Francisco. An
+Anthony Levandowski discusses Uber’s self-driving cars in San Francisco. An
+Otto truck can be seen in the background. Photograph: Eric Risberg/AP
+Waymo claims to have significant evidence of the theft, including logs of
+downloads by Levandowski and other Otto recruits, an errant email from a vendor
+showing that Otto’s LiDAR system – the system that allows an autonomous vehicle
+to navigate – bears a “striking resemblance” to Waymo’s own design, and
+documents Otto filed with the Nevada state government. The suit also alleges
+that Levandowski met with “high-level executives” at Uber’s San Francisco
+headquarters while he still worked at Google – and one day before he formed the
+On Friday, Uber issued a blanket denial, saying in a statement: “We have
+reviewed Waymo’s claims and determined them to be a baseless attempt to slow
+down a competitor and we look forward to vigorously defending against them in
+court.” Levandowski did not respond to a request for comment.
+But if Google is able to prove its case, the cost to Uber could be significant.
+In addition to monetary damages, Waymo is seeking an injunction against Uber to
+Google could win a “head-start” injunction against Uber, preventing the company
+from working on the disputed LiDAR technology for as long as it took Google to
+develop, according to Robert Merges, an intellectual property expert at the
+University of California, Berkeley law school. For Uber to “sit on the
+sideline” for three to five years while its competitors race to market would be
+Indeed, according to Uber’s own CEO, Travis Kalanick, such a delay could be
+In August, Kalanick laid out the stakes of his competition with Google to
+Bloomberg: “The minute it was clear to us that our friends in Mountain View
+were going to be getting in the ride-sharing space, we needed to make sure
+there is an alternative [self-driving car], because if there is not, we’re not
+Building their own self-driving car “is basically existential for us”, he
+Driverless trucks: economic tsunami may swallow one of most common US jobs
+At the center of the current dispute is LiDAR, the system of lasers that allow
+an autonomous vehicle to build a 3D map of its environment and “see” where it
+is going. Waymo claims that its proprietary LiDAR is its secret sauce, but
+Merges cautioned that “it might not be as innovative as they make it seem”. If
+Waymo’s design is derived from public information, such as scientific papers,
+then Otto and Uber could defend the alleged similarities in design.
+Still, experts questioned the speed at which Otto claimed to have developed its
+own system. “It takes years to break into commercialisation if you start with a
+blank sheet of paper,” said Richard Wallace of the Center for Automotive
+Research. “Recreating is a lot slower than ‘I already have it.’”
+Wallace and others suggested that in the worst-case scenario – an injunction –
+Uber could simply purchase LiDAR from another company, but it’s not the kind of
+technology that can be simply bought off the shelf.
+According to Laszlo Kishonti, the CEO of AImotive, a driverless car company,
+the only LiDAR systems available for sale (at about $80,000 a pop) have long
+wait lists. Waiting is a risk, Kishonti said, because once a LiDAR-equipped car
+is on the road, a company can start building a precise 3D map of a city or
+“If someone else gets there first,” Kishonti said, “they can steal whole cities
+Waymo has also alleged that the theft went beyond the LiDAR system’s
+specifications to include other trade secrets involving the company’s supply
+chain and vendors. And despite Levandowski’s claim that the company was started
+“traditionally in a house in Palo Alto”, the company’s roots clearly point to
+The four co-founders – Levandowski, Lior Ron, Claire Delaunay, and Don Burnette
+– all left jobs at Google to start Otto. An additional 28 Otto employees are
+Google alumni, according to a review of LinkedIn profiles, and 18 of them left
+jobs with Google’s self-driving car unit and joined Otto a month or two later.
+Many moved into positions with the same or comparable job titles, including
+Sameer Kshirsagar, Google’s former manager for global supply management for
+self-driving cars who became Uber and Otto’s director of supply chain in July
+In the lawsuit, Waymo alleges that a “supply chain manager” downloaded
+“confidential supply chain information and other confidential manufacturing
+information” one month before resigning in July 2016 and going to work for
+Otto. Kshirsagar did not immediately respond to a request for comment.
+A Google self-driving prototype car at the Google campus in Mountain View,
+A Google self-driving prototype car at the Google campus in Mountain View,
+The suit comes as Uber is being buffeted on multiple fronts. The company has
+long appeared to enjoy its battles with state and local regulators and the taxi
+industry, but the company is now facing enemies closer to home.
+For years, the company dominated the ride-hail market despite widely discussed
+concerns about ethics. Customers seemed content to ignore any moral qualms
+about Uber’s treatment of its drivers in favor of the service’s convenience.
+Uber writes to users abandoning service over sexual harassment claims
+But the election of Donald Trump has changed the political climate in the US.
+More than 200,000 customers reportedly deleted their accounts in February after
+a questionable tweet from Uber during a New York airport taxi strike over the
+president’s travel ban and Kalanick’s role on an economic advisory panel for
+Trump produced a maelstrom of #DeleteUber outrage.
+Sunday’s publication of allegations of a workplace culture rife with sexual
+harassment and gender discrimination by a former Uber engineer have intensified
+the crisis. While Uber has pledged to investigate and reform, a steady flow of
+leaks about company meetings and other airings of dirty laundry suggest that
+some employees are feeling significantly less loyal to their employer. The
+negative portrayal of Uber’s workplace could hamper its ability to attract and
+retain top talent, and the fact that Uber has crafted a special message to
+account deleters about the harassment allegations suggests that customers
+On Thursday, just hours before the Waymo suit dropped, Uber was also hit with a
+public rebuke from two of its earliest investors, Mitch and Freada Kapor. The
+pair lambasted “a culture plagued by disrespect, exclusionary cliques, lack of
+diversity, and tolerance for bullying and harassment of every form” and pointed
+out Uber’s habit of “responding to public exposure of bad behavior by holding
+an all-hands meeting, apologizing and vowing to change, only to quickly return
+© 2017 Guardian News and Media Limited or its affiliated companies.

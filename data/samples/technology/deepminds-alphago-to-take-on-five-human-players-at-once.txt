@@ -1,0 +1,48 @@
+  • [                    ] [SUBMIT] What term do you want to search?
+  • switch to the US edition switch to the AU edition switch to the INT edition
+DeepMind's AlphaGo to play on team with humans and to challenge five at once
+After its game-playing AI beat the best human, Google subsidiary plans to test
+The broadcast of the Google DeepMind Challenge Match between AlphaGo and South
+[ ] The broadcast of the Google DeepMind Challenge Match between AlphaGo and
+South Korean professional Lee Sedol. Photograph: Ahn Young-joon/AP
+DeepMind's AlphaGo to play on team with humans and to challenge five at once
+After its game-playing AI beat the best human, Google subsidiary plans to test
+Monday 10 April 2017 15.53 BST First published on Monday 10 April 2017 
+A year on from its victory over Go star Lee Sedol, Google DeepMind is preparing
+a “festival” of exhibition matches for its board game-playing AI, AlphaGo, to
+Headlining the event will be a one-on-one match against the current number one
+player of the ancient Asian game, 19-year-old Chinese professional Ke Jie.
+DeepMind has had its eye on this match since even before AlphaGo beat Lee. On
+the eve of his trip to Seoul in March 2016, the company’s co-founder, Demis
+Hassabis, told the Guardian: “There’s a young kid in China who’s very, very
+As well as the one-on-one match with Jie, which will be played over the course
+of three games, AlphaGo will take part in two other games with slightly odder
+One, “Pair Go”, will see two human Go professionals play against each other,
+each partnered up with their own iteration of AlphaGo. The human and AI players
+will alternate, with each having to learn from, and adapt to, the moves played
+Pair Go is similar to the concept of Advanced Chess, a new form of chess that
+was created after the defeat of Garry Kasparov at the hands of IBM’s Deep Blue
+in 1997. Advanced Chess players work with a chess computer alongside them,
+using the machines as consultants to improve their play. The best Advanced
+Chess players tend to be better than both the best human players and the best
+solo chess machines, suggesting that human ingenuity still has something to add
+to the brute-force approach of the chess machines.
+The other new format is Team Go, a more traditional “humanity vs the machines”
+setup that will involve a five-player team made up of China’s top Go players
+taking AlphaGo head-on. It may seem like showboating, but the match will be
+useful for answering a question raised by AlphaGo’s first victory: how good can
+anything, man or machine, get at playing Go? Are the best players and the best
+AIs already near to perfection, or is there a vast amount of improvement still
+DeepMind says both new formats have been created to try and see whether AlphaGo
+can be encouraged to show the same unorthodox thinking that it employed to
+defeat Lee. Most famously, move 37 of the AI’s second game involved a tile
+placement almost unheard-of in top tier Go, and which Go strategists still talk
+A DeepMind spokesperson said: “One of the most exciting aspects of our match
+against Lee Sedol was the discovery of new creative strategies. This second
+event has been specifically designed to see what more new secrets can be
+unearthed, including through collaborative formats like Pair Go and Team Go.”
+Alongside the matches, taking place in late May in Wuzhen, China, DeepMind will
+host a conference to “explore how AlphaGo has created new knowledge about the
+oldest of games, and how the technologies behind AlphaGo, machine learning, and
+artificial intelligence, are bringing solutions to some of the world’s greatest
+© 2017 Guardian News and Media Limited or its affiliated companies.

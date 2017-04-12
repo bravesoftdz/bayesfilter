@@ -1,0 +1,99 @@
+  • [                    ] [SUBMIT] What term do you want to search?
+  • switch to the US edition switch to the AU edition switch to the INT edition
+Are there any good Windows 10 tablets to replace an old Surface RT?
+John’s wife wants to replace her Microsoft Surface RT, which she uses in her
+job as a tutor. Are there any affordable Intel-based tablets up to the job?
+Microsoft RT users had to be content with Windows Store apps and web-based
+[ ] Microsoft RT users had to be content with Windows Store apps and web-based
+Are there any good Windows 10 tablets to replace an old Surface RT?
+John’s wife wants to replace her Microsoft Surface RT, which she uses in her
+job as a tutor. Are there any affordable Intel-based tablets up to the job?
+Thursday 2 March 2017 09.59 GMT Last modified on Thursday 2 March 2017 
+    My wife has used a Microsoft Surface RT tablet for a few years in her job
+    as a tutor. She has found its size and the touch keyboard invaluable in her
+    planning and writing up of lessons, especially as this often happens in the
+    car between pupils. Unfortunately, it is becoming less reliable, and much
+    slower, and she is looking for a replacement. She has looked at the new
+    Surface Pros, but does not want to spend more than £500. She requires
+    Microsoft Office, a long battery life and portability.
+    By the way, I also wanted to thank you for the advice you gave my daughter
+    in What sort of tablet should I buy for drawing? Niamh bought a Wacom
+Microsoft launched the Surface RT in 2012 when the tablet market looked
+promising. It was the first tablet to run Windows on an ARM chip, which
+provided long battery life. It also made it incompatible with all the
+traditional software written for Intel x86 versions of Windows, including
+The Surface RT tablets included Microsoft Office, which was good, but it wasn’t
+optimised for touch-screen use, which was bad. Otherwise, users had to be
+content with Windows Store apps and web-based applications.
+While Surface RT users loved their machines, there were not many of them, and
+Microsoft abandoned the ARM line in favour of the successful Intel-based
+Surface Pro versions. However, ARM-based versions will return to the market
+Your wife’s Surface RT should not have slowed down that much, and a reset might
+speed it up again. To do this, take a backup of the current system – or at
+least, all the personal data – and restore it to factory condition. Run the
+Settings app (cogwheel icon), select Update & security, click Recovery and then
+hit the “Get started” button under “Reset this PC”.
+The drawback is that you will have to reinstall all the updates that have been
+Windows has a lot of visual effects: for example, things slide into view
+instead of instantly popping into view. To change this, type in “advanced
+system settings” to find the System Properties sheet from the old Control
+Panel. In the Performance section, click the Settings button and then select
+After that, go through the list of effects and restore any you still want.
+“Enable Peek”, “Show shadows under mouse pointer”, “Show window contents while
+dragging” and “Smooth edges of screen fonts” are worth keeping.
+Unfortunately, the Surface RT is a sealed box, like most tablets. You can’t get
+the simple improvement that works with desktop and some laptop PCs: just add
+The whole tablet market is in decline – Apple iPad sales are roughly half what
+they were at their peak – and manufacturers are shifting resources to AR
+(augmented reality, such as the Microsoft HoloLens) and VR (virtual reality,
+such as the Oculus Rift). Windows PC manufacturers switched to 2-in-1s and then
+convertibles, where sales are still growing strongly.
+Unfortunately, the better products are generally more expensive, including the
+Microsoft Surface Pro 4, the HP Spectre x2, HP Elite x2, and Dell Latitude 11
+5175. There’s a huge gap between pro tablets and convertibles with Intel Core
+processors, 8GB of memory and proper SSDs and the cheap, casual models with
+Intel Atom processors, 2GB of memory and 32GB of eMMC Flash storage.
+It can be hard to find affordable machines in the “sweet spot” between the two
+extremes. These may have Intel Core M processors such as the Core m3-6Y30 and
+4GB or 8GB of memory. The best compromise is a Cherry Trail (x3, x5 or x7)
+The one I’d recommend at the moment is last year’s Lenovo Miix 310, which has
+an Atom x5-Z8350 processor, 4GB of memory and 64GB of storage for a current web
+price of £249.99 (£30 off). However, this week, Lenovo unveiled the Miix 320
+with 128GB of storage, so it might be worth waiting for that.
+The main alternative is the Asus Transformer Book T100HA, which has a Cherry
+Trail x5-Z8500 processor, 2GB of memory and either 32GB or 64GB of storage.
+Currently, eBuyer has the 2GB/64GB model for £229.97 with free delivery. The
+T100HA has been around for a while, and the Miix 310 has twice the memory and a
+In both cases, the electronics are behind the screen, so you can detach the
+screen from the keyboard and use it as a tablet. (The virtual keyboard is built
+into Windows 10.) The alternative is to keep the electronics under the keyboard
+and fit a 360-degree hinge. Folding the keyboard behind the screen provides a
+somewhat thicker tablet. The Lenovo Yoga range pioneered this approach, and
+your wife could have a look at one to see if the idea is acceptable. Yogas come
+in dozens of configurations but a Yoga 300 with an Intel Pentium N3710, 4GB of
+memory and 64GB of storage costs £279.99 from PC World. The N3710 is faster
+With a Lenovo Yoga Book, you can write and draw on the keyboard. Photograph:
+You don’t say if your wife is using a stylus. I hope so, because a
+Surface-style device, Microsoft OneNote and a stylus is a terrific system for
+educational use. However, adding a stylus and a pen-capable screen bumps up the
+The main exception is the Asus Transformer Mini T102HA (x5-Z8350/4GB/64GB) with
+a stylus, which costs £449.95 at John Lewis, or £398.46 on Amazon. However,
+Microsoft currently has a Signature Edition (ie crapware free) version for only
+I believe the Mini T102HA is the cheapest current 2-in-1 with a stylus, unless
+you are willing to risk a Chinese product such as a Teclast X3 Pro or X5 Pro.
+These aren’t even included in Tablet PC Review’s invaluable spreadsheet of
+The other possibility is Microsoft’s Surface 3 – not the same as a Surface Pro
+3 – if you can still find one at a reasonable price. Microsoft has some at a
+“student price” of £449.99, if you pre-qualify as a student.
+Lenovo’s very innovative Yoga Book is also worth a look at £549.99.
+Windows 10 is a mobile operating system, like Android, and also runs on ARM
+chips in smartphones, which aren’t expected to run traditional x86 Windows
+programs. Later this year, however, we expect to see ARM-based tablets and
+small laptops running Windows 10 on the next-generation Qualcomm Snapdragon 835
+processor. Qualcomm has a Microsoft demo video on its website.
+These new devices won’t be the same as the Surface RT. The main difference is
+that they have enough power to run traditional x86 programs under emulation.
+The Snapdragon 835 also supports touch, pen and the latest wireless standards:
+Early models will probably be designed and priced for corporate use, but
+Have you got another question for Jack? Email it to Ask.Jack@theguardian.com
+© 2017 Guardian News and Media Limited or its affiliated companies.
