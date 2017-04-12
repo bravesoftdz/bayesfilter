@@ -1,10 +1,11 @@
 ### Welcome to the Bayes Filter!
 
+![Thomas\_Bayes.gif](./Thomas_Bayes.gif)
+*The Rev. Thomas Bayes*
+
 This library can be used to categorise text, based on samples.
 
 For example, if you have a directory of "business" news stories, and another of "technology" news stories, this code will find the probably category for the string `analysisText`.
-
-![Thomas\_Bayes.gif](./Thomas_Bayes.gif)
 
 ````
 HashMap<String, SampleSource> sampleSourceHashMap = new HashMap<>();
