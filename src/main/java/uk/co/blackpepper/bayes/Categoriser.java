@@ -1,6 +1,5 @@
 package uk.co.blackpepper.bayes;
 
-import java.io.Serializable;
 import java.util.*;
 import java.util.stream.Collectors;
 
@@ -9,18 +8,25 @@ import java.util.stream.Collectors;
  */
 public class Categoriser {
 
-    private final Map<String, Sampleable> sampleSourceMap;
+    private final Map<String, SampleSource> sampleSourceMap;
+    private Tokenizer tokenizer;
 
     public Categoriser() {
         this(new HashMap<>());
     }
 
-    public Categoriser(Map<String,Sampleable> sampleSourceMap) {
-        this.sampleSourceMap = sampleSourceMap;
+    public Categoriser(Map<String,SampleSource> sampleSourceMap) {
+        this(sampleSourceMap, new AsciiTextParser());
     }
 
-    public Categoriser category(String categoryName, Sampleable sample) {
-        Map<String, Sampleable> map = new HashMap<>(sampleSourceMap);
+    public Categoriser(Map<String,SampleSource> sampleSourceMap, Tokenizer tokenizer) {
+        this.sampleSourceMap = sampleSourceMap;
+        this.tokenizer = tokenizer;
+    }
+
+    public Categoriser category(String categoryName, SampleSource sample) {
+        tokenizer = new AsciiTextParser();
+        Map<String, SampleSource> map = new HashMap<>(sampleSourceMap);
         map.put(categoryName, sample);
         return new Categoriser(map);
     }
@@ -29,7 +35,7 @@ public class Categoriser {
         double prob = 0;
         String category = "UNKNOWN";
 
-        for (Map.Entry<String,Sampleable> entry : sampleSourceMap.entrySet()) {
+        for (Map.Entry<String,SampleSource> entry : sampleSourceMap.entrySet()) {
             double probability = getProbability(text, entry);
 
             if (probability > prob) {
@@ -42,7 +48,7 @@ public class Categoriser {
     }
 
     public double getProbabilityInCategory(String text, String category) {
-        for (Map.Entry<String, Sampleable> entry : sampleSourceMap.entrySet()) {
+        for (Map.Entry<String, SampleSource> entry : sampleSourceMap.entrySet()) {
             if (entry.getKey().equals(category)) {
                 return getProbability(text, entry);
             }
@@ -51,31 +57,26 @@ public class Categoriser {
     }
 
     //<editor-fold desc="Utility methods">
-    private double getProbability(String text, Map.Entry<String, Sampleable> entry) {
-        Sampleable sampleable = entry.getValue();
+    private double getProbability(String text, Map.Entry<String, SampleSource> entry) {
+        SampleSource sampleSource = entry.getValue();
         Concordance othersConcordance = new Concordance("");
         int othersCount = 0;
-        for (Map.Entry<String,Sampleable> others : sampleSourceMap.entrySet()) {
+        for (Map.Entry<String,SampleSource> others : sampleSourceMap.entrySet()) {
             if (!others.getKey().equals(entry.getKey())) {
                 othersConcordance = othersConcordance.merge(others.getValue().concordance());
                 othersCount += others.getValue().sampleCount();
             }
         }
         return getProbability(text,
-                sampleable.sampleCount(), sampleable.concordance(),
-                othersCount, othersConcordance);
+                sampleSource, new SimpleSampleSource(othersConcordance, othersCount));
     }
 
     private double getProbability(String text,
-                                 int inCategoryCount, Concordance categoryConcordance,
-                                 int outOfCategoryCount, Concordance outOfCategoryConcordance) {
-        HashMap<String, Double> probabilityMap = getProbabilityMap(
-                text,
-                categoryConcordance, outOfCategoryConcordance,
-                inCategoryCount, outOfCategoryCount);
+                                  SampleSource inSamples,
+                                  SampleSource outSamples) {
+        HashMap<String, Double> probabilityMap = getProbabilityMap(text, inSamples, outSamples);
 
         HashMap<String, Double> topMap = getTopMap(probabilityMap);
-        System.err.println("topMap = " + topMap);
 
         Collection<Double> values = topMap.values();
         double product = values.stream().reduce(1.0, (a, b) -> a * b);
@@ -96,18 +97,15 @@ public class Categoriser {
         return topMap;
     }
 
-    private HashMap<String, Double> getProbabilityMap(String text, Concordance categoryConcordance,
-                                                      Concordance outOfCategoryConcordance,
-                                                      int inCategoryCount, int outOfCategoryCount) {
-        Parseable parseable = new AsciiTextParser();
-        List<String> tokenise = parseable.tokenise(text);
+    private HashMap<String, Double> getProbabilityMap(String text,
+                                                      SampleSource inSamples,
+                                                      SampleSource outSamples) {
+        List<String> tokenise = tokenizer.tokenise(text);
         List<String> distinctWords = tokenise.stream().distinct().collect(Collectors.toList());
 
         HashMap<String, Double> probs = new HashMap<>();
         for (String word : distinctWords) {
-            double value = wordProbability(word,
-                    outOfCategoryConcordance, categoryConcordance,
-                    outOfCategoryCount, inCategoryCount);
+            double value = wordProbability(word, inSamples, outSamples);
             if (value >= 0) {
                 probs.put(word, value);
             }
@@ -115,17 +113,17 @@ public class Categoriser {
         return probs;
     }
 
-    private double wordProbability(String word,
-                                   Concordance outOfCategoryConcordance, Concordance categoryConcordance,
-                                   int outOfCategoryCount, int inCategoryCount) {
-        int goodCount = outOfCategoryConcordance.count(word);
-        int badCount = categoryConcordance.count(word);
-        double g = 2 * goodCount;
+    private double wordProbability(String word, SampleSource inSamples, SampleSource outSamples) {
+        int goodCount = outSamples.concordance().count(word);
+        int badCount = inSamples.concordance().count(word);
+        double g = 2 * (double)goodCount;
         if (g + (double) badCount >= 5) {
+            int inSampleCount = inSamples.sampleCount();
+            int outSampleCount = outSamples.sampleCount();
             return Math.max(.01, Math.min(.99,
-                    Math.min(1, ((double) badCount / inCategoryCount))
+                    Math.min(1, (double) badCount / inSampleCount)
                             /
-                            (Math.min(1, (g / outOfCategoryCount)) + Math.min(1, ((double) badCount / inCategoryCount)))
+                            (Math.min(1, g / outSampleCount) + Math.min(1, (double) badCount / inSampleCount))
             ));
         }
         return -1;
@@ -144,13 +142,32 @@ public class Categoriser {
     }
 
     private static Comparator<Map.Entry<String,Double>> comparingByDistinctFromHalf() {
-        return (Comparator<Map.Entry<String, Double>> & Serializable)
-                (c1, c2) -> {
-                    double v1 = Math.abs(c1.getValue().doubleValue() - 0.5);
-                    double v2 = Math.abs(c2.getValue().doubleValue() - 0.5);
-                    int i = (int) (1000000000 * (v2 - v1));
-                    return i;
-                };
+        return (c1, c2) -> {
+            double v1 = Math.abs(c1.getValue() - 0.5);
+            double v2 = Math.abs(c2.getValue() - 0.5);
+            return (int) (1000000000 * (v2 - v1));
+        };
+    }
+
+    private static class SimpleSampleSource implements SampleSource {
+
+        private final Concordance concordance;
+        private final int sampleCount;
+
+        public SimpleSampleSource(Concordance concordance, int sampleCount) {
+            this.concordance = concordance;
+            this.sampleCount = sampleCount;
+        }
+
+        @Override
+        public int sampleCount() {
+            return sampleCount;
+        }
+
+        @Override
+        public Concordance concordance() {
+            return concordance;
+        }
     }
     //</editor-fold>
 

@@ -1,6 +1,8 @@
 package uk.co.blackpepper.bayes;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.util.stream.Collectors;
@@ -8,19 +10,18 @@ import java.util.stream.Collectors;
 /**
  * Created by davidg on 11/04/2017.
  */
-public class AsciiTextParser implements Parseable {
+public class AsciiTextParser implements Tokenizer {
     public List<String> tokenise(String text) {
-        ArrayList<String> result = new ArrayList<String>();
+        ArrayList<String> result = new ArrayList<>();
         if (text == null) {
             return result;
         }
-        text.replaceAll("[^A-Za-z'!]", " ");
         result.addAll(tokenizeSpaces(text));
-        ArrayList<String> result2 = new ArrayList<String>();
+        ArrayList<String> result2 = new ArrayList<>();
         for (String s : result) {
             result2.addAll(tokenizePeriods(s));
         }
-        ArrayList<String> result3 = new ArrayList<String>();
+        ArrayList<String> result3 = new ArrayList<>();
         for (String s : result2) {
             result3.addAll(tokenizeExc(s));
         }
@@ -29,13 +30,13 @@ public class AsciiTextParser implements Parseable {
 
     private List<String> tokenizeSpaces(String text) {
         String[] split = text.split("\\s");
-        ArrayList<String> result = new ArrayList<String>();
+        ArrayList<String> result = new ArrayList<>();
         result.addAll(Arrays.asList(split));
         return result;
     }
 
     private List<String> tokenizePeriods(String text) {
-        ArrayList<String> result = new ArrayList<String>();
+        ArrayList<String> result = new ArrayList<>();
         Pattern p = Pattern.compile("([0-9]+\\.[0-9]+)+");
         Matcher matcher = p.matcher(text);
         int i = 0;
@@ -59,12 +60,12 @@ public class AsciiTextParser implements Parseable {
     }
 
     private List<String> tokenizeExc(String text) {
-        ArrayList<String> result = new ArrayList<String>();
+        ArrayList<String> result = new ArrayList<>();
         if (text.indexOf('!') == -1) {
             result.add(text);
             return result;
         }
-        String s = "";
+        StringBuilder s = new StringBuilder();
         for (int i = 0; i < text.length(); i++) {
             char c = text.charAt(i);
             char next = 0;
@@ -72,32 +73,20 @@ public class AsciiTextParser implements Parseable {
                 next = text.charAt(i + 1);
             }
             if (c != '!') {
-                s += c;
+                s.append(c);
             } else {
                 if (next != '!') {
-                    s += c;
-                    result.add(s);
-                    s = "";
+                    s.append(c);
+                    result.add(s.toString());
+                    s = new StringBuilder();
                 } else {
-                    s += c;
+                    s.append(c);
                 }
             }
         }
         if (s.length() > 0) {
-            result.add(s);
+            result.add(s.toString());
         }
         return result;
-    }
-
-    private static boolean isNumeric(String str) {
-        try
-        {
-            double d = Double.parseDouble(str);
-        }
-        catch(NumberFormatException nfe)
-        {
-            return false;
-        }
-        return true;
     }
 }

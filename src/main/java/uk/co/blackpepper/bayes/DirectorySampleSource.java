@@ -8,7 +8,7 @@ import java.io.IOException;
 /**
  * Created by davidg on 12/04/2017.
  */
-class DirectorySampleSource implements Sampleable {
+class DirectorySampleSource implements SampleSource {
 
     private final File dir;
     private final Concordance concordance;
@@ -19,11 +19,11 @@ class DirectorySampleSource implements Sampleable {
 
     public DirectorySampleSource(File dir) throws IOException {
         this.dir = dir;
-        String words = "";
+        StringBuilder words = new StringBuilder();
         for (File file : dir.listFiles()) {
-            words += " " + readFileAsString(file);
+            words.append(" ").append(readFileAsString(file));
         }
-        concordance = new Concordance(words);
+        concordance = new Concordance(words.toString());
     }
 
     @Override
@@ -38,11 +38,11 @@ class DirectorySampleSource implements Sampleable {
 
     private static String readFileAsString(File filePath)
             throws IOException{
-        StringBuffer fileData = new StringBuffer(1000);
+        StringBuilder fileData = new StringBuilder(1000);
         BufferedReader reader = new BufferedReader(
                 new FileReader(filePath));
         char[] buf = new char[1024];
-        int numRead=0;
+        int numRead;
         while((numRead=reader.read(buf)) != -1){
             String readData = String.valueOf(buf, 0, numRead);
             fileData.append(readData);

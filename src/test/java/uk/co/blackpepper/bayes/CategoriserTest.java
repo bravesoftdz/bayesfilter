@@ -9,9 +9,9 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.StandardCopyOption;
-import java.util.Map;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 /**
  * Created by davidg on 13/04/2017.
@@ -413,7 +413,6 @@ public class CategoriserTest {
             if (name.endsWith(".txt")) {
                 String analysisText = readFileAsString(file);
                 String category = categoriser.getProbableCategoryFor(analysisText);
-                System.err.println("Category = " + category);
                 File destDir = new File(outputDirName, category);
                 if (!destDir.isDirectory()) {
                     Files.createDirectory(destDir.toPath());
@@ -433,11 +432,11 @@ public class CategoriserTest {
 
     private static String readFileAsString(File filePath)
             throws java.io.IOException{
-        StringBuffer fileData = new StringBuffer(1000);
+        StringBuilder fileData = new StringBuilder(1000);
         BufferedReader reader = new BufferedReader(
                 new FileReader(filePath));
         char[] buf = new char[1024];
-        int numRead=0;
+        int numRead;
         while((numRead=reader.read(buf)) != -1){
             String readData = String.valueOf(buf, 0, numRead);
             fileData.append(readData);
