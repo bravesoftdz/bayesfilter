@@ -77,4 +77,4 @@ This takes a piece of text, and breaks it down into words.
 
 ##### A categoriser
 
-This takes a set of categories and calculates the probability of a piece of text belong to one of them.
+This takes a set of categories and calculates the probability of a piece of text belonging to each of them.
