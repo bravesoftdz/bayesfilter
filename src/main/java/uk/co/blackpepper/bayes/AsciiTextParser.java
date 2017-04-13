@@ -11,13 +11,14 @@ import java.util.stream.Collectors;
  * Created by davidg on 11/04/2017.
  */
 public class AsciiTextParser implements TextParser {
+    @Override
     public List<String> words(String text) {
         ArrayList<String> result = new ArrayList<>();
         if (text == null) {
             return result;
         }
-        text = text.replaceAll("[\\|\\-:/]", " ");
-        result.addAll(tokenizeSpaces(text));
+        String t = text.replaceAll("[\\|\\-:/]", " ");
+        result.addAll(tokenizeSpaces(t));
         ArrayList<String> result2 = new ArrayList<>();
         for (String s : result) {
             result2.addAll(tokenizePeriods(s));

@@ -14,28 +14,64 @@ public class Categoriser {
     private final TextParser textParser;
     private final int topWordsConsidered;
 
+    /**
+     * Create a blank categoriser with no sample data.
+     */
     public Categoriser() {
         this(new HashMap<>());
     }
 
+    /**
+     * Instantiates a new Categoriser using a specific parser.
+     *
+     * @param textParser the text parser
+     */
     public Categoriser(TextParser textParser) {
         this(new HashMap<>(), textParser);
     }
 
+    /**
+     * Instantiates a new Categoriser with a map of sample sources: category-name --> sample-source
+     *
+     * @param sampleSourceMap the sample source map
+     */
     public Categoriser(Map<String,SampleSource> sampleSourceMap) {
         this(sampleSourceMap, new AsciiTextParser());
     }
 
+    /**
+     * Instantiates a new Categoriser with a map of sample sources: category-name --> sample-source and a parser
+     *
+     * @param sampleSourceMap the sample source map
+     * @param textParser      the text parser
+     */
     public Categoriser(Map<String,SampleSource> sampleSourceMap, TextParser textParser) {
         this(sampleSourceMap, textParser, 15);
     }
 
+    /**
+     * Instantiates a new Categoriser with a map of sample sources: category-name --> sample-source, a parser and a
+     * specified number of 'top words' to consider when analysing a document.
+     *
+     * @param sampleSourceMap    the sample source map
+     * @param textParser         the text parser
+     * @param topWordsConsidered the top words considered
+     */
     public Categoriser(Map<String,SampleSource> sampleSourceMap, TextParser textParser, int topWordsConsidered) {
         this.sampleSourceMap = sampleSourceMap;
         this.textParser = textParser;
         this.topWordsConsidered = topWordsConsidered;
     }
 
+    /**
+     * Method to make it a little simpler to create a categoriser with a given category and source, e.g.
+     *
+     * new Categoriser().category("spam", spamSampleSource).category("cornedBeed", cornedBeefSource);
+     *
+     * @param categoryName the category name
+     * @param sample       the sample
+     * @return the categoriser
+     */
     public Categoriser category(String categoryName, SampleSource sample) {
         Map<String, SampleSource> map = new HashMap<>(sampleSourceMap);
         map.put(categoryName, sample);
@@ -55,7 +91,7 @@ public class Categoriser {
 
     /**
      * Which category is the most likely for the given text
-     *
+     * <p>
      * If all categories have probability 0, return "UNKNOWN" (that probably means it found no words in common at all).
      *
      * @param text -- what we're analysing
@@ -80,7 +116,7 @@ public class Categoriser {
     /**
      * Get the probability that the given piece of text is in the specified category
      *
-     * @param text -- the text we're analysing
+     * @param text     -- the text we're analysing
      * @param category -- the category we're checking against
      * @return the probability (0.0 to 1.0)
      */
@@ -91,16 +127,16 @@ public class Categoriser {
     /**
      * A map of words that are used to decide if the given text matches the given category.
      * each word is matched to the weight of evidence of a match.
-     *
+     * <p>
      * For example, if you are comparing a piece of text against a category of business news items,
      * then the map might contain the word "money" with a value of 0.8 (this a good match for the category)
      * and "kitten" with a value of 0.1 (this is a bad match for the category).
-     *
+     * <p>
      * This map might be used to highlight significant words with a high value for the match.
      *
-     * @param text -- the text we're analysing
+     * @param text     -- the text we're analysing
      * @param category -- the category we are comparing the text against.
-     * @return
+     * @return map
      */
     public Map<String,Double> interestingWords(String text, String category) {
 

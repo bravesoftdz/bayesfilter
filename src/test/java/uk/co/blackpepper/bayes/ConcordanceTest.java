@@ -11,6 +11,9 @@ import static org.junit.Assert.assertEquals;
  * Created by davidg on 12/04/2017.
  */
 public class ConcordanceTest {
+    /**
+     * Frequency is always zero if there are no words.
+     */
     @Test
     public void frequencyIsAlwaysZeroIfThereAreNoWords() {
         //<editor-fold desc="Given">
@@ -22,6 +25,9 @@ public class ConcordanceTest {
         //</editor-fold>
     }
 
+    /**
+     * Can count single words.
+     */
     @Test
     public void canCountSingleWords() {
         //<editor-fold desc="Given">
@@ -34,6 +40,9 @@ public class ConcordanceTest {
         //</editor-fold>
     }
 
+    /**
+     * Can count multiple words.
+     */
     @Test
     public void canCountMultipleWords() {
         //<editor-fold desc="Given">
@@ -46,6 +55,9 @@ public class ConcordanceTest {
         //</editor-fold>
     }
 
+    /**
+     * Can merge disjoint concordances.
+     */
     @Test
     public void canMergeDisjointConcordances() {
         Concordance concordance1 = new Concordance(Arrays.asList("hello", "world"));
@@ -59,6 +71,9 @@ public class ConcordanceTest {
 
     }
 
+    /**
+     * Can merge concordances with duplicates.
+     */
     @Test
     public void canMergeConcordancesWithDuplicates() {
         //<editor-fold desc="Given">
@@ -77,6 +92,9 @@ public class ConcordanceTest {
         //</editor-fold>
     }
 
+    /**
+     * If you merge a null concordance it does nothing.
+     */
     @Test
     public void ifYouMergeANullConcordanceItDoesNothing() {
         //<editor-fold desc="Given">
@@ -94,6 +112,9 @@ public class ConcordanceTest {
         //</editor-fold>
     }
 
+    /**
+     * Can create a concordance from a text string.
+     */
     @Test
     public void canCreateAConcordanceFromATextString() {
         //<editor-fold desc="Given">
@@ -112,6 +133,9 @@ public class ConcordanceTest {
     }
 
 
+    /**
+     * A concordance of one word is a single instance.
+     */
     @Test
     public void aConcordanceOfOneWordIsASingleInstance() {
         Concordance concordance = new Concordance("one");
@@ -119,6 +143,9 @@ public class ConcordanceTest {
         assertEquals(1, concordance.count("one"));
     }
 
+    /**
+     * Can create a concordance of multiple words.
+     */
     @Test
     public void canCreateAConcordanceOfMultipleWords() {
         Concordance concordance = new Concordance("seven words are better than six words");

@@ -9,6 +9,9 @@ import static org.junit.Assert.assertEquals;
  * Created by davidg on 13/04/2017.
  */
 public class TextParserTest {
+    /**
+     * Can create a parseable from a lambda.
+     */
     @Test
     public void canCreateAParseableFromALambda() {
         TextParser p = t -> asList(t.split(" "));

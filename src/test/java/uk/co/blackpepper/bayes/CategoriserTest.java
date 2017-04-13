@@ -19,6 +19,9 @@ import static org.junit.Assert.assertTrue;
  */
 public class CategoriserTest {
 
+    /**
+     * Can find john grisham titles.
+     */
     @Test
     public void canFindJohnGrishamTitles() {
         //<editor-fold desc="Given">
@@ -83,6 +86,11 @@ public class CategoriserTest {
         assertTrue(probability > 0.5);
     }
 
+    /**
+     * A non sport story does not look like sport.
+     *
+     * @throws IOException the io exception
+     */
     @Test
     public void aNonSportStoryDoesNotLookLikeSport() throws IOException {
         //<editor-fold desc="Given">
@@ -206,6 +214,11 @@ public class CategoriserTest {
     }
 
 
+    /**
+     * A sport story looks like sport.
+     *
+     * @throws IOException the io exception
+     */
     @Test
     public void aSportStoryLooksLikeSport() throws IOException {
         //<editor-fold desc="Given">
@@ -347,6 +360,11 @@ public class CategoriserTest {
         //</editor-fold>
     }
 
+    /**
+     * First story on the ny times science section is science.
+     *
+     * @throws IOException the io exception
+     */
     @Test
     public void firstStoryOnTheNYTimesScienceSectionIsScience() throws IOException {
         //<editor-fold desc="When">
@@ -450,6 +468,11 @@ public class CategoriserTest {
         //</editor-fold>
     }
 
+    /**
+     * An android story is android.
+     *
+     * @throws IOException the io exception
+     */
     @Test
     public void anAndroidStoryIsAndroid() throws IOException {
         //<editor-fold desc="Given">
@@ -495,6 +518,11 @@ public class CategoriserTest {
         //</editor-fold>
     }
 
+    /**
+     * Run demo.
+     *
+     * @throws IOException the io exception
+     */
     @Test
     @Ignore
     /**

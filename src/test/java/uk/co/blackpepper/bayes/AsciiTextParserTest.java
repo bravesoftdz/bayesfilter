@@ -13,6 +13,9 @@ public class AsciiTextParserTest {
 
     private final TextParser textParser = new AsciiTextParser();
 
+    /**
+     * If text contains one word then return a list of one word.
+     */
     @Test
     public void ifTextContainsOneWordThenReturnAListOfOneWord() {
         //<editor-fold desc="When">
@@ -25,6 +28,9 @@ public class AsciiTextParserTest {
         //</editor-fold>
     }
 
+    /**
+     * Ignores weird chars.
+     */
     @Test
     public void ignoresWeirdChars() {
         //<editor-fold desc="When">
@@ -36,6 +42,9 @@ public class AsciiTextParserTest {
         //</editor-fold>
     }
 
+    /**
+     * Is text is null then return an empty list.
+     */
     @Test
     public void isTextIsNullThenReturnAnEmptyList() {
         //<editor-fold desc="When">
@@ -47,6 +56,9 @@ public class AsciiTextParserTest {
         //</editor-fold>
     }
 
+    /**
+     * Is text is blank then return an empty list.
+     */
     @Test
     public void isTextIsBlankThenReturnAnEmptyList() {
         //<editor-fold desc="When">
@@ -58,6 +70,9 @@ public class AsciiTextParserTest {
         //</editor-fold>
     }
 
+    /**
+     * If text contains two words then return a list of two words.
+     */
     @Test
     public void ifTextContainsTwoWordsThenReturnAListOfTwoWords() {
         //<editor-fold desc="When">
@@ -71,6 +86,9 @@ public class AsciiTextParserTest {
         //</editor-fold>
     }
 
+    /**
+     * Can split words with any whitespace characters.
+     */
     @Test
     public void canSplitWordsWithAnyWhitespaceCharacters() {
         //<editor-fold desc="When">
@@ -86,6 +104,9 @@ public class AsciiTextParserTest {
         //</editor-fold>
     }
 
+    /**
+     * Exclamation points are constituent characters.
+     */
     @Test
     public void exclamationPointsAreConstituentCharacters() {
         //<editor-fold desc="When">
@@ -99,6 +120,9 @@ public class AsciiTextParserTest {
         //</editor-fold>
     }
 
+    /**
+     * Exclamation points are constituent characters even if no gap after.
+     */
     @Test
     public void exclamationPointsAreConstituentCharactersEvenIfNoGapAfter() {
         //<editor-fold desc="When">
@@ -112,6 +136,9 @@ public class AsciiTextParserTest {
         //</editor-fold>
     }
 
+    /**
+     * Multiple exclamation points are constituent characters even if no gap after.
+     */
     @Test
     public void multipleExclamationPointsAreConstituentCharactersEvenIfNoGapAfter() {
         //<editor-fold desc="When">
@@ -125,6 +152,9 @@ public class AsciiTextParserTest {
         //</editor-fold>
     }
 
+    /**
+     * Can have multiple words ending with ex marks.
+     */
     @Test
     public void canHaveMultipleWordsEndingWithExMarks() {
         //<editor-fold desc="When">
@@ -139,6 +169,9 @@ public class AsciiTextParserTest {
         //</editor-fold>
     }
 
+    /**
+     * Periods can split words.
+     */
     @Test
     public void periodsCanSplitWords() {
         //<editor-fold desc="When">
@@ -152,6 +185,9 @@ public class AsciiTextParserTest {
         //</editor-fold>
     }
 
+    /**
+     * Periods do not split numbers.
+     */
     @Test
     public void periodsDoNotSplitNumbers() {
         //<editor-fold desc="When">

@@ -4,12 +4,11 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.Arrays;
 
 /**
  * A {@link uk.co.blackpepper.bayes.SampleSource} created from a directory of files.
  * It will recursively include files from sub-directories.
- *
+ * <p>
  * Created by davidg on 12/04/2017.
  */
 class DirectorySampleSource implements SampleSource {
@@ -17,10 +16,22 @@ class DirectorySampleSource implements SampleSource {
     private final Concordance concordance;
     private final int count;
 
+    /**
+     * A sample source based on a directory specified by name. It will recurse sub-directories.
+     *
+     * @param dirName the name of the directory
+     * @throws IOException if the directory is not accessible
+     */
     public DirectorySampleSource(String dirName) throws IOException {
         this(new File(dirName));
     }
 
+    /**
+     * A sample source based on a directory. It will recurse subdirectories.
+     *
+     * @param dir the dir
+     * @throws IOException the io exception
+     */
     public DirectorySampleSource(File dir) throws IOException {
         SampleSource sampleSource = new SimpleSampleSource();
 
