@@ -9,7 +9,8 @@ import java.util.stream.Collectors;
 public class Categoriser {
 
     private final Map<String, SampleSource> sampleSourceMap;
-    private TextParser textParser;
+    private final TextParser textParser;
+    private final int topWordsConsidered;
 
     public Categoriser() {
         this(new HashMap<>());
@@ -24,15 +25,23 @@ public class Categoriser {
     }
 
     public Categoriser(Map<String,SampleSource> sampleSourceMap, TextParser textParser) {
+        this(sampleSourceMap, textParser, 15);
+    }
+
+    public Categoriser(Map<String,SampleSource> sampleSourceMap, TextParser textParser, int topWordsConsidered) {
         this.sampleSourceMap = sampleSourceMap;
         this.textParser = textParser;
+        this.topWordsConsidered = topWordsConsidered;
     }
 
     public Categoriser category(String categoryName, SampleSource sample) {
-        textParser = new AsciiTextParser();
         Map<String, SampleSource> map = new HashMap<>(sampleSourceMap);
         map.put(categoryName, sample);
-        return new Categoriser(map);
+        return new Categoriser(map, textParser, topWordsConsidered);
+    }
+
+    public Categoriser topWordsConsidered(int words) {
+        return new Categoriser(new HashMap<>(sampleSourceMap), textParser, words);
     }
 
     public String getProbableCategoryFor(String text) {
@@ -121,8 +130,8 @@ public class Categoriser {
 
     private Map<String, Double> interestingWords(Map<String, Double> probabilityMap) {
         Map<String, Double> sortedProbabilityMap = sort(probabilityMap);
-        int count = 15;
         HashMap<String, Double> topMap = new HashMap<>();
+        int count = topWordsConsidered;
         for (Map.Entry<String,Double> entry : sortedProbabilityMap.entrySet()) {
             if (count-- == 0) {
                 break;

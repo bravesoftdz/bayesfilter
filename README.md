@@ -47,7 +47,7 @@ When the categoriser in this library wants to decide if a piece of text matches 
 p0, p1, ..... , pn
 ````
 
-It then finds the 15 word probabilities that are furthest from 0.5. These are the words that are most likely to tell us whether the text is in, or out, of the category. These probabilities are then combined into a single probability:
+It then finds (by default) the 15 word probabilities that are furthest from 0.5. These are the words that are most likely to tell us whether the text is in, or out, of the category. These probabilities are then combined into a single probability:
 
 ````
 p0...p14 / (p0...p14 + (1 - p0)...(1-p14))

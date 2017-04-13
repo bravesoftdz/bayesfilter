@@ -505,6 +505,7 @@ public class CategoriserTest {
                 .category("business", new DirectorySampleSource("./data/samples/business"))
                 .category("technology", new DirectorySampleSource("./data/samples/technology"))
                 .category("sport", new DirectorySampleSource("./data/samples/sport"))
+                .topWordsConsidered(200)
                 ;
 
         String dataDirName = "./data/";
