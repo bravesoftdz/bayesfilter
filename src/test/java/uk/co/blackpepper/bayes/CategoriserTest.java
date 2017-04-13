@@ -9,6 +9,7 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.StandardCopyOption;
+import java.util.Map;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
@@ -77,6 +78,9 @@ public class CategoriserTest {
         //</editor-fold>
 
         assertEquals("grisham", categoriser.getProbableCategoryFor("The Whistler"));
+        Map<String, Double> interestingWords = categoriser.interestingWords("The Whistler", "grisham");
+        double probability = interestingWords.get("The");
+        assertTrue(probability > 0.5);
     }
 
     @Test
@@ -88,13 +92,19 @@ public class CategoriserTest {
         //</editor-fold>
 
         //<editor-fold desc="When">
-        String text = "LUCCA, Italy — Secretary of State Rex W. Tillerson said on Tuesday that the reign of President Bashar al-Assad of Syria was “coming to an end” and warned that Russia was at risk of becoming irrelevant in the Middle East by continuing to support him.\n" +
+        String text = "LUCCA, Italy — Secretary of State Rex W. Tillerson said on Tuesday that the reign of " +
+                "President Bashar al-Assad of Syria was “coming to an end” and warned that Russia was at risk " +
+                "of becoming irrelevant in the Middle East by continuing to support him.\n" +
                 "\n" +
-                "Mr. Tillerson, in comments made just before he traveled to Moscow for a high-stakes summit meeting, sought to clear up the United States’ position on Syria while also declaring that President Vladimir V. Putin of Russia needed to choose whether to side with Mr. Assad or the West.\n" +
+                "Mr. Tillerson, in comments made just before he traveled to Moscow for a high-stakes summit " +
+                "meeting, sought to clear up the United States’ position on Syria while also declaring that President Vladimir V. Putin of Russia needed to choose whether to side with Mr. Assad or the West.\n" +
                 "\n" +
-                "Russia can be a part of the discussions “and play an important role,” Mr. Tillerson said at a Group of 7 meeting in Lucca, Italy, or it “can maintain its alliance with this group, which we believe is not going to serve Russia’s interests longer term.”\n" +
+                "Russia can be a part of the discussions “and play an important role,” Mr. Tillerson said at " +
+                "a Group of 7 meeting in Lucca, Italy, or it “can maintain its alliance with this group, " +
+                "which we believe is not going to serve Russia’s interests longer term.”\n" +
                 "\n" +
-                "In a preview of his coming meetings in Moscow, he then added, “Only Russia can answer that question.”\n" +
+                "In a preview of his coming meetings in Moscow, he then added, “Only Russia can answer that " +
+                "question.”\n" +
                 "\n" +
                 "Continue reading the main story\n" +
                 "RELATED COVERAGE\n" +
@@ -108,19 +118,36 @@ public class CategoriserTest {
                 "Worst Chemical Attack in Years in Syria; U.S. Blames Assad APRIL 4, 2017\n" +
                 "\n" +
                 "Dozens of U.S. Missiles Hit Air Base in Syria APRIL 6, 2017\n" +
-                "The United States carried out cruise missile strikes last week after a chemical weapons attack in Syria — where a civil war has raged for six years — that has been widely attributed to Mr. Assad and his military forces.\n" +
+                "The United States carried out cruise missile strikes last week after a chemical weapons " +
+                "attack in Syria — where a civil war has raged for six years — that has been widely attributed " +
+                "to Mr. Assad and his military forces.\n" +
                 "\n" +
-                "Russia’s increasingly close alliance with Mr. Assad has allowed it to expanded its military presence in the Middle East and has contributed to what is widely viewed as a renewed relevance in the region. Mr. Tillerson’s suggestion that Russia’s ties with Mr. Assad would diminish the country’s standing contradicts Moscow’s recent experience.\n" +
+                "Russia’s increasingly close alliance with Mr. Assad has allowed it to expanded its military " +
+                "presence in the Middle East and has contributed to what is widely viewed as a renewed relevance " +
+                "in the region. Mr. Tillerson’s suggestion that Russia’s ties with Mr. Assad would diminish the " +
+                "country’s standing contradicts Moscow’s recent experience.\n" +
                 "\n" +
-                "With his comments, Mr. Tillerson tried to untangle the confusing mix of signals from the Trump administration over whether the United States conducted the missile strike for humanitarian or national security reasons, and whether the Trump administration seeks an immediate change in government in Syria.\n" +
+                "With his comments, Mr. Tillerson tried to untangle the confusing mix of signals from the Trump " +
+                "administration over whether the United States conducted the missile strike for humanitarian or " +
+                "national security reasons, and whether the Trump administration seeks an immediate change in " +
+                "government in Syria.\n" +
                 "\n" +
-                "“We do not want the regime’s uncontrolled stockpile of chemical weapons to fall into the hands of ISIS or other terrorist groups who could and want to attack the United States or our allies,” he said at a brief news conference in Lucca, referring to the Islamic State. “Nor can we accept the normalization of the use of chemical weapons by other actors or countries in Syria or elsewhere.”\n" +
+                "“We do not want the regime’s uncontrolled stockpile of chemical weapons to fall into the hands " +
+                "of ISIS or other terrorist groups who could and want to attack the United States or our " +
+                "allies,” he said at a brief news conference in Lucca, referring to the Islamic State. “Nor can " +
+                "we accept the normalization of the use of chemical weapons by other actors or countries in " +
+                "Syria or elsewhere.”\n" +
                 "\n" +
-                "Shortly after speaking, Mr. Tillerson got up from a round wooden table in the Palazzo Ducale, where he was attending a summit meeting of foreign ministers from G-7 countries, and headed to the airport.\n" +
+                "Shortly after speaking, Mr. Tillerson got up from a round wooden table in the Palazzo Ducale, " +
+                "where he was attending a summit meeting of foreign ministers from G-7 countries, and headed " +
+                "to the airport.\n" +
                 "\n" +
-                "Mr. Tillerson said that the American priority in Syria and Iraq “remains the defeat of ISIS,” and that Mr. Assad does not have a place in Syria’s future.\n" +
+                "Mr. Tillerson said that the American priority in Syria and Iraq “remains the defeat of ISIS,” " +
+                "and that Mr. Assad does not have a place in Syria’s future.\n" +
                 "\n" +
-                "“I think it is clear to all of us that the reign of the Assad family is coming to an end,” the secretary of state said. “But the question of how that ends, and the transition itself could be very important, in our view, to the durability, the stability inside of a unified Syria.”\n" +
+                "“I think it is clear to all of us that the reign of the Assad family is coming to an end,” the " +
+                "secretary of state said. “But the question of how that ends, and the transition itself could " +
+                "be very important, in our view, to the durability, the stability inside of a unified Syria.”\n" +
                 "\n" +
                 "The Interpreter Newsletter\n" +
                 "Understand the world with sharp insight and commentary on the major news stories of the week.\n" +
@@ -132,25 +159,41 @@ public class CategoriserTest {
                 "Receive occasional updates and special offers for The New York Times's products and services.\n" +
                 "\n" +
                 "MANAGE EMAIL PREFERENCES PRIVACY POLICY\n" +
-                "“We are not presupposing how that occurs,” he said, but added that Mr. Assad’s continued use of chemical weapons had ended his legitimacy.\n" +
+                "“We are not presupposing how that occurs,” he said, but added that Mr. Assad’s continued use " +
+                "of chemical weapons had ended his legitimacy.\n" +
                 "\n" +
-                "Despite the blunt criticism from Mr. Tillerson, the Italian foreign minister, Angelino Alfano, said there was “no consensus” on whether to toughen sanctions on Russia, as sought by his British counterpart, Boris Johnson.\n" +
+                "Despite the blunt criticism from Mr. Tillerson, the Italian foreign minister, Angelino Alfano, " +
+                "said there was “no consensus” on whether to toughen sanctions on Russia, as sought by his " +
+                "British counterpart, Boris Johnson.\n" +
                 "\n" +
-                "Mr. Alfano said that any effort to isolate Russia “would be wrong,” adding that the dominant position at the G-7 “was dialogue with Russia, not pushing Russia into a corner.”\n" +
+                "Mr. Alfano said that any effort to isolate Russia “would be wrong,” adding that the dominant " +
+                "position at the G-7 “was dialogue with Russia, not pushing Russia into a corner.”\n" +
                 "\n" +
-                "The Italian government has long been uneasy about punishing Russia, which faces sanctions imposed for its actions in eastern Ukraine, because many Italian companies have significant business interests there.\n" +
+                "The Italian government has long been uneasy about punishing Russia, which faces sanctions " +
+                "imposed for its actions in eastern Ukraine, because many Italian companies have significant " +
+                "business interests there.\n" +
                 "\n" +
                 "“Russia has the power to put pressure on Assad,” Mr. Alfano said.\n" +
                 "\n" +
-                "Mr. Tillerson’s trip to Moscow is the first by a high-level Trump administration official, and the State Department is not expecting any breakthroughs with the Russian government over the myriad issues that increasingly divide the two governments, according to a senior American official.\n" +
+                "Mr. Tillerson’s trip to Moscow is the first by a high-level Trump administration official, and " +
+                "the State Department is not expecting any breakthroughs with the Russian government over " +
+                "the myriad issues that increasingly divide the two governments, according to a senior " +
+                "American official.\n" +
                 "\n" +
-                "Rather, the purpose of the trip is to make plain the areas of disagreement, said the official, who spoke on the condition of anonymity in keeping with State Department practice.\n" +
+                "Rather, the purpose of the trip is to make plain the areas of disagreement, said the official, " +
+                "who spoke on the condition of anonymity in keeping with State Department practice.\n" +
                 "\n" +
-                "Even though Mr. Tillerson received a friendship award from Mr. Putin’s government when he served as chief executive of Exxon Mobil, he has taken a tough line on Russia since joining the administration. He repeated his view that Russia was either incompetent or inattentive in its failure to secure and destroy Mr. Assad’s chemical weapons stockpiles.\n" +
+                "Even though Mr. Tillerson received a friendship award from Mr. Putin’s government when he " +
+                "served as chief executive of Exxon Mobil, he has taken a tough line on Russia since joining " +
+                "the administration. He repeated his view that Russia was either incompetent or inattentive in " +
+                "its failure to secure and destroy Mr. Assad’s chemical weapons stockpiles.\n" +
                 "\n" +
-                "“But this distinction doesn’t much matter to the dead,” he said. “We can’t let this happen again.”\n" +
+                "“But this distinction doesn’t much matter to the dead,” he said. “We can’t let this " +
+                "happen again.”\n" +
                 "\n" +
-                "Russia has denied that Mr. Assad conducted a chemical attack, saying the poison gas was the result of an assault by rebels. But Mr. Tillerson said he hoped to convince the Russians that their continued support of Mr. Assad has become embarrassing for Russia.\n" +
+                "Russia has denied that Mr. Assad conducted a chemical attack, saying the poison gas was the " +
+                "result of an assault by rebels. But Mr. Tillerson said he hoped to convince the Russians " +
+                "that their continued support of Mr. Assad has become embarrassing for Russia.\n" +
                 "\n" +
                 "“And now Assad has made the Russians look not so good,” Mr. Tillerson said.";
 
@@ -307,13 +350,24 @@ public class CategoriserTest {
     @Test
     public void firstStoryOnTheNYTimesScienceSectionIsScience() throws IOException {
         //<editor-fold desc="When">
-        String text = "Coleoid cephalopods, a group encompassing octopuses, squid and cuttlefish, are the most intelligent invertebrates: Octopuses can open jars, squid communicate with their own Morse code and cuttlefish start learning to identify prey when they’re just embryos.\n" +
+        String text = "Coleoid cephalopods, a group encompassing octopuses, squid and cuttlefish, are the most " +
+                "intelligent invertebrates: Octopuses can open jars, squid communicate with their own Morse code " +
+                "and cuttlefish start learning to identify prey when they’re just embryos.\n" +
                 "\n" +
-                "In fact, coleoids are the only “animal lineage that has really achieved behavioral sophistication” other than vertebrates, said Joshua Rosenthal, a senior scientist at the Marine Biological Laboratory in Woods Hole, Mass. This sophistication could be related to a quirk in how their genes work, according to new research from Dr. Rosenthal and Eli Eisenberg, a biophysicist at Tel Aviv University.\n" +
+                "In fact, coleoids are the only “animal lineage that has really achieved behavioral " +
+                "sophistication” other than vertebrates, said Joshua Rosenthal, a senior scientist at the Marine " +
+                "Biological Laboratory in Woods Hole, Mass. This sophistication could be related to a quirk in " +
+                "how their genes work, according to new research from Dr. Rosenthal and Eli Eisenberg, a " +
+                "biophysicist at Tel Aviv University.\n" +
                 "\n" +
-                "In the journal Cell on Thursday, the scientists reported that octopuses, squid and cuttlefish make extensive use of RNA editing, a genetic process thought to have little functional significance in most other animals, to diversify proteins in their nervous system. And natural selection seems to have favored RNA editing in coleoids, even though it potentially slows the DNA-based evolution that typically helps organisms acquire beneficial adaptations over time.\n" +
+                "In the journal Cell on Thursday, the scientists reported that octopuses, squid and cuttlefish " +
+                "make extensive use of RNA editing, a genetic process thought to have little functional " +
+                "significance in most other animals, to diversify proteins in their nervous system. And natural " +
+                "selection seems to have favored RNA editing in coleoids, even though it potentially slows the " +
+                "DNA-based evolution that typically helps organisms acquire beneficial adaptations over time.\n" +
                 "\n" +
-                "Conventional wisdom says that RNA acts as a messenger, passing instructions from DNA to protein builders in a cell.\n" +
+                "Conventional wisdom says that RNA acts as a messenger, passing instructions from DNA to protein " +
+                "builders in a cell.\n" +
                 "\n" +
                 "Continue reading the main story\n" +
                 "RELATED COVERAGE\n" +
@@ -335,28 +389,56 @@ public class CategoriserTest {
                 "For an Octopus, Seeing the Light Doesn’t Require Eyes MAY 20, 2015\n" +
                 "Photo\n" +
                 "\n" +
-                "A longfin inshore squid. The use of RNA editing by coleoids may contribute to their behavioral complexity. Credit Roger Hanlon/Marine Biological Laboratory\n" +
-                "But sometimes, enzymes swap out some letters — the ACGU you might have learned about in school — in the RNA’s code for others. When that happens, modified RNA can create proteins that weren’t originally encoded in the DNA, allowing an organism to add new riffs to its base genetic blueprint.\n" +
+                "A longfin inshore squid. The use of RNA editing by coleoids may contribute to their behavioral " +
+                "complexity. Credit Roger Hanlon/Marine Biological Laboratory\n" +
+                "But sometimes, enzymes swap out some letters — the ACGU you might have learned about in school — " +
+                "in the RNA’s code for others. When that happens, modified RNA can create proteins that " +
+                "weren’t originally encoded in the DNA, allowing an organism to add new riffs to its base " +
+                "genetic blueprint.\n" +
                 "\n" +
-                "This RNA editing seemed to be happening more in coleoids, so Dr. Eisenberg, Dr. Rosenthal and Noa Liscovitch-Brauer, a postdoctoral scholar at Tel Aviv University, set out to quantify it by looking for disagreements in the DNA and RNA sequences of two octopus, one squid and one cuttlefish species.\n" +
+                "This RNA editing seemed to be happening more in coleoids, so Dr. Eisenberg, Dr. Rosenthal " +
+                "and Noa Liscovitch-Brauer, a postdoctoral scholar at Tel Aviv University, set out to quantify " +
+                "it by looking for disagreements in the DNA and RNA sequences of two octopus, one squid and " +
+                "one cuttlefish species.\n" +
                 "\n" +
-                "They found that coleoids have tens of thousands of so-called recoding sites, where RNA editing results in a protein different from what was initially encoded by DNA. When they applied the same methods to two less sophisticated mollusks — a nautilus and a sea slug — they found that RNA editing levels were orders of magnitude lower.\n" +
+                "They found that coleoids have tens of thousands of so-called recoding sites, where RNA editing " +
+                "results in a protein different from what was initially encoded by DNA. When they applied the " +
+                "same methods to two less sophisticated mollusks — a nautilus and a sea slug — they found that " +
+                "RNA editing levels were orders of magnitude lower.\n" +
                 "\n" +
-                "Next, the researchers compared RNA recoding sites between the octopuses, squid and cuttlefish species and found that they shared tens of thousands of these sites to varying degrees. By comparison, humans and mice share only about 40 recoding sites, even though they are hundreds of millions of years closer in evolution than octopuses and squids.\n" +
+                "Next, the researchers compared RNA recoding sites between the octopuses, squid and cuttlefish " +
+                "species and found that they shared tens of thousands of these sites to varying degrees. By " +
+                "comparison, humans and mice share only about 40 recoding sites, even though they are hundreds " +
+                "of millions of years closer in evolution than octopuses and squids.\n" +
                 "\n" +
-                "“Evolutionarily, that’s a big deal,” said Jin Billy Li, an assistant professor of genetics at Stanford, who was not involved in this study. The findings suggest that the editing sites are very important, he added.\n" +
+                "“Evolutionarily, that’s a big deal,” said Jin Billy Li, an assistant professor of genetics " +
+                "at Stanford, who was not involved in this study. The findings suggest that the editing sites " +
+                "are very important, he added.\n" +
                 "\n" +
                 "Continue reading the main story\n" +
                 "Photo\n" +
                 "\n" +
-                "A common cuttlefish. The trade-off of heavy RNA editing is that it may slow DNA-based evolution. Credit Roger Hanlon, Marine Biological Laboratory\n" +
-                "Conserving RNA editing sites may have come with an evolutionary trade-off, however. When the researchers looked at the coleoids’ genes, they found that DNA mutations were markedly depleted around recoding sites to help preserve them. The result is a significant portion of the genome “that can’t really evolve fast,” Dr. Rosenthal said.\n" +
+                "A common cuttlefish. The trade-off of heavy RNA editing is that it may slow DNA-based " +
+                "evolution. Credit Roger Hanlon, Marine Biological Laboratory\n" +
+                "Conserving RNA editing sites may have come with an evolutionary trade-off, however. When " +
+                "the researchers looked at the coleoids’ genes, they found that DNA mutations were markedly " +
+                "depleted around recoding sites to help preserve them. The result is a significant portion " +
+                "of the genome “that can’t really evolve fast,” Dr. Rosenthal said.\n" +
                 "\n" +
-                "Slower evolution is a “big price to pay,” Dr. Eisenberg said, because DNA mutations are usually the source of new adaptive traits. But it also suggests the greater ability to edit RNA “must be worth it” in terms of natural selection, he said.\n" +
+                "Slower evolution is a “big price to pay,” Dr. Eisenberg said, because DNA mutations are usually " +
+                "the source of new adaptive traits. But it also suggests the greater ability to edit RNA “must " +
+                "be worth it” in terms of natural selection, he said.\n" +
                 "\n" +
-                "He and Dr. Rosenthal found that RNA editing is enriched in coleoids’ nervous tissues, so they suspect it contributes to these animals’ behavioral complexity, possibly by allowing for dynamic control over proteins in response to different environmental conditions or tasks. Previously, Dr. Rosenthal showed that RNA editing might help octopuses rapidly adapt to temperature changes.\n" +
+                "He and Dr. Rosenthal found that RNA editing is enriched in coleoids’ nervous tissues, so they " +
+                "suspect it contributes to these animals’ behavioral complexity, possibly by allowing for " +
+                "dynamic control over proteins in response to different environmental conditions or tasks. " +
+                "Previously, Dr. Rosenthal showed that RNA editing might help octopuses rapidly adapt to " +
+                "temperature changes.\n" +
                 "\n" +
-                "Other organisms use all sorts of different methods to modify their RNA, but the possibility that coleoids use extensive RNA editing to flexibly manipulate their nervous system is “extraordinary,” said Kazuko Nishikura, a professor at the Wistar Institute, a nonprofit biomedical research institute in Philadelphia, who was not involved in the study.\n" +
+                "Other organisms use all sorts of different methods to modify their RNA, but the possibility " +
+                "that coleoids use extensive RNA editing to flexibly manipulate their nervous system is " +
+                "“extraordinary,” said Kazuko Nishikura, a professor at the Wistar Institute, a nonprofit " +
+                "biomedical research institute in Philadelphia, who was not involved in the study.\n" +
                 "\n" +
                 "“We may learn a lot from squid and octopus brains,” she said.";
 
@@ -373,16 +455,35 @@ public class CategoriserTest {
         //<editor-fold desc="Given">
         String text = "When will the next version of Android be released and what might be in it?\n" +
                 "\n" +
-                "A. Google released Android O, the “developer’s preview” of the next version, on March 21 so app developers could begin working with the future operating system. The final public release of the software and its delivery to smartphones and tablets is likely to take place this year, but a lot of work will happen in the meantime as the system is tested and refined.\n" +
+                "A. Google released Android O, the “developer’s preview” of the next version, on March 21 so " +
+                "app developers could begin working with the future operating system. The final public release " +
+                "of the software and its delivery to smartphones and tablets is likely to take place this year, " +
+                "but a lot of work will happen in the meantime as the system is tested and refined.\n" +
                 "\n" +
                 "Photo\n" +
                 "\n" +
-                "Google’s Android O developer’s preview allows app creators to begin working with the new system. Credit The New York Times\n" +
-                "Some of the new features expected in Android O include improved support for using the keyboard to navigate Android apps, better control of onscreen notifications and picture-in-picture video so people can continue to play clips while tapping into other apps. Also in the pipeline are improved audio fidelity over Bluetooth connections and support for Wi-Fi Aware technology (which allows compatible devices to connect directly to each other without a cellular data or other wireless network).\n" +
+                "Google’s Android O developer’s preview allows app creators to begin working with the new " +
+                "system. Credit The New York Times\n" +
+                "Some of the new features expected in Android O include improved support for using the keyboard " +
+                "to navigate Android apps, better control of onscreen notifications and picture-in-picture video " +
+                "so people can continue to play clips while tapping into other apps. Also in the pipeline are " +
+                "improved audio fidelity over Bluetooth connections and support for Wi-Fi Aware technology " +
+                "(which allows compatible devices to connect directly to each other without a cellular data or " +
+                "other wireless network).\n" +
                 "\n" +
-                "Android O will be a work in progress for several months, but Google says it will do a “deep dive on all things Android” at its annual Google I/O conference that starts May 17. These developer-oriented events are often used by companies to showcase new software on the way. Microsoft’s Build conference for Windows software creators starts on May 10, and Apple’s World Wide Developers Conference for its operating systems will take place the first week of June.\n" +
+                "Android O will be a work in progress for several months, but Google says it will do a “deep " +
+                "dive on all things Android” at its annual Google I/O conference that starts May 17. These " +
+                "developer-oriented events are often used by companies to showcase new software on the way. " +
+                "Microsoft’s Build conference for Windows software creators starts on May 10, and Apple’s " +
+                "World Wide Developers Conference for its operating systems will take place the " +
+                "first week of June.\n" +
                 "\n" +
-                "The release date and the official name of Android O will be revealed later in the year as development of the system continues. The company should also announce which hardware models will get the update. In recent years, Google has released the final versions of Android in late summer (as with Android 7.0 Nougat, on Aug. 22, 2016) and even deep into autumn (Android 4.0 Kit Kat arrived on Oct. 31, 2013), but the day you actually get the new version depends on your device and wireless carrier.";
+                "The release date and the official name of Android O will be revealed later in the year as " +
+                "development of the system continues. The company should also announce which hardware models " +
+                "will get the update. In recent years, Google has released the final versions of Android in " +
+                "late summer (as with Android 7.0 Nougat, on Aug. 22, 2016) and even deep into autumn (Android " +
+                "4.0 Kit Kat arrived on Oct. 31, 2013), but the day you actually get the new version depends " +
+                "on your device and wireless carrier.";
         //</editor-fold>
 
         //<editor-fold desc="When">
