@@ -9,9 +9,10 @@ For example, if you have a directory of "business" news stories, and another of 
 
 ````
 Categoriser categoriser = new Categoriser()
-    .category("business", new DirectorySampleSource("./data/samples/business"))
-    .category("technology", new DirectorySampleSource("./data/samples/technology"));
+    .category("Biz", new DirectorySampleSource("./data/samples/business"))
+    .category("Tech", new DirectorySampleSource("./data/samples/technology"));
         
+// Will be "Biz" or "Tech"
 String probableCategory = categoriser.getProbableCategoryFor(analysisText);
 ````
 
