@@ -8,7 +8,7 @@ import java.util.stream.Collectors;
 /**
  * Created by davidg on 11/04/2017.
  */
-public class TextParser implements Parseable {
+public class AsciiTextParser implements Parseable {
     public List<String> tokenise(String text) {
         ArrayList<String> result = new ArrayList<String>();
         if (text == null) {

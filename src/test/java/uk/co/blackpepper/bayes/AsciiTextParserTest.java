@@ -9,9 +9,9 @@ import static org.junit.Assert.*;
 /**
  * Created by davidg on 11/04/2017.
  */
-public class TextParserTest {
+public class AsciiTextParserTest {
 
-    private final Parseable parseable = new TextParser();
+    private final Parseable parseable = new AsciiTextParser();
 
     @Test
     public void ifTextContainsOneWordThenReturnAListOfOneWord() {

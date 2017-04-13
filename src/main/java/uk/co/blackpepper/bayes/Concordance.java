@@ -3,7 +3,6 @@ package uk.co.blackpepper.bayes;
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.function.BiFunction;
 
 /**
  * Created by davidg on 12/04/2017.
@@ -26,7 +25,7 @@ public class Concordance {
     }
 
     public Concordance(String words) {
-        this((new TextParser()).tokenise(words));
+        this((new AsciiTextParser()).tokenise(words));
     }
 
     private Concordance(Map<String,Integer> map) {

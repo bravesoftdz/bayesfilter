@@ -20,6 +20,7 @@ public class CategoriserTest {
 
     @Test
     public void canFindJohnGrishamTitles() {
+        //<editor-fold desc="Given">
         Categoriser categoriser = new Categoriser()
                 .category("grisham", new StringSampleSource(
                         "A Time to Kill",
@@ -73,16 +74,20 @@ public class CategoriserTest {
                         "The Pickwick Papers",
                         "The Selected Letters of Charles Dickens"
                 ));
+        //</editor-fold>
+
         assertEquals("grisham", categoriser.getProbableCategoryFor("The Whistler"));
     }
 
     @Test
     public void aNonSportStoryDoesNotLookLikeSport() throws IOException {
+        //<editor-fold desc="Given">
         Categoriser categoriser = new Categoriser()
                 .category("sport", new DirectorySampleSource("./samples/sport"))
                 .category("nonsport", new DirectorySampleSource("./samples/nonsport"));
+        //</editor-fold>
 
-
+        //<editor-fold desc="When">
         String text = "LUCCA, Italy — Secretary of State Rex W. Tillerson said on Tuesday that the reign of President Bashar al-Assad of Syria was “coming to an end” and warned that Russia was at risk of becoming irrelevant in the Middle East by continuing to support him.\n" +
                 "\n" +
                 "Mr. Tillerson, in comments made just before he traveled to Moscow for a high-stakes summit meeting, sought to clear up the United States’ position on Syria while also declaring that President Vladimir V. Putin of Russia needed to choose whether to side with Mr. Assad or the West.\n" +
@@ -150,73 +155,124 @@ public class CategoriserTest {
                 "“And now Assad has made the Russians look not so good,” Mr. Tillerson said.";
 
         double probability = categoriser.getProbabilityInCategory(text, "sport");
+        //</editor-fold>
+
+        //<editor-fold desc="Then">
         assertTrue(probability < 0.1);
+        //</editor-fold>
     }
 
 
     @Test
     public void aSportStoryLooksLikeSport() throws IOException {
+        //<editor-fold desc="Given">
         Categoriser categoriser = new Categoriser()
                 .category("sport", new DirectorySampleSource("./samples/sport"))
                 .category("nonsport", new DirectorySampleSource("./samples/nonsport"));
 
-
-        String text = "As Michael Pineda cut through the Tampa Bay Rays’ lineup Monday afternoon, stacking one out on top of another on top of another, an uncommon energy percolated throughout Yankee Stadium.\n" +
+        String text = "As Michael Pineda cut through the Tampa Bay Rays’ lineup Monday afternoon, stacking one " +
+                "out on top of another on top of another, an uncommon energy percolated throughout Yankee Stadium.\n" +
                 "\n" +
-                "Outs began to be punctuated by increasingly enthusiastic cheers. Fans began to rise whenever Pineda reached two strikes on a hitter. When Brett Gardner raced toward the left-field line to snag Kevin Kiermaier’s seventh-inning liner, the sellout crowd for the Yankees’ home opener let out a roar, acknowledging what was generally unspoken: Pineda was only seven outs from a perfect game.\n" +
+                "Outs began to be punctuated by increasingly enthusiastic cheers. Fans began to rise whenever " +
+                "Pineda reached two strikes on a hitter. When Brett Gardner raced toward the left-field line " +
+                "to snag Kevin Kiermaier’s seventh-inning liner, the sellout crowd for the Yankees’ home opener " +
+                "let out a roar, acknowledging what was generally unspoken: Pineda was only seven outs from a " +
+                "perfect game.\n" +
                 "\n" +
-                "“You’re thinking it’s going to be another special day here at the Stadium,” Manager Joe Girardi said. “I thought he had a shot.”\n" +
+                "“You’re thinking it’s going to be another special day here at the Stadium,” Manager Joe " +
+                "Girardi said. “I thought he had a shot.”\n" +
                 "\n" +
-                "The dreams of a perfect game — or even a no-hitter — vanished on the next at-bat, however, when Evan Longoria hooked a belt-high slider into the left-field corner for a double. And a shutout disappeared on Logan Morrison’s solo homer in the eighth. But those did little to dampen the enthusiasm surrounding the Yankees’ 8-1 victory over the Rays.\n" +
+                "The dreams of a perfect game — or even a no-hitter — vanished on the next at-bat, however, " +
+                "when Evan Longoria hooked a belt-high slider into the left-field corner for a double. And a " +
+                "shutout disappeared on Logan Morrison’s solo homer in the eighth. But those did little to " +
+                "dampen the enthusiasm surrounding the Yankees’ 8-1 victory over the Rays.\n" +
                 "\n" +
                 "Continue reading the main story\n" +
                 "Photo\n" +
                 "\n" +
-                "Brett Gardner, who singled to lead off the game, raced to third on Matt Holliday’s single. He scored the Yankees’ first run in the third inning, on a double by Jacoby Ellsbury. Credit Ben Solomon for The New York Times\n" +
-                "For a team that lost four of its first six games and that had already endured its share of dispiriting injury news, a performance like Pineda’s had a buoyant effect.\n" +
+                "Brett Gardner, who singled to lead off the game, raced to third on Matt Holliday’s single. " +
+                "He scored the Yankees’ first run in the third inning, on a double by Jacoby Ellsbury. Credit " +
+                "Ben Solomon for The New York Times\n" +
+                "For a team that lost four of its first six games and that had already endured its share of " +
+                "dispiriting injury news, a performance like Pineda’s had a buoyant effect.\n" +
                 "\n" +
                 "Continue reading the main story\n" +
                 "ADVERTISEMENT\n" +
                 "\n" +
                 "Continue reading the main story\n" +
                 "\n" +
-                "If the Yankees, who found out Monday that they would be without catcher Gary Sanchez for four weeks with a strained muscle in his arm — in addition to missing shortstop Didi Gregorius (shoulder) until May — are to stay afloat, they will need to see this type of Pineda more often.\n" +
+                "If the Yankees, who found out Monday that they would be without catcher Gary Sanchez for " +
+                "four weeks with a strained muscle in his arm — in addition to missing shortstop Didi " +
+                "Gregorius (shoulder) until May — are to stay afloat, they will need to see this type of " +
+                "Pineda more often.\n" +
                 "\n" +
-                "Pineda, a 6-foot-7 right-hander with loose limbs and an ample paunch, has been a confounding presence in the Yankees’ rotation for the last three seasons. Blessed with the arsenal of an ace, Pineda has been consistently undone by head-scratching meltdowns. Two years ago, he struck out 16 Baltimore hitters in a game. But he entered Monday with a 23-28 record and a 4.15 earned run average with the Yankees. Last season, opponents batted .328 against him with two outs.\n" +
+                "Pineda, a 6-foot-7 right-hander with loose limbs and an ample paunch, has been a " +
+                "confounding presence in the Yankees’ rotation for the last three seasons. Blessed with " +
+                "the arsenal of an ace, Pineda has been consistently undone by head-scratching meltdowns. " +
+                "Two years ago, he struck out 16 Baltimore hitters in a game. But he entered Monday with " +
+                "a 23-28 record and a 4.15 earned run average with the Yankees. Last season, opponents " +
+                "batted .328 against him with two outs.\n" +
                 "\n" +
-                "Pineda pledged to improved his focus this season, but in his first start, at Tampa Bay last Wednesday, his third pitch was hit for a home run, he allowed two run-scoring hits with two outs in the second, and he was gone before the fourth inning was finished.\n" +
+                "Pineda pledged to improved his focus this season, but in his first start, at Tampa Bay " +
+                "last Wednesday, his third pitch was hit for a home run, he allowed two run-scoring hits " +
+                "with two outs in the second, and he was gone before the fourth inning was finished.\n" +
                 "\n" +
                 "He looked like a different pitcher Monday.\n" +
                 "\n" +
-                "On a 76-degree, sun-kissed afternoon — a far cry from last year’s shivering 36-degree home opener — Pineda was constantly ahead of hitters. He walked none; his slider was devastating, responsible for 10 of his 11 strikeouts; and he used his changeup more frequently and with great effect.\n" +
+                "On a 76-degree, sun-kissed afternoon — a far cry from last year’s shivering 36-degree " +
+                "home opener — Pineda was constantly ahead of hitters. He walked none; his slider was " +
+                "devastating, responsible for 10 of his 11 strikeouts; and he used his changeup more " +
+                "frequently and with great effect.\n" +
                 "\n" +
                 "Continue reading the main story\n" +
                 "Photo\n" +
                 "\n" +
-                "The Yankees’ Aaron Judge celebrated after hitting a home run in the fourth inning. Credit Ben Solomon for The New York Times\n" +
-                "“The last time we faced him, some of the fastballs were just sprayed — weren’t really close to the zone — and a lot of the sliders that he threw weren’t really close, either,” Longoria said. “Early on he established he was throwing strikes and really made us kind of try to attack him. He was just throwing the ball where he wanted to.”\n" +
+                "The Yankees’ Aaron Judge celebrated after hitting a home run in the fourth inning. " +
+                "Credit Ben Solomon for The New York Times\n" +
+                "“The last time we faced him, some of the fastballs were just sprayed — weren’t really " +
+                "close to the zone — and a lot of the sliders that he threw weren’t really close, either,” " +
+                "Longoria said. “Early on he established he was throwing strikes and really made us kind of " +
+                "try to attack him. He was just throwing the ball where he wanted to.”\n" +
                 "\n" +
-                "The Yankees gave Pineda a 1-0 lead in the third when Gardner struck out but reached on Alex Cobb’s wild pitch, then raced home on Jacoby Ellsbury’s double into the right-center gap. Aaron Judge hit a solo homer in the fourth, and Chase Headley added another in the seventh before the Yankees turned the game into a rout with five runs in the eighth — two on Starlin Castro’s homer.\n" +
+                "The Yankees gave Pineda a 1-0 lead in the third when Gardner struck out but reached on Alex " +
+                "Cobb’s wild pitch, then raced home on Jacoby Ellsbury’s double into the right-center gap. " +
+                "Aaron Judge hit a solo homer in the fourth, and Chase Headley added another in the seventh " +
+                "before the Yankees turned the game into a rout with five runs in the eighth — two on " +
+                "Starlin Castro’s homer.\n" +
                 "\n" +
-                "But the offense served only as a complement to Pineda, who by the fourth inning had the crowd anticipating the chase for what would have been just the fourth perfect game in Yankees history. The last do it, David Cone, was in the broadcast booth Monday. Cone’s perfect game in 1999 was also the last time a Yankee threw a no-hitter. His catcher that day was Girardi.\n" +
+                "But the offense served only as a complement to Pineda, who by the fourth inning had the crowd " +
+                "anticipating the chase for what would have been just the fourth perfect game in Yankees history. " +
+                "The last do it, David Cone, was in the broadcast booth Monday. Cone’s perfect game in 1999 " +
+                "was also the last time a Yankee threw a no-hitter. His catcher that day was Girardi.\n" +
                 "\n" +
-                "“I’m thinking the fourth inning, I look at the scoreboard and say, ‘Oh, a zero,’” Pineda said. “I’m not really thinking of a no-hitter or a perfect game, but I’m thinking about giving a good outing and giving an opportunity to my team.”\n" +
+                "“I’m thinking the fourth inning, I look at the scoreboard and say, ‘Oh, a zero,’” Pineda said. " +
+                "“I’m not really thinking of a no-hitter or a perfect game, but I’m thinking about giving a " +
+                "good outing and giving an opportunity to my team.”\n" +
                 "\n" +
-                "But the drama was punctured in the seventh. Longoria laced the first pitch he saw into the left-field corner, and this time Gardner did not have a chance. With the Yankees clinging to a 2-0 lead, the pitching coach Larry Rothschild, who has been befuddled by Pineda’s inconsistencies, visited Pineda to make sure he stayed composed.\n" +
+                "But the drama was punctured in the seventh. Longoria laced the first pitch he saw into the " +
+                "left-field corner, and this time Gardner did not have a chance. With the Yankees clinging to " +
+                "a 2-0 lead, the pitching coach Larry Rothschild, who has been befuddled by Pineda’s " +
+                "inconsistencies, visited Pineda to make sure he stayed composed.\n" +
                 "\n" +
                 "Continue reading the main story\n" +
                 "\n" +
                 "Photo\n" +
                 "\n" +
-                "Fans awaited the start of the game during opening ceremonies. Credit Ben Solomon for The New York Times\n" +
+                "Fans awaited the start of the game during opening ceremonies. Credit Ben Solomon for The New " +
+                "York Times\n" +
                 "Pineda did so, striking out Brad Miller on four pitches to end the inning.\n" +
                 "\n" +
-                "When Pineda walked off the mound an inning later to a standing ovation, he stayed in character for the day: He used his uniform to wipe sweat from his face but showed little emotion.\n" +
+                "When Pineda walked off the mound an inning later to a standing ovation, he stayed in character " +
+                "for the day: He used his uniform to wipe sweat from his face but showed little emotion.\n" +
                 "\n" +
-                "“Very calm and reserved, and he showed that out there,” said catcher Austin Romine, who filled in for Sanchez. “There was no moment where it got out of hand. There was no moment where he missed a pitch and it was frustration. It was just: ‘Give me the ball. I’m going to make another pitch.’”\n" +
+                "“Very calm and reserved, and he showed that out there,” said catcher Austin Romine, who filled " +
+                "in for Sanchez. “There was no moment where it got out of hand. There was no moment where he " +
+                "missed a pitch and it was frustration. It was just: ‘Give me the ball. I’m going to make " +
+                "another pitch.’”\n" +
                 "\n" +
                 "Sports\n" +
-                "Get the big sports news, highlights and analysis from Times journalists, delivered to your inbox every week.\n" +
+                "Get the big sports news, highlights and analysis from Times journalists, delivered to your " +
+                "inbox every week.\n" +
                 "\n" +
                 "\n" +
                 "Enter your email address\n" +
@@ -225,18 +281,32 @@ public class CategoriserTest {
                 "Receive occasional updates and special offers for The New York Times's products and services.\n" +
                 "\n" +
                 "SEE SAMPLE MANAGE EMAIL PREFERENCES PRIVACY POLICY\n" +
-                "Romine was an unlikely partner during Pineda’s gem. He had caught him only six times and not since last July 25, when Pineda pitched one of his best games of the season: a 2-1 victory over Houston’s Dallas Keuchel, a Yankees tormentor.\n" +
+                "Romine was an unlikely partner during Pineda’s gem. He had caught him only six times and not " +
+                "since last July 25, when Pineda pitched one of his best games of the season: a 2-1 victory over " +
+                "Houston’s Dallas Keuchel, a Yankees tormentor.\n" +
                 "\n" +
-                "The moment was also special for Romine, who was drafted by the Yankees 10 years ago but is still seeking to establish himself in the major leagues. He was a capable backup last season and figured to do the same until Sanchez was injured. But Monday, he was introduced with the starting lineup, and afterward, as he answered questions at his locker, his son stood nearby.\n" +
+                "The moment was also special for Romine, who was drafted by the Yankees 10 years ago but is " +
+                "still seeking to establish himself in the major leagues. He was a capable backup last season " +
+                "and figured to do the same until Sanchez was injured. But Monday, he was introduced with the " +
+                "starting lineup, and afterward, as he answered questions at his locker, his son stood nearby.\n" +
                 "\n" +
-                "“I’m going to remember we were pretty close,” Romine said when asked what he would remember about the day. “I’m not going to be in a position too many times to catch on opening day – it’s not the gig of a backup to get those opportunities, so I was taking it in. It was fun.”";
+                "“I’m going to remember we were pretty close,” Romine said when asked what he would remember " +
+                "about the day. “I’m not going to be in a position too many times to catch on opening day – " +
+                "it’s not the gig of a backup to get those opportunities, so I was taking it in. It was fun.”";
+        //</editor-fold>
 
+        //<editor-fold desc="When">
         double probability = categoriser.getProbabilityInCategory(text, "sport");
+        //</editor-fold>
+
+        //<editor-fold desc="Then">
         assertTrue(probability > 0.9);
+        //</editor-fold>
     }
 
     @Test
     public void firstStoryOnTheNYTimesScienceSectionIsScience() throws IOException {
+        //<editor-fold desc="When">
         String text = "Coleoid cephalopods, a group encompassing octopuses, squid and cuttlefish, are the most intelligent invertebrates: Octopuses can open jars, squid communicate with their own Morse code and cuttlefish start learning to identify prey when they’re just embryos.\n" +
                 "\n" +
                 "In fact, coleoids are the only “animal lineage that has really achieved behavioral sophistication” other than vertebrates, said Joshua Rosenthal, a senior scientist at the Marine Biological Laboratory in Woods Hole, Mass. This sophistication could be related to a quirk in how their genes work, according to new research from Dr. Rosenthal and Eli Eisenberg, a biophysicist at Tel Aviv University.\n" +
@@ -291,13 +361,16 @@ public class CategoriserTest {
                 "“We may learn a lot from squid and octopus brains,” she said.";
 
         String result = getLikelyCategory(text);
+        //</editor-fold>
 
+        //<editor-fold desc="Then">
         assertEquals(result, "science");
+        //</editor-fold>
     }
-
 
     @Test
     public void anAndroidStoryIsAndroid() throws IOException {
+        //<editor-fold desc="Given">
         String text = "When will the next version of Android be released and what might be in it?\n" +
                 "\n" +
                 "A. Google released Android O, the “developer’s preview” of the next version, on March 21 so app developers could begin working with the future operating system. The final public release of the software and its delivery to smartphones and tablets is likely to take place this year, but a lot of work will happen in the meantime as the system is tested and refined.\n" +
@@ -310,10 +383,15 @@ public class CategoriserTest {
                 "Android O will be a work in progress for several months, but Google says it will do a “deep dive on all things Android” at its annual Google I/O conference that starts May 17. These developer-oriented events are often used by companies to showcase new software on the way. Microsoft’s Build conference for Windows software creators starts on May 10, and Apple’s World Wide Developers Conference for its operating systems will take place the first week of June.\n" +
                 "\n" +
                 "The release date and the official name of Android O will be revealed later in the year as development of the system continues. The company should also announce which hardware models will get the update. In recent years, Google has released the final versions of Android in late summer (as with Android 7.0 Nougat, on Aug. 22, 2016) and even deep into autumn (Android 4.0 Kit Kat arrived on Oct. 31, 2013), but the day you actually get the new version depends on your device and wireless carrier.";
+        //</editor-fold>
 
+        //<editor-fold desc="When">
         String result = getLikelyCategory(text);
+        //</editor-fold>
 
+        //<editor-fold desc="Then">
         assertEquals("android", result);
+        //</editor-fold>
     }
 
     @Test
