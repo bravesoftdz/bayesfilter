@@ -12,8 +12,18 @@ public class Categoriser {
 
     private final Map<String, SampleSource> sampleSourceMap;
 
+    public Categoriser() {
+        this(new HashMap<>());
+    }
+
     public Categoriser(Map<String,SampleSource> sampleSourceMap) {
         this.sampleSourceMap = sampleSourceMap;
+    }
+
+    public Categoriser category(String categoryName, SampleSource sample) {
+        Map<String, SampleSource> map = new HashMap<>(sampleSourceMap);
+        map.put(categoryName, sample);
+        return new Categoriser(map);
     }
 
     public String getProbableCategoryFor(String text) throws IOException {

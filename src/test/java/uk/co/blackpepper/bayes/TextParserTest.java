@@ -242,23 +242,10 @@ public class TextParserTest {
 
     @Test
     public void aNonSportStoryDoesNotLookLikeSport() throws IOException {
-        TextParser textParser = new TextParser();
+        Categoriser categoriser = new Categoriser()
+                .category("sport", new DirectorySampleSource("./samples/sport"))
+                .category("nonsport", new DirectorySampleSource("./samples/nonsport"));
 
-        File sportDir = new File("./samples/sport");
-        SampleSource sportSample = new DirectorySampleSource(sportDir);
-
-        Concordance sportConcordance = sportSample.concordance();
-        int sportCount = sportSample.sampleCount();
-
-        File nonSportDir = new File("./samples/nonsport");
-        SampleSource nonSportSample = new DirectorySampleSource(nonSportDir);
-
-        Concordance nonSportConcordance = nonSportSample.concordance();
-        int nonSportCount = nonSportSample.sampleCount();
-
-        HashMap<String, SampleSource> sampleSourceHashMap = new HashMap<>();
-        sampleSourceHashMap.put("sport", sportSample);
-        sampleSourceHashMap.put("nonsport", nonSportSample);
 
         String text = "LUCCA, Italy — Secretary of State Rex W. Tillerson said on Tuesday that the reign of President Bashar al-Assad of Syria was “coming to an end” and warned that Russia was at risk of becoming irrelevant in the Middle East by continuing to support him.\n" +
                 "\n" +
@@ -326,7 +313,6 @@ public class TextParserTest {
                 "\n" +
                 "“And now Assad has made the Russians look not so good,” Mr. Tillerson said.";
 
-        Categoriser categoriser = new Categoriser(sampleSourceHashMap);
         double probability = categoriser.getProbabilityInCategory(text, "sport");
         assertTrue(probability < 0.1);
     }
@@ -334,15 +320,10 @@ public class TextParserTest {
 
     @Test
     public void aSportStoryLooksLikeSport() throws IOException {
-        File sportDir = new File("./samples/sport");
-        SampleSource sportSample = new DirectorySampleSource(sportDir);
+        Categoriser categoriser = new Categoriser()
+                .category("sport", new DirectorySampleSource("./samples/sport"))
+                .category("nonsport", new DirectorySampleSource("./samples/nonsport"));
 
-        File nonSportDir = new File("./samples/nonsport");
-        SampleSource nonSportSample = new DirectorySampleSource(nonSportDir);
-
-        HashMap<String, SampleSource> sourceHashMap = new HashMap<>();
-        sourceHashMap.put("sport", sportSample);
-        sourceHashMap.put("nonsport", nonSportSample);
 
         String text = "As Michael Pineda cut through the Tampa Bay Rays’ lineup Monday afternoon, stacking one out on top of another on top of another, an uncommon energy percolated throughout Yankee Stadium.\n" +
                 "\n" +
@@ -414,7 +395,6 @@ public class TextParserTest {
                 "\n" +
                 "“I’m going to remember we were pretty close,” Romine said when asked what he would remember about the day. “I’m not going to be in a position too many times to catch on opening day – it’s not the gig of a backup to get those opportunities, so I was taking it in. It was fun.”";
 
-        Categoriser categoriser = new Categoriser(sourceHashMap);
         double probability = categoriser.getProbabilityInCategory(text, "sport");
         assertTrue(probability > 0.9);
     }
@@ -503,12 +483,9 @@ public class TextParserTest {
     @Test
     @Ignore
     public void fred() throws IOException {
-
-        HashMap<String, SampleSource> sampleSourceHashMap = new HashMap<>();
-        sampleSourceHashMap.put("business", new DirectorySampleSource(new File("./data/samples/business")));
-        sampleSourceHashMap.put("technology", new DirectorySampleSource(new File("./data/samples/technology")));
-
-        Categoriser categoriser = new Categoriser(sampleSourceHashMap);
+        Categoriser categoriser = new Categoriser()
+                .category("business", new DirectorySampleSource("./data/samples/business"))
+                .category("technology", new DirectorySampleSource("./data/samples/technology"));
 
         String dataDirName = "./data/";
         String analysisDirName = dataDirName + "analysis/";
@@ -530,21 +507,11 @@ public class TextParserTest {
     }
 
     private String getLikelyCategory(String text) throws IOException {
-        File sportDir = new File("./samples/sport");
-        SampleSource sportSample = new DirectorySampleSource(sportDir);
-
-        File androidDir = new File("./samples/android");
-        SampleSource androidSample = new DirectorySampleSource(androidDir);
-
-        File scienceDir = new File("./samples/science");
-        SampleSource scienceSample = new DirectorySampleSource(scienceDir);
-
-        HashMap<String, SampleSource> sampleSourceHashMap = new HashMap<>();
-        sampleSourceHashMap.put("sport", sportSample);
-        sampleSourceHashMap.put("android", androidSample);
-        sampleSourceHashMap.put("science", scienceSample);
-
-        return (new Categoriser(sampleSourceHashMap)).getProbableCategoryFor(text);
+        return new Categoriser()
+                .category("sport", new DirectorySampleSource("./samples/sport"))
+                .category("android", new DirectorySampleSource("./samples/android"))
+                .category("science", new DirectorySampleSource("./samples/science"))
+                .getProbableCategoryFor(text);
     }
 
     private static String readFileAsString(File filePath)

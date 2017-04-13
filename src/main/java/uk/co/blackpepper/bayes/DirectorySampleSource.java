@@ -13,6 +13,10 @@ class DirectorySampleSource implements SampleSource {
     private final File dir;
     private final Concordance concordance;
 
+    public DirectorySampleSource(String dirName) throws IOException {
+        this(new File(dirName));
+    }
+
     public DirectorySampleSource(File dir) throws IOException {
         this.dir = dir;
         String words = "";

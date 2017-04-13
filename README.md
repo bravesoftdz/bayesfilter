@@ -8,12 +8,10 @@ This library can be used to categorise text, based on samples.
 For example, if you have a directory of "business" news stories, and another of "technology" news stories, this code will find the probable category for the string `analysisText`.
 
 ````
-HashMap<String, SampleSource> sampleSourceHashMap = new HashMap<>();
-sampleSourceHashMap.put("business", new DirectorySampleSource(new File("./data/samples/business")));
-sampleSourceHashMap.put("technology", new DirectorySampleSource(new File("./data/samples/technology")));
-
-Categoriser categoriser = new Categoriser(sampleSourceHashMap);
-
+Categoriser categoriser = new Categoriser()
+    .category("business", new DirectorySampleSource("./data/samples/business"))
+    .category("technology", new DirectorySampleSource("./data/samples/technology"));
+        
 String probableCategory = categoriser.getProbableCategoryFor(analysisText);
 ````
 
