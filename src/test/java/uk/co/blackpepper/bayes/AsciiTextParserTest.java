@@ -28,7 +28,7 @@ public class AsciiTextParserTest {
     @Test
     public void ignoresWeirdChars() {
         //<editor-fold desc="When">
-        List<String> tokens = textParser.words("| -");
+        List<String> tokens = textParser.words("| - : /");
         //</editor-fold>
 
         //<editor-fold desc="Then">

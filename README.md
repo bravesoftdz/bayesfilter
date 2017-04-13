@@ -43,7 +43,7 @@ The value of `1` is easy to evaluate; it is simply the number of instances of th
 
 When the categoriser in this library wants to decide if a piece of text matches a given category, it first calculates the probability that text is in the category for each word:
 
-`````
+````
 p0, p1, ..... , pn
 ````
 

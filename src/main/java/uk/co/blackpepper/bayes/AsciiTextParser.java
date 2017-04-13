@@ -16,7 +16,7 @@ public class AsciiTextParser implements TextParser {
         if (text == null) {
             return result;
         }
-        text = text.replaceAll("[\\|\\-]", " ");
+        text = text.replaceAll("[\\|\\-:/]", " ");
         result.addAll(tokenizeSpaces(text));
         ArrayList<String> result2 = new ArrayList<>();
         for (String s : result) {
