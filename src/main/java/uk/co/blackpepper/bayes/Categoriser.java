@@ -100,8 +100,8 @@ public class Categoriser {
     private HashMap<String, Double> getProbabilityMap(String text, Concordance categoryConcordance,
                                                       Concordance outOfCategoryConcordance,
                                                       int inCategoryCount, int outOfCategoryCount) {
-        TextParser textParser = new TextParser();
-        List<String> tokenise = textParser.tokenise(text);
+        Parseable parseable = new TextParser();
+        List<String> tokenise = parseable.tokenise(text);
         List<String> distinctWords = tokenise.stream().distinct().collect(Collectors.toList());
 
         HashMap<String, Double> probs = new HashMap<>();

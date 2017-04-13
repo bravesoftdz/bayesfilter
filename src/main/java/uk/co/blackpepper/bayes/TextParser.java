@@ -8,7 +8,7 @@ import java.util.stream.Collectors;
 /**
  * Created by davidg on 11/04/2017.
  */
-public class TextParser {
+public class TextParser implements Parseable {
     public List<String> tokenise(String text) {
         ArrayList<String> result = new ArrayList<String>();
         if (text == null) {
@@ -25,20 +25,6 @@ public class TextParser {
             result3.addAll(tokenizeExc(s));
         }
         return result3.stream().filter(i -> i.length() > 0).collect(Collectors.toList());
-    }
-
-    public Map<String,Integer> concordance(String text) {
-        List<String> stringList = tokenise(text);
-        Map<String, Integer> map = new HashMap<String, Integer>();
-        for (String s : stringList) {
-            if (map.containsKey(s)) {
-                int count = map.get(s);
-                map.put(s, count + 1);
-            } else {
-                map.put(s, 1);
-            }
-        }
-        return map;
     }
 
     private List<String> tokenizeSpaces(String text) {

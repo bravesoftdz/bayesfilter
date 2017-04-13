@@ -4,6 +4,7 @@ import org.junit.Test;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Map;
 
 import static org.junit.Assert.*;
 
@@ -109,5 +110,25 @@ public class ConcordanceTest {
         assertEquals(1, merge.count("hello"));
         assertEquals(1, merge.count("world"));
         //</editor-fold>
+    }
+
+
+    @Test
+    public void aConcordanceOfOneWordIsASingleInstance() {
+        Concordance concordance = new Concordance("one");
+
+        assertEquals(1, concordance.count("one"));
+    }
+
+    @Test
+    public void canCreateAConcordanceOfMultipleWords() {
+        Concordance concordance = new Concordance("seven words are better than six words");
+
+        assertEquals(1, concordance.count("seven"));
+        assertEquals(2, concordance.count("words"));
+        assertEquals(1, concordance.count("are"));
+        assertEquals(1, concordance.count("better"));
+        assertEquals(1, concordance.count("than"));
+        assertEquals(1, concordance.count("six"));
     }
 }
