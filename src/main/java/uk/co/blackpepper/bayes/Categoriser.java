@@ -3,6 +3,8 @@ package uk.co.blackpepper.bayes;
 import java.util.*;
 import java.util.stream.Collectors;
 
+import static java.util.stream.Collectors.toList;
+
 /**
  * Created by davidg on 11/04/2017.
  */
@@ -40,10 +42,25 @@ public class Categoriser {
         return new Categoriser(map, textParser, topWordsConsidered);
     }
 
+    /**
+     * Set the number of words considered when analysing. The higher the number, the greater the accuracy, but the
+     * slower the processing. Defaults to 15.
+     *
+     * @param words -- the number of 'most important' words to consider
+     * @return a new categoriser
+     */
     public Categoriser topWordsConsidered(int words) {
         return new Categoriser(new HashMap<>(sampleSourceMap), textParser, words);
     }
 
+    /**
+     * Which category is the most likely for the given text
+     *
+     * If all categories have probability 0, return "UNKNOWN" (that probably means it found no words in common at all).
+     *
+     * @param text -- what we're analysing
+     * @return the name of the category
+     */
     public String getProbableCategoryFor(String text) {
         double prob = 0;
         String category = "UNKNOWN";
@@ -60,6 +77,13 @@ public class Categoriser {
         return category;
     }
 
+    /**
+     * Get the probability that the given piece of text is in the specified category
+     *
+     * @param text -- the text we're analysing
+     * @param category -- the category we're checking against
+     * @return the probability (0.0 to 1.0)
+     */
     public double getProbabilityInCategory(String text, String category) {
         return getProbability(text, sampleSourceMap.get(category), createCombinedSourceOfOthers(category));
     }
@@ -80,7 +104,8 @@ public class Categoriser {
      */
     public Map<String,Double> interestingWords(String text, String category) {
 
-        return interestingWords(getProbabilityMap(text, sampleSourceMap.get(category), createCombinedSourceOfOthers(category)));
+        return interestingWords(getProbabilityMap(text, sampleSourceMap.get(category),
+                createCombinedSourceOfOthers(category)));
     }
 
     //<editor-fold desc="Utility methods">
@@ -89,8 +114,8 @@ public class Categoriser {
      * So, if this categoriser has categories a, b, c and d, calling this method for category "d" will
      * create a sample source representing a combined source of samples including everything from a, b and c
      *
-     * @param category
-     * @return
+     * @param category -- the name of the category we *don't* want
+     * @return everything except the given category as a single source
      */
     private SampleSource createCombinedSourceOfOthers(String category) {
         return sampleSourceMap.entrySet().stream()
@@ -99,10 +124,7 @@ public class Categoriser {
                 .reduce(new SimpleSampleSource(), SampleSource::merge);
     }
 
-    private double getProbability(String text,
-                                  SampleSource inSamples,
-                                  SampleSource outSamples) {
-
+    private double getProbability(String text, SampleSource inSamples, SampleSource outSamples) {
         Map<String, Double> topMap = interestingWords(getProbabilityMap(text, inSamples, outSamples));
 
         Collection<Double> values = topMap.values();
@@ -111,16 +133,22 @@ public class Categoriser {
         return product / (product + productOneMinuses);
     }
 
+    /**
+     * Get the most interesting words from a word probability map
+     *
+     * Creates a sorted map, and limits it to the first n, where n is given by topWordsConsidered.
+     *
+     * @param probabilityMap -- the map to find the words from
+     * @return A map of the most interesting words, word --> probability
+     */
     private Map<String, Double> interestingWords(Map<String, Double> probabilityMap) {
         return sort(probabilityMap).entrySet().stream().limit(topWordsConsidered)
                 .collect(TreeMap::new, (m, e) -> m.put(e.getKey(), e.getValue()), Map::putAll);
     }
 
-    private Map<String, Double> getProbabilityMap(String text,
-                                                      SampleSource inSamples,
-                                                      SampleSource outSamples) {
-        List<String> tokenise = textParser.words(text);
-        List<String> distinctWords = tokenise.stream().distinct().collect(Collectors.toList());
+    private Map<String, Double> getProbabilityMap(String text, SampleSource inSamples, SampleSource outSamples) {
+        List<String> words = textParser.words(text);
+        List<String> distinctWords = words.stream().distinct().collect(toList());
 
         HashMap<String, Double> probs = new HashMap<>();
         for (String word : distinctWords) {
@@ -129,6 +157,7 @@ public class Categoriser {
                 probs.put(word, value);
             }
         }
+
         return probs;
     }
 
