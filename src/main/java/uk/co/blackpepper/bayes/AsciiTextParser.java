@@ -30,13 +30,13 @@ public class AsciiTextParser implements Tokenizer {
 
     private List<String> tokenizeSpaces(String text) {
         String[] split = text.split("\\s");
-        ArrayList<String> result = new ArrayList<>();
+        List<String> result = new ArrayList<>();
         result.addAll(Arrays.asList(split));
         return result;
     }
 
     private List<String> tokenizePeriods(String text) {
-        ArrayList<String> result = new ArrayList<>();
+        List<String> result = new ArrayList<>();
         Pattern p = Pattern.compile("([0-9]+\\.[0-9]+)+");
         Matcher matcher = p.matcher(text);
         int i = 0;
