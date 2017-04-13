@@ -10,8 +10,8 @@ import java.util.stream.Collectors;
 /**
  * Created by davidg on 11/04/2017.
  */
-public class AsciiTextParser implements Tokenizer {
-    public List<String> tokenise(String text) {
+public class AsciiTextParser implements TextParser {
+    public List<String> words(String text) {
         ArrayList<String> result = new ArrayList<>();
         if (text == null) {
             return result;

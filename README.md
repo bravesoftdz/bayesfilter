@@ -39,7 +39,7 @@ and allows you to calculate the probability the other way round:
 2. Probability(That this is a spam email given that it contains the word 'x')
 ````
 
-The value of 1 is easy to evaluate; it is simply a function of the number of instance of the word 'x', divided by the number of known spam emails. But the value of 2 is what can be used to decide if an email is spam.
+The value of `1` is easy to evaluate; it is simply the number of instances of the word 'x', divided by the number of known spam emails. But the value of `2` is what can be used to decide if an email is spam.
 
 When the categoriser in this library wants to decide if a piece of text matches a given category, it first calculates the probability that text is in the category for each word:
 
@@ -47,7 +47,7 @@ When the categoriser in this library wants to decide if a piece of text matches 
 p0, p1, ..... , pn
 ````
 
-It then finds the 15 word probabilities that are furthest from 0.5. These are the words that are most likely to tell us whether the text is in, or out of the category. These probabilities are then combined into a single probability:
+It then finds the 15 word probabilities that are furthest from 0.5. These are the words that are most likely to tell us whether the text is in, or out, of the category. These probabilities are then combined into a single probability:
 
 ````
 p0...p14 / (p0...p14 + (1 - p0)...(1-p14))
@@ -60,3 +60,21 @@ Probability(This piece of text belongs in the category given the words it contai
 ````
 
 The library will find the category with the highest probability of a match, and return the name of that category.
+
+#### Main concepts in the code
+
+##### A concordance
+
+A concordance is effectively a map of word frequencies. 
+
+##### A sample source
+
+Examples of a given category. It provides a concordance of the samples, and the number of items (e.g. files) in the source.
+
+##### A text parser
+
+This takes a piece of text, and breaks it down into words.
+
+##### A categoriser
+
+This takes a set of categories and calculates the probability of a piece of text belong to one of them.

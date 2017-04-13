@@ -11,12 +11,12 @@ import static org.junit.Assert.assertEquals;
  */
 public class AsciiTextParserTest {
 
-    private final Tokenizer tokenizer = new AsciiTextParser();
+    private final TextParser textParser = new AsciiTextParser();
 
     @Test
     public void ifTextContainsOneWordThenReturnAListOfOneWord() {
         //<editor-fold desc="When">
-        List<String> tokens = tokenizer.tokenise("word");
+        List<String> tokens = textParser.words("word");
         //</editor-fold>
 
         //<editor-fold desc="Then">
@@ -28,7 +28,7 @@ public class AsciiTextParserTest {
     @Test
     public void isTextIsNullThenReturnAnEmptyList() {
         //<editor-fold desc="When">
-        List<String> tokens = tokenizer.tokenise(null);
+        List<String> tokens = textParser.words(null);
         //</editor-fold>
 
         //<editor-fold desc="Then">
@@ -39,7 +39,7 @@ public class AsciiTextParserTest {
     @Test
     public void isTextIsBlankThenReturnAnEmptyList() {
         //<editor-fold desc="When">
-        List<String> tokens = tokenizer.tokenise("     \n\n\n\n\n \t   \r\n   ");
+        List<String> tokens = textParser.words("     \n\n\n\n\n \t   \r\n   ");
         //</editor-fold>
 
         //<editor-fold desc="Then">
@@ -50,7 +50,7 @@ public class AsciiTextParserTest {
     @Test
     public void ifTextContainsTwoWordsThenReturnAListOfTwoWords() {
         //<editor-fold desc="When">
-        List<String> tokens = tokenizer.tokenise("some words");
+        List<String> tokens = textParser.words("some words");
         //</editor-fold>
 
         //<editor-fold desc="Then">
@@ -63,7 +63,7 @@ public class AsciiTextParserTest {
     @Test
     public void canSplitWordsWithAnyWhitespaceCharacters() {
         //<editor-fold desc="When">
-        List<String> tokens = tokenizer.tokenise("some words\tare\nhere");
+        List<String> tokens = textParser.words("some words\tare\nhere");
         //</editor-fold>
 
         //<editor-fold desc="Then">
@@ -78,7 +78,7 @@ public class AsciiTextParserTest {
     @Test
     public void exclamationPointsAreConstituentCharacters() {
         //<editor-fold desc="When">
-        List<String> tokens = tokenizer.tokenise("some! words");
+        List<String> tokens = textParser.words("some! words");
         //</editor-fold>
 
         //<editor-fold desc="Then">
@@ -91,7 +91,7 @@ public class AsciiTextParserTest {
     @Test
     public void exclamationPointsAreConstituentCharactersEvenIfNoGapAfter() {
         //<editor-fold desc="When">
-        List<String> tokens = tokenizer.tokenise("some!words");
+        List<String> tokens = textParser.words("some!words");
         //</editor-fold>
 
         //<editor-fold desc="Then">
@@ -104,7 +104,7 @@ public class AsciiTextParserTest {
     @Test
     public void multipleExclamationPointsAreConstituentCharactersEvenIfNoGapAfter() {
         //<editor-fold desc="When">
-        List<String> tokens = tokenizer.tokenise("some!!!!words");
+        List<String> tokens = textParser.words("some!!!!words");
         //</editor-fold>
 
         //<editor-fold desc="Then">
@@ -117,7 +117,7 @@ public class AsciiTextParserTest {
     @Test
     public void canHaveMultipleWordsEndingWithExMarks() {
         //<editor-fold desc="When">
-        List<String> tokens = tokenizer.tokenise("some!!!!words!! here");
+        List<String> tokens = textParser.words("some!!!!words!! here");
         //</editor-fold>
 
         //<editor-fold desc="Then">
@@ -131,7 +131,7 @@ public class AsciiTextParserTest {
     @Test
     public void periodsCanSplitWords() {
         //<editor-fold desc="When">
-        List<String> tokens = tokenizer.tokenise("hello.world");
+        List<String> tokens = textParser.words("hello.world");
         //</editor-fold>
 
         //<editor-fold desc="Then">
@@ -144,7 +144,7 @@ public class AsciiTextParserTest {
     @Test
     public void periodsDoNotSplitNumbers() {
         //<editor-fold desc="When">
-        List<String> tokens = tokenizer.tokenise("hello.1.2.world.3.4 15.4 and. hello");
+        List<String> tokens = textParser.words("hello.1.2.world.3.4 15.4 and. hello");
         //</editor-fold>
 
         //<editor-fold desc="Then">

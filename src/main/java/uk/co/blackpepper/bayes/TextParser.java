@@ -8,6 +8,6 @@ import java.util.List;
  * Created by davidg on 13/04/2017.
  */
 @FunctionalInterface
-public interface Tokenizer {
-    public List<String> tokenise(String text);
+public interface TextParser {
+    public List<String> words(String text);
 }

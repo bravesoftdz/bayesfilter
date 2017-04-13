@@ -1,7 +1,5 @@
 package uk.co.blackpepper.bayes;
 
-import sun.tools.jstat.Token;
-
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
@@ -44,8 +42,8 @@ public class Concordance {
         this(words, new AsciiTextParser());
     }
 
-    public Concordance(String words, Tokenizer tokenizer) {
-        this(tokenizer.tokenise(words));
+    public Concordance(String words, TextParser textParser) {
+        this(textParser.words(words));
     }
 
     private Concordance(Map<String,Integer> map) {

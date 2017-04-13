@@ -9,27 +9,27 @@ import java.util.stream.Collectors;
 public class Categoriser {
 
     private final Map<String, SampleSource> sampleSourceMap;
-    private Tokenizer tokenizer;
+    private TextParser textParser;
 
     public Categoriser() {
         this(new HashMap<>());
     }
 
-    public Categoriser(Tokenizer tokenizer) {
-        this(new HashMap<>(), tokenizer);
+    public Categoriser(TextParser textParser) {
+        this(new HashMap<>(), textParser);
     }
 
     public Categoriser(Map<String,SampleSource> sampleSourceMap) {
         this(sampleSourceMap, new AsciiTextParser());
     }
 
-    public Categoriser(Map<String,SampleSource> sampleSourceMap, Tokenizer tokenizer) {
+    public Categoriser(Map<String,SampleSource> sampleSourceMap, TextParser textParser) {
         this.sampleSourceMap = sampleSourceMap;
-        this.tokenizer = tokenizer;
+        this.textParser = textParser;
     }
 
     public Categoriser category(String categoryName, SampleSource sample) {
-        tokenizer = new AsciiTextParser();
+        textParser = new AsciiTextParser();
         Map<String, SampleSource> map = new HashMap<>(sampleSourceMap);
         map.put(categoryName, sample);
         return new Categoriser(map);
@@ -55,6 +55,26 @@ public class Categoriser {
         return getProbability(text, sampleSourceMap.get(category), createCombinedSourceOfOthers(category));
     }
 
+    /**
+     * A map of words that are used to decide if the given text matches the given category.
+     * each word is matched to the weight of evidence of a match.
+     *
+     * For example, if you are comparing a piece of text against a category of business news items,
+     * then the map might contain the word "money" with a value of 0.8 (this a good match for the category)
+     * and "kitten" with a value of 0.1 (this is a bad match for the category).
+     *
+     * This map might be used to highlight significant words with a high value for the match.
+     *
+     * @param text -- the text we're analysing
+     * @param category -- the category we are comparing the text against.
+     * @return
+     */
+    public Map<String,Double> interestingWords(String text, String category) {
+
+        return interestingWords(getProbabilityMap(text, sampleSourceMap.get(category), createCombinedSourceOfOthers(category)));
+    }
+
+    //<editor-fold desc="Utility methods">
     /**
      * Create a sample source that represents all of the samples *except* the given category.
      * So, if this categoriser has categories a, b, c and d, calling this method for category "d" will
@@ -90,9 +110,8 @@ public class Categoriser {
     private double getProbability(String text,
                                   SampleSource inSamples,
                                   SampleSource outSamples) {
-        HashMap<String, Double> probabilityMap = getProbabilityMap(text, inSamples, outSamples);
 
-        HashMap<String, Double> topMap = getTopMap(probabilityMap);
+        Map<String, Double> topMap = interestingWords(getProbabilityMap(text, inSamples, outSamples));
 
         Collection<Double> values = topMap.values();
         double product = values.stream().reduce(1.0, (a, b) -> a * b);
@@ -100,7 +119,7 @@ public class Categoriser {
         return product / (product + productOneMinuses);
     }
 
-    private HashMap<String, Double> getTopMap(HashMap<String, Double> probabilityMap) {
+    private Map<String, Double> interestingWords(Map<String, Double> probabilityMap) {
         Map<String, Double> sortedProbabilityMap = sort(probabilityMap);
         int count = 15;
         HashMap<String, Double> topMap = new HashMap<>();
@@ -113,10 +132,10 @@ public class Categoriser {
         return topMap;
     }
 
-    private HashMap<String, Double> getProbabilityMap(String text,
+    private Map<String, Double> getProbabilityMap(String text,
                                                       SampleSource inSamples,
                                                       SampleSource outSamples) {
-        List<String> tokenise = tokenizer.tokenise(text);
+        List<String> tokenise = textParser.words(text);
         List<String> distinctWords = tokenise.stream().distinct().collect(Collectors.toList());
 
         HashMap<String, Double> probs = new HashMap<>();
@@ -164,7 +183,5 @@ public class Categoriser {
             return (int) (1000000000 * (v2 - v1));
         };
     }
-
     //</editor-fold>
-
 }
