@@ -112,16 +112,8 @@ public class Categoriser {
     }
 
     private Map<String, Double> interestingWords(Map<String, Double> probabilityMap) {
-        Map<String, Double> sortedProbabilityMap = sort(probabilityMap);
-        HashMap<String, Double> topMap = new HashMap<>();
-        int count = topWordsConsidered;
-        for (Map.Entry<String,Double> entry : sortedProbabilityMap.entrySet()) {
-            if (count-- == 0) {
-                break;
-            }
-            topMap.put(entry.getKey(), entry.getValue());
-        }
-        return topMap;
+        return sort(probabilityMap).entrySet().stream().limit(topWordsConsidered)
+                .collect(TreeMap::new, (m, e) -> m.put(e.getKey(), e.getValue()), Map::putAll);
     }
 
     private Map<String, Double> getProbabilityMap(String text,
