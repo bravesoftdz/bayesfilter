@@ -8,7 +8,7 @@ import java.util.Arrays;
 
 /**
  * A {@link uk.co.blackpepper.bayes.SampleSource} created from a directory of files.
- * It will ignore sub-directories.
+ * It will recursively include files from sub-directories.
  *
  * Created by davidg on 12/04/2017.
  */
@@ -22,17 +22,16 @@ class DirectorySampleSource implements SampleSource {
     }
 
     public DirectorySampleSource(File dir) throws IOException {
-        Concordance c = new Concordance("");
-        int count = 0;
+        SampleSource sampleSource = new SimpleSampleSource();
 
         for (File file : dir.listFiles()) {
-            if (file.isFile()) {
-                c = c.merge(new Concordance(readFileAsString(file)));
-                count++;
-            }
+            sampleSource = sampleSource.merge(file.isDirectory()
+                    ? new DirectorySampleSource(file)
+                    : new StringSampleSource(readFileAsString(file)));
         }
-        this.concordance = c;
-        this.count = count;
+
+        this.concordance = sampleSource.concordance();
+        this.count = sampleSource.sampleCount();
     }
 
     @Override

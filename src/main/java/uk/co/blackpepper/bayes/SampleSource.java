@@ -13,4 +13,10 @@ public interface SampleSource {
     int sampleCount();
 
     Concordance concordance();
+
+    default SampleSource merge(final SampleSource other) {
+        return new SimpleSampleSource(
+                sampleCount() + other.sampleCount(),
+                concordance().merge(other.concordance()));
+    }
 }
