@@ -93,15 +93,10 @@ public class Categoriser {
      * @return
      */
     private SampleSource createCombinedSourceOfOthers(String category) {
-        Concordance othersConcordance = new Concordance("");
-        int othersCount = 0;
-        for (Map.Entry<String,SampleSource> others : sampleSourceMap.entrySet()) {
-            if (!others.getKey().equals(category)) {
-                othersConcordance = othersConcordance.merge(others.getValue().concordance());
-                othersCount += others.getValue().sampleCount();
-            }
-        }
-        return new SimpleSampleSource(othersCount, othersConcordance);
+        return sampleSourceMap.entrySet().stream()
+                .filter(e -> !e.getKey().equals(category))
+                .map(Map.Entry::getValue)
+                .reduce(new SimpleSampleSource(), SampleSource::merge);
     }
 
     private double getProbability(String text,
