@@ -101,19 +101,7 @@ public class Categoriser {
                 othersCount += others.getValue().sampleCount();
             }
         }
-        final Concordance concordance = othersConcordance;
-        final int sampleCount = othersCount;
-        return new SampleSource() {
-            @Override
-            public int sampleCount() {
-                return sampleCount;
-            }
-
-            @Override
-            public Concordance concordance() {
-                return concordance;
-            }
-        };
+        return new SimpleSampleSource(othersCount, othersConcordance);
     }
 
     private double getProbability(String text,
