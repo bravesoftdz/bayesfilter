@@ -26,6 +26,17 @@ public class AsciiTextParserTest {
     }
 
     @Test
+    public void ignoresWeirdChars() {
+        //<editor-fold desc="When">
+        List<String> tokens = textParser.words("| -");
+        //</editor-fold>
+
+        //<editor-fold desc="Then">
+        assertEquals(0, tokens.size());
+        //</editor-fold>
+    }
+
+    @Test
     public void isTextIsNullThenReturnAnEmptyList() {
         //<editor-fold desc="When">
         List<String> tokens = textParser.words(null);

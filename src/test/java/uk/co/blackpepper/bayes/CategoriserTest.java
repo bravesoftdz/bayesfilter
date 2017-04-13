@@ -503,7 +503,9 @@ public class CategoriserTest {
     public void runDemo() throws IOException {
         Categoriser categoriser = new Categoriser()
                 .category("business", new DirectorySampleSource("./data/samples/business"))
-                .category("technology", new DirectorySampleSource("./data/samples/technology"));
+                .category("technology", new DirectorySampleSource("./data/samples/technology"))
+                .category("sport", new DirectorySampleSource("./data/samples/sport"))
+                ;
 
         String dataDirName = "./data/";
         String analysisDirName = dataDirName + "analysis/";
