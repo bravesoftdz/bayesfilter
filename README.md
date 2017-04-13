@@ -5,7 +5,7 @@
 
 This library can be used to categorise text, based on samples.
 
-For example, if you have a directory of "business" news stories, and another of "technology" news stories, this code will find the probably category for the string `analysisText`.
+For example, if you have a directory of "business" news stories, and another of "technology" news stories, this code will find the probable category for the string `analysisText`.
 
 ````
 HashMap<String, SampleSource> sampleSourceHashMap = new HashMap<>();
@@ -17,3 +17,41 @@ Categoriser categoriser = new Categoriser(sampleSourceHashMap);
 String probableCategory = categoriser.getProbableCategoryFor(analysisText);
 ````
 
+
+#### What is a Bayesian filter
+
+A Bayesian filter is typically used to associated a piece of text with other similar pieces of text. An example would be a spam filter: provide the filter with a large set of spam messages and non-spam messages, then ask if it a new email is more like a spam message or a non-spam message.
+
+In this implementation, the Bayesian filter can be provided with a set of text categories, and will then return the name of the most likely category for any given piece of text.
+
+#### How does a Bayesian filter work?
+
+A Bayesian filter uses Bayes' theorem to calculate the probability of a piece of text matching a particular category.
+
+Bayes' theorem is used to calculate probabilities based on evidence. With Bayes' theorem you can take this:
+
+````
+1. Probability(Email contains word 'x' given that it is a spam email)
+````
+
+and allows you to calculate the probability the other way round:
+
+````
+2. Probability(That this is a spam email given that it contains the word 'x')
+````
+
+The value of 1 is easy to evaluate; it is simply a function of the number of instance of the word 'x', divided by the number of known spam emails. But the value of 2 is what can be used to decide if an email is spam.
+
+When the categoriser in this library wants to decide if a piece of text matches a given category, it first calculates the probability that text is in the category for each word: p0, p1, ..... , pn. It then finds the 15 word probabilities that are further from 0.5. THese are the words that are most likely to tell us whether the text matches the category (if their value is > 0.5) or whether it does not match the category (if their value is < 0.5). The code then combines these values into a single value with:
+
+````
+p0...p14 / (p0...p14 + (1 - p0)...(1-p14))
+````
+
+This is an approximation of:
+
+````
+Probability(This piece of text belongs in the category given the words it contains)
+````
+
+The library will find the category with the highest probability of a match, and return the name of that category.
