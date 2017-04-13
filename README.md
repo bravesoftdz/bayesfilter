@@ -42,7 +42,13 @@ and allows you to calculate the probability the other way round:
 
 The value of 1 is easy to evaluate; it is simply a function of the number of instance of the word 'x', divided by the number of known spam emails. But the value of 2 is what can be used to decide if an email is spam.
 
-When the categoriser in this library wants to decide if a piece of text matches a given category, it first calculates the probability that text is in the category for each word: p0, p1, ..... , pn. It then finds the 15 word probabilities that are further from 0.5. THese are the words that are most likely to tell us whether the text matches the category (if their value is > 0.5) or whether it does not match the category (if their value is < 0.5). The code then combines these values into a single value with:
+When the categoriser in this library wants to decide if a piece of text matches a given category, it first calculates the probability that text is in the category for each word:
+
+`````
+p0, p1, ..... , pn
+````
+
+It then finds the 15 word probabilities that are furthest from 0.5. These are the words that are most likely to tell us whether the text is in, or out of the category. These probabilities are then combined into a single probability:
 
 ````
 p0...p14 / (p0...p14 + (1 - p0)...(1-p14))
@@ -55,3 +61,4 @@ Probability(This piece of text belongs in the category given the words it contai
 ````
 
 The library will find the category with the highest probability of a match, and return the name of that category.
+
