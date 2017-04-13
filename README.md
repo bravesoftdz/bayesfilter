@@ -59,4 +59,3 @@ Probability(This piece of text belongs in the category given the words it contai
 ````
 
 The library will find the category with the highest probability of a match, and return the name of that category.
-

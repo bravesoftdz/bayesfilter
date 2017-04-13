@@ -4,31 +4,40 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.Arrays;
 
 /**
+ * A {@link uk.co.blackpepper.bayes.SampleSource} created from a directory of files.
+ * It will ignore sub-directories.
+ *
  * Created by davidg on 12/04/2017.
  */
 class DirectorySampleSource implements SampleSource {
 
-    private final File dir;
     private final Concordance concordance;
+    private final int count;
 
     public DirectorySampleSource(String dirName) throws IOException {
         this(new File(dirName));
     }
 
     public DirectorySampleSource(File dir) throws IOException {
-        this.dir = dir;
-        StringBuilder words = new StringBuilder();
+        Concordance c = new Concordance("");
+        int count = 0;
+
         for (File file : dir.listFiles()) {
-            words.append(" ").append(readFileAsString(file));
+            if (file.isFile()) {
+                c = c.merge(new Concordance(readFileAsString(file)));
+                count++;
+            }
         }
-        concordance = new Concordance(words.toString());
+        this.concordance = c;
+        this.count = count;
     }
 
     @Override
     public int sampleCount() {
-        return dir.listFiles().length;
+        return count;
     }
 
     @Override
