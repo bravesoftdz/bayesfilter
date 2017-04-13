@@ -15,6 +15,10 @@ public class Categoriser {
         this(new HashMap<>());
     }
 
+    public Categoriser(Tokenizer tokenizer) {
+        this(new HashMap<>(), tokenizer);
+    }
+
     public Categoriser(Map<String,SampleSource> sampleSourceMap) {
         this(sampleSourceMap, new AsciiTextParser());
     }
@@ -36,7 +40,7 @@ public class Categoriser {
         String category = "UNKNOWN";
 
         for (Map.Entry<String,SampleSource> entry : sampleSourceMap.entrySet()) {
-            double probability = getProbability(text, entry);
+            double probability = getProbability(text, entry.getValue(), createCombinedSourceOfOthers(entry.getKey()));
 
             if (probability > prob) {
                 prob = probability;
@@ -50,25 +54,42 @@ public class Categoriser {
     public double getProbabilityInCategory(String text, String category) {
         for (Map.Entry<String, SampleSource> entry : sampleSourceMap.entrySet()) {
             if (entry.getKey().equals(category)) {
-                return getProbability(text, entry);
+                return getProbability(text, entry.getValue(), createCombinedSourceOfOthers(entry.getKey()));
             }
         }
         return 0;
     }
 
-    //<editor-fold desc="Utility methods">
-    private double getProbability(String text, Map.Entry<String, SampleSource> entry) {
-        SampleSource sampleSource = entry.getValue();
+    /**
+     * Create a sample source that represents all of the samples *except* the given category.
+     * So, if this categoriser has categories a, b, c and d, calling this method for category "d" will
+     * create a sample source representing a combined source of samples including everything from a, b and c
+     *
+     * @param category
+     * @return
+     */
+    private SampleSource createCombinedSourceOfOthers(String category) {
         Concordance othersConcordance = new Concordance("");
         int othersCount = 0;
         for (Map.Entry<String,SampleSource> others : sampleSourceMap.entrySet()) {
-            if (!others.getKey().equals(entry.getKey())) {
+            if (!others.getKey().equals(category)) {
                 othersConcordance = othersConcordance.merge(others.getValue().concordance());
                 othersCount += others.getValue().sampleCount();
             }
         }
-        return getProbability(text,
-                sampleSource, new SimpleSampleSource(othersConcordance, othersCount));
+        final Concordance concordance = othersConcordance;
+        final int sampleCount = othersCount;
+        return new SampleSource() {
+            @Override
+            public int sampleCount() {
+                return sampleCount;
+            }
+
+            @Override
+            public Concordance concordance() {
+                return concordance;
+            }
+        };
     }
 
     private double getProbability(String text,
@@ -80,8 +101,8 @@ public class Categoriser {
 
         Collection<Double> values = topMap.values();
         double product = values.stream().reduce(1.0, (a, b) -> a * b);
-        double productOneMinus = values.stream().reduce(1.0, (a, b) -> a * (1 - b));
-        return product / (product + productOneMinus);
+        double productOneMinuses = values.stream().reduce(1.0, (a, b) -> a * (1 - b));
+        return product / (product + productOneMinuses);
     }
 
     private HashMap<String, Double> getTopMap(HashMap<String, Double> probabilityMap) {
@@ -149,26 +170,6 @@ public class Categoriser {
         };
     }
 
-    private static class SimpleSampleSource implements SampleSource {
-
-        private final Concordance concordance;
-        private final int sampleCount;
-
-        public SimpleSampleSource(Concordance concordance, int sampleCount) {
-            this.concordance = concordance;
-            this.sampleCount = sampleCount;
-        }
-
-        @Override
-        public int sampleCount() {
-            return sampleCount;
-        }
-
-        @Override
-        public Concordance concordance() {
-            return concordance;
-        }
-    }
     //</editor-fold>
 
 }
