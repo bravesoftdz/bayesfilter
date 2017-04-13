@@ -10,27 +10,27 @@ import java.util.stream.Collectors;
  */
 public class Categoriser {
 
-    private final Map<String, SampleSource> sampleSourceMap;
+    private final Map<String, Sampleable> sampleSourceMap;
 
     public Categoriser() {
         this(new HashMap<>());
     }
 
-    public Categoriser(Map<String,SampleSource> sampleSourceMap) {
+    public Categoriser(Map<String,Sampleable> sampleSourceMap) {
         this.sampleSourceMap = sampleSourceMap;
     }
 
-    public Categoriser category(String categoryName, SampleSource sample) {
-        Map<String, SampleSource> map = new HashMap<>(sampleSourceMap);
+    public Categoriser category(String categoryName, Sampleable sample) {
+        Map<String, Sampleable> map = new HashMap<>(sampleSourceMap);
         map.put(categoryName, sample);
         return new Categoriser(map);
     }
 
-    public String getProbableCategoryFor(String text) throws IOException {
+    public String getProbableCategoryFor(String text) {
         double prob = 0;
         String category = "UNKNOWN";
 
-        for (Map.Entry<String,SampleSource> entry : sampleSourceMap.entrySet()) {
+        for (Map.Entry<String,Sampleable> entry : sampleSourceMap.entrySet()) {
             double probability = getProbability(text, entry);
 
             if (probability > prob) {
@@ -43,7 +43,7 @@ public class Categoriser {
     }
 
     public double getProbabilityInCategory(String text, String category) {
-        for (Map.Entry<String, SampleSource> entry : sampleSourceMap.entrySet()) {
+        for (Map.Entry<String, Sampleable> entry : sampleSourceMap.entrySet()) {
             if (entry.getKey().equals(category)) {
                 return getProbability(text, entry);
             }
@@ -52,18 +52,18 @@ public class Categoriser {
     }
 
     //<editor-fold desc="Utility methods">
-    private double getProbability(String text, Map.Entry<String, SampleSource> entry) {
-        SampleSource sampleSource = entry.getValue();
+    private double getProbability(String text, Map.Entry<String, Sampleable> entry) {
+        Sampleable sampleable = entry.getValue();
         Concordance othersConcordance = new Concordance("");
         int othersCount = 0;
-        for (Map.Entry<String,SampleSource> others : sampleSourceMap.entrySet()) {
+        for (Map.Entry<String,Sampleable> others : sampleSourceMap.entrySet()) {
             if (!others.getKey().equals(entry.getKey())) {
                 othersConcordance = othersConcordance.merge(others.getValue().concordance());
                 othersCount += others.getValue().sampleCount();
             }
         }
         return getProbability(text,
-                sampleSource.sampleCount(), sampleSource.concordance(),
+                sampleable.sampleCount(), sampleable.concordance(),
                 othersCount, othersConcordance);
     }
 

@@ -8,7 +8,7 @@ import java.io.IOException;
 /**
  * Created by davidg on 12/04/2017.
  */
-class DirectorySampleSource implements SampleSource {
+class DirectorySampleSource implements Sampleable {
 
     private final File dir;
     private final Concordance concordance;

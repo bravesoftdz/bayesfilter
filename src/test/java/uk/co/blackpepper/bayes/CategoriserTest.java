@@ -17,6 +17,65 @@ import static org.junit.Assert.*;
  * Created by davidg on 13/04/2017.
  */
 public class CategoriserTest {
+
+    @Test
+    public void canFindJohnGrishamTitles() {
+        Categoriser categoriser = new Categoriser()
+                .category("grisham", new StringSampleSource(
+                        "A Time to Kill",
+                        "The Firm ",
+                        "The Pelican Brief",
+                        "The Client",
+                        "The Chamber",
+                        "The Rainmaker",
+                        "The Runaway Jury",
+                        "The Partner",
+                        "The Street Lawyer",
+                        "The Testament",
+                        "The Brethren",
+                        "A Painted House",
+                        "Skipping Christmas",
+                        "The Summons",
+                        "The King of Torts",
+                        "Bleachers",
+                        "The Last Juror",
+                        "The Broker",
+                        "The Innocent Man",
+                        "Playing for Pizza",
+                        "The Appeal",
+                        "The Associate",
+                        "Ford County",
+                        "Theodore Boone: Kid Lawyer",
+                        "The Confession",
+                        "Theodore Boone: The Abduction",
+                        "The Litigators ",
+                        "Theodore Boone: The Accused",
+                        "Calico Joe",
+                        "The Racketeer",
+                        "Theodore Boone: The Activist",
+                        "Sycamore Row ",
+                        "Gray Mountain",
+                        "Theodore Boone: The Fugitive",
+                        "Rogue Lawyer",
+                        "Partners (a \"Rogue Lawyer\" short story)",
+                        "Theodore Boone: The Scandal",
+                        "Witness to a Trial (a digital short story)"
+                ))
+                .category("dickens", new StringSampleSource(
+                        "Great Expectations",
+                        "Our Mutual Friend",
+                        "David Copperfield",
+                        "Bleak House",
+                        "Little Dorrit",
+                        "Oliver Twist",
+                        "Nicholas Nickleby",
+                        "Dombey and Son",
+                        "The Pickwick Papers",
+                        "The Selected Letters of Charles Dickens"
+                ));
+        assertEquals("grisham", categoriser.getProbableCategoryFor("The Whistler"));
+    }
+
     @Test
     public void aNonSportStoryDoesNotLookLikeSport() throws IOException {
         Categoriser categoriser = new Categoriser()
