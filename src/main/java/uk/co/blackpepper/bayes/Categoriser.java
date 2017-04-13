@@ -52,12 +52,7 @@ public class Categoriser {
     }
 
     public double getProbabilityInCategory(String text, String category) {
-        for (Map.Entry<String, SampleSource> entry : sampleSourceMap.entrySet()) {
-            if (entry.getKey().equals(category)) {
-                return getProbability(text, entry.getValue(), createCombinedSourceOfOthers(entry.getKey()));
-            }
-        }
-        return 0;
+        return getProbability(text, sampleSourceMap.get(category), createCombinedSourceOfOthers(category));
     }
 
     /**
