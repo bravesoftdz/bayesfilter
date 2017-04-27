@@ -15,10 +15,6 @@
         <dependency>
             <groupId>uk.co.blackpepper</groupId>
             <artifactId>naive</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>uk.co.blackpepper</groupId>
-            <artifactId>naive</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
     </dependencies>
