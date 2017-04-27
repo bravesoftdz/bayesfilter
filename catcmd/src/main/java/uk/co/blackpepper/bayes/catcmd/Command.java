@@ -12,7 +12,7 @@ import java.nio.file.Files;
 public class Command {
     public static void main(String[] args) {
         try {
-            String dataDirName = "./catcmd/data/";
+            String dataDirName = (args.length < 1) ? "./catcmd/data/" : args[0];
 
             Categoriser categoriser = new Categoriser()
                     .category("business", new DirectorySampleSource(dataDirName + "samples/business"))
