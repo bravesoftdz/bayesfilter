@@ -209,7 +209,8 @@ public class AsciiTextParserTest {
     @Test
     public void willSkipWeirdWords() {
         //<editor-fold desc="Given">
-        String text = "now â€” the you'll - World-wide";
+        String text = "now â€” the you'll - World-wide Â£ 3.9 $4.8bn\n" +
+                "(£3.9bn) sale";
         //</editor-fold>
 
         //<editor-fold desc="When">
@@ -221,6 +222,10 @@ public class AsciiTextParserTest {
         assertEquals("the", words.get(1));
         assertEquals("you'll", words.get(2));
         assertEquals("World-wide", words.get(3));
+        assertEquals("3.9", words.get(4));
+        assertEquals("$4.8bn", words.get(5));
+        assertEquals("£3.9bn", words.get(6));
+        assertEquals("sale", words.get(7));
         //</editor-fold>
     }
 

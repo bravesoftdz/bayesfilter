@@ -55,7 +55,7 @@ public class AsciiTextParser implements TextParser {
 
     private List<String> tokenizePeriods(String text) {
         List<String> result = new ArrayList<>();
-        Pattern p = Pattern.compile("([0-9]+\\.[0-9]+)+");
+        Pattern p = Pattern.compile("([£$€₪₩₨₢₡0-9]+\\.[a-zA-Z0-9]+)+");
         Matcher matcher = p.matcher(text);
         int i = 0;
         while(matcher.find()) {
