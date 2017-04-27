@@ -3,10 +3,7 @@ package uk.co.blackpepper.bayes;
 import org.junit.Ignore;
 import org.junit.Test;
 
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
 import java.nio.file.Files;
 import java.nio.file.StandardCopyOption;
 import java.util.Map;
@@ -549,7 +546,10 @@ public class CategoriserTest {
                 if (!destDir.isDirectory()) {
                     Files.createDirectory(destDir.toPath());
                 }
-                Files.copy(file.toPath(), new File(destDir, name).toPath(), StandardCopyOption.REPLACE_EXISTING);
+                String html = HTMLRenderer.getInstance().render(analysisText, categoriser.interestingWords(analysisText, category));
+                FileWriter writer = new FileWriter(new File(destDir, name + ".html"));
+                writer.write(html);
+                writer.close();
             }
         }
     }
