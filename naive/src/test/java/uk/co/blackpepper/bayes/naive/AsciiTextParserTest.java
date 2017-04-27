@@ -218,10 +218,9 @@ public class AsciiTextParserTest {
 
         //<editor-fold desc="Then">
         assertEquals("now", words.get(0));
-        assertEquals("€", words.get(1));
-        assertEquals("the", words.get(2));
-        assertEquals("you'll", words.get(3));
-        assertEquals("World-wide", words.get(4));
+        assertEquals("the", words.get(1));
+        assertEquals("you'll", words.get(2));
+        assertEquals("World-wide", words.get(3));
         //</editor-fold>
     }
 
@@ -254,6 +253,26 @@ public class AsciiTextParserTest {
         assertEquals("1,000,000", words.get(0));
         assertEquals("or", words.get(1));
         assertEquals("more", words.get(2));
+        //</editor-fold>
+    }
+
+    @Test
+    public void currencySymbolNotIgnoreIfBeforeNumber() {
+        //<editor-fold desc="Given">
+        String text = "$1000 £1000 $hello 0$0 world";
+        //</editor-fold>
+
+        //<editor-fold desc="When">
+        List<String> words = textParser.words(text);
+        //</editor-fold>
+
+        //<editor-fold desc="Then">
+        assertEquals("$1000", words.get(0));
+        assertEquals("£1000", words.get(1));
+        assertEquals("hello", words.get(2));
+        assertEquals("0", words.get(3));
+        assertEquals("$0", words.get(4));
+        assertEquals("world", words.get(5));
         //</editor-fold>
     }
 }

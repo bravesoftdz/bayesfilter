@@ -27,8 +27,12 @@ public class AsciiTextParser implements TextParser {
         // Remove commas outside of numbers
         t = t.replaceAll(",(?=[^0-9])", " ");
 
+        // Remove currency symbols that don't come before numbers
+        t = t.replaceAll("[£$€₪₩₨₢₡](?=[^0-9])", " ");
+        t = t.replaceAll("([0-9])([£$€₪₩₨₢₡])", "$1 $2");
+
         // Get rid of chars we don't care about
-        t = t.replaceAll("[^A-Za-z0-9'\\.\\-!&£$€₪₩₨₢₡,]", " ");
+        t = t.replaceAll("[^A-Za-z0-9'\\.\\-!&,£$€₪₩₨₢₡]", " ");
 
         result.addAll(tokenizeSpaces(t));
         ArrayList<String> result2 = new ArrayList<>();
