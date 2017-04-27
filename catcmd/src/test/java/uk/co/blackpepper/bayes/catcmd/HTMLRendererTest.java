@@ -11,7 +11,7 @@ import java.util.HashMap;
  */
 public class HTMLRendererTest {
 
-    public static final String START = "<span style='color: rgba(0, 0, 0, 0.10);'>";
+    public static final String START = "<span style='color: rgba(0, 0, 0, 0.10);' title='0.50'>";
     public static final String END = "</span>";
     private HTMLRenderer renderer;
 
@@ -55,7 +55,7 @@ public class HTMLRendererTest {
         //</editor-fold>
 
         //<editor-fold desc="Then">
-        Assert.assertEquals(START + "<span style='color: rgba(255, 0, 0, 1.00);'>Hello</span> World!" + END, render);
+        Assert.assertEquals(START + "<span style='color: rgba(255, 0, 0, 1.00);' title='0.00'>Hello</span> World!" + END, render);
         //</editor-fold>
     }
 
@@ -71,7 +71,7 @@ public class HTMLRendererTest {
         //</editor-fold>
 
         //<editor-fold desc="Then">
-        Assert.assertEquals(START + "Hello <span style='color: rgba(0, 0, 255, 1.00);'>World!</span>" + END, render);
+        Assert.assertEquals(START + "Hello <span style='color: rgba(0, 0, 255, 1.00);' title='1.00'>World!</span>" + END, render);
         //</editor-fold>
     }
 
@@ -87,7 +87,7 @@ public class HTMLRendererTest {
         //</editor-fold>
 
         //<editor-fold desc="Then">
-        Assert.assertEquals(START + "Hello <span style='color: rgba(0, 0, 255, 0.10);'>World!</span>" + END, render);
+        Assert.assertEquals(START + "Hello <span style='color: rgba(0, 0, 255, 0.10);' title='0.50'>World!</span>" + END, render);
         //</editor-fold>
     }
 
@@ -104,8 +104,8 @@ public class HTMLRendererTest {
         //</editor-fold>
 
         //<editor-fold desc="Then">
-        Assert.assertEquals(START + "<span style='color: rgba(0, 0, 255, 1.00);'>Hello</span> " +
-                "<span style='color: rgba(255, 0, 0, 0.46);'>Hell</span>" + END, render);
+        Assert.assertEquals(START + "<span style='color: rgba(0, 0, 255, 1.00);' title='1.00'>Hello</span> " +
+                "<span style='color: rgba(255, 0, 0, 0.46);' title='0.30'>Hell</span>" + END, render);
         //</editor-fold>
     }
 }

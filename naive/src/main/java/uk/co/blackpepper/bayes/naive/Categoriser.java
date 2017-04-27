@@ -140,6 +140,9 @@ public class Categoriser {
      */
     public Map<String,Double> interestingWords(String text, String category) {
 
+        if (!sampleSourceMap.containsKey(category)) {
+            return new HashMap<>();
+        }
         return interestingWords(getProbabilityMap(text, sampleSourceMap.get(category),
                 createCombinedSourceOfOthers(category)));
     }

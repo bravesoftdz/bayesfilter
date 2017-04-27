@@ -13,7 +13,7 @@ import java.util.Map;
  */
 public class HTMLRenderer {
     private static final HTMLRenderer instance = new HTMLRenderer();
-    public static final String DIV_WITH_STYLE = "<span style='color: rgba(%s, %.2f);'>%s</span>";
+    public static final String DIV_WITH_STYLE = "<span style='color: rgba(%s, %.2f);' title='%.2f'>%s</span>";
 
     private HTMLRenderer() {
         // Do nothing
@@ -50,7 +50,7 @@ public class HTMLRenderer {
                 double prob = wordProbMap.get(word);
                 String colour = (prob < 0.5) ? "255, 0, 0" : "0, 0, 255";
                 double alpha = Math.abs(prob - 0.5) * 1.8 + 0.1;
-                result += " " + formatDiv(word, colour, alpha);
+                result += " " + formatDiv(word, colour, alpha, prob);
             } else {
                 result += " " + word;
             }
@@ -58,11 +58,11 @@ public class HTMLRenderer {
 
         result = result.trim();
 
-        return formatDiv(result, "0, 0, 0", 0.1);
+        return formatDiv(result, "0, 0, 0", 0.1, 0.5);
     }
 
-    private String formatDiv(String word, String colour, double alpha) {
+    private String formatDiv(String word, String colour, double alpha, double prob) {
         return String.format(Locale.ENGLISH,
-                        DIV_WITH_STYLE, colour, alpha, word);
+                        DIV_WITH_STYLE, colour, alpha, prob, word);
     }
 }

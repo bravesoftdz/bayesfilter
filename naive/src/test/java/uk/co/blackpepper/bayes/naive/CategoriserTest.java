@@ -514,6 +514,21 @@ public class CategoriserTest {
         //</editor-fold>
     }
 
+    @Test
+    public void ifWeAskForInterestingWordsForAnUnknownCategoryWeDoNotGetAny() {
+        //<editor-fold desc="Given">
+        Categoriser categoriser = new Categoriser();
+        //</editor-fold>
+
+        //<editor-fold desc="When">
+        Map<String, Double> wordProbs = categoriser.interestingWords("hello", "DONOTKNOWME");
+        //</editor-fold>
+
+        //<editor-fold desc="Then">
+        assertTrue(wordProbs.isEmpty());
+        //</editor-fold>
+    }
+
     private String getLikelyCategory(String text) throws IOException {
         return new Categoriser()
                 .category("sport", new DirectorySampleSource("./samples/sport"))
