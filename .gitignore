@@ -1,6 +1,6 @@
 target
 .idea
-bayes.iml
+*.iml
 .DS_Store
 output
-/README.md~
+*~
