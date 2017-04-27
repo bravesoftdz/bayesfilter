@@ -17,7 +17,16 @@ public class AsciiTextParser implements TextParser {
         if (text == null) {
             return result;
         }
-        String t = text.replaceAll("[\\|\\-:/]", " ");
+
+        // Replace smart-quotes
+        String t = text.replaceAll("’", "'");
+
+        // Remove floating hyphens
+        t = t.replaceAll("\\s\\-\\s", " ");
+
+        // Get rid of chars we don't care about
+        t = t.replaceAll("[^A-Za-z0-9'\\.\\-!&£$€₪₩₨₢₡]", " ");
+
         result.addAll(tokenizeSpaces(t));
         ArrayList<String> result2 = new ArrayList<>();
         for (String s : result) {

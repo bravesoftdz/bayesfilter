@@ -205,5 +205,40 @@ public class AsciiTextParserTest {
         assertEquals("hello", tokens.get(6));
         //</editor-fold>
     }
+
+    @Test
+    public void willSkipWeirdWords() {
+        //<editor-fold desc="Given">
+        String text = "now â€” the you'll - World-wide";
+        //</editor-fold>
+
+        //<editor-fold desc="When">
+        List<String> words = textParser.words(text);
+        //</editor-fold>
+
+        //<editor-fold desc="Then">
+        assertEquals("now", words.get(0));
+        assertEquals("€", words.get(1));
+        assertEquals("the", words.get(2));
+        assertEquals("you'll", words.get(3));
+        assertEquals("World-wide", words.get(4));
+        //</editor-fold>
+    }
+
+    @Test
+    public void willTidySmartQuotes() {
+        //’
+        //<editor-fold desc="Given">
+        String text = "you’ll replace smart quotes";
+        //</editor-fold>
+
+        //<editor-fold desc="When">
+        List<String> words = textParser.words(text);
+        //</editor-fold>
+
+        //<editor-fold desc="Then">
+        assertEquals("you'll", words.get(0));
+        //</editor-fold>
+    }
 }
 
