@@ -24,8 +24,11 @@ public class AsciiTextParser implements TextParser {
         // Remove floating hyphens
         t = t.replaceAll("\\s\\-\\s", " ");
 
+        // Remove commas outside of numbers
+        t = t.replaceAll(",(?=[^0-9])", " ");
+
         // Get rid of chars we don't care about
-        t = t.replaceAll("[^A-Za-z0-9'\\.\\-!&£$€₪₩₨₢₡]", " ");
+        t = t.replaceAll("[^A-Za-z0-9'\\.\\-!&£$€₪₩₨₢₡,]", " ");
 
         result.addAll(tokenizeSpaces(t));
         ArrayList<String> result2 = new ArrayList<>();

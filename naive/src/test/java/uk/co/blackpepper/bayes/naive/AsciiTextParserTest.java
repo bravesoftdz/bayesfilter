@@ -227,7 +227,6 @@ public class AsciiTextParserTest {
 
     @Test
     public void willTidySmartQuotes() {
-        //’
         //<editor-fold desc="Given">
         String text = "you’ll replace smart quotes";
         //</editor-fold>
@@ -238,6 +237,23 @@ public class AsciiTextParserTest {
 
         //<editor-fold desc="Then">
         assertEquals("you'll", words.get(0));
+        //</editor-fold>
+    }
+
+    @Test
+    public void commasNotIgnoredInsideNumbers() {
+        //<editor-fold desc="Given">
+        String text = "1,000,000, or more";
+        //</editor-fold>
+
+        //<editor-fold desc="When">
+        List<String> words = textParser.words(text);
+        //</editor-fold>
+
+        //<editor-fold desc="Then">
+        assertEquals("1,000,000", words.get(0));
+        assertEquals("or", words.get(1));
+        assertEquals("more", words.get(2));
         //</editor-fold>
     }
 }
