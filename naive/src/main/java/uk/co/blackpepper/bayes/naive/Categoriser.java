@@ -11,6 +11,7 @@ import static java.util.stream.Collectors.toList;
 public class Categoriser {
 
     private final Map<String, SampleSource> sampleSourceMap;
+    private final Map<String, SampleSource> outSampleSourceMap = new HashMap<>();
     private final TextParser textParser;
     private final int topWordsConsidered;
 
@@ -157,10 +158,15 @@ public class Categoriser {
      * @return everything except the given category as a single source
      */
     private SampleSource createCombinedSourceOfOthers(String category) {
-        return sampleSourceMap.entrySet().stream()
+        if (outSampleSourceMap.containsKey(category)) {
+            return outSampleSourceMap.get(category);
+        }
+        SampleSource sampleSourceOfOthers = sampleSourceMap.entrySet().stream()
                 .filter(e -> !e.getKey().equals(category))
                 .map(Map.Entry::getValue)
                 .reduce(new SimpleSampleSource(), SampleSource::merge);
+        outSampleSourceMap.put(category, sampleSourceOfOthers);
+        return sampleSourceOfOthers;
     }
 
     private double getProbability(String text, SampleSource inSamples, SampleSource outSamples) {
