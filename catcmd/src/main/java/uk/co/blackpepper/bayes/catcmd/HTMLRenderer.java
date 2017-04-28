@@ -40,21 +40,23 @@ public class HTMLRenderer {
      * @return the string
      */
     public String render(String text, Map<String,Double> wordProbMap) {
-        String result = "";
+        String result;
 
         AsciiTextParser parser = new AsciiTextParser();
         List<String> words = parser.words(text);
 
+        StringBuilder resultBuilder = new StringBuilder();
         for (String word : words) {
             if (wordProbMap.containsKey(word)) {
                 double prob = wordProbMap.get(word);
                 String colour = (prob < 0.5) ? "255, 0, 0" : "0, 0, 255";
                 double alpha = Math.abs(prob - 0.5) * 1.8 + 0.1;
-                result += " " + formatDiv(word, colour, alpha, prob);
+                resultBuilder.append(" ").append(formatDiv(word, colour, alpha, prob));
             } else {
-                result += " " + word;
+                resultBuilder.append(" ").append(word);
             }
         }
+        result = resultBuilder.toString();
 
         result = result.trim();
 
