@@ -23,6 +23,10 @@ public class Command {
 
             String analysisDirName = dataDirName + "analysis/";
             String outputDirName = dataDirName + "output/";
+            File outputDir = new File(outputDirName);
+            if (!outputDir.exists()) {
+                outputDir.mkdir();
+            }
             File analysisDir = new File(analysisDirName);
             for (File file : analysisDir.listFiles()) {
                 String name = file.getName();
